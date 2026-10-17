@@ -1,6 +1,6 @@
 {
-  "createdAt": "2026-10-14T17:32:48.196Z",
-  "sha256": "282e2586d69677234e0212a35b256d603a8fcada8642386fcd67ff43a759776c",
+  "createdAt": "2026-10-17T10:11:26.617Z",
+  "sha256": "c9460995d258310b8c27b490895d0b6398fb1407956ce0c1af69abdf26ac4b56",
   "files": [
     "index.html",
     "README.txt",
@@ -9,6 +9,6 @@
     "assets/images/view-b.svg",
     "assets/audio/test-tone.wav"
   ],
-  "sourceSha256": "ed70e22d527404048a167c3ab32b8885d4d7585a05211d77fe42ffd91b05cbad",
+  "sourceSha256": "6de05ecad202b253ee0637d65cd6a1fde9ad5f31eb15290bbd6cc29eceeb7e8d",
   "status": "packaged; browser verification is separate"
 }

@@ -6,10 +6,13 @@ Images: geometric test fixtures from scripts/create_fixtures.py.
 Audio: a generated sine-wave test fixture from scripts/create_fixtures.py.
 These fixtures are for technical checks. Replace them before final submission.
 
-SugarCube 2.37.3
-Author: Thomas Michael Edwards
-Source: https://www.motoslave.net/sugarcube/2/
-License: BSD 2-Clause. The full license follows in the built package.
+Harlowe 3.3.9
+Author: Leon Arnott
+Source: https://github.com/klembot/twinejs/releases/tag/2.12.1
+Manual: https://twine2.neocities.org/
+License: Zlib, as declared in the official format metadata.
+The runtime comes unchanged from the official Twine 2.12.1 bundle.
+Upstream notices remain in index.html.
 
 Tweego 2.1.1 is a build tool. Its executable is not part of this package.
 Source: https://www.motoslave.net/tweego/

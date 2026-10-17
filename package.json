@@ -2,7 +2,7 @@
   "name": "final-ip-project",
   "version": "0.1.0",
   "private": true,
-  "description": "Offline SugarCube technical prototype. All story content is authored by the group.",
+  "description": "Offline Harlowe technical prototype. All story content is authored by the group.",
   "devDependencies": {
     "playwright": "1.64.1"
   },

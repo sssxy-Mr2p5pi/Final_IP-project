@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-10-14T17:39:03.871Z",
-  "sourceSha256": "ed70e22d527404048a167c3ab32b8885d4d7585a05211d77fe42ffd91b05cbad",
-  "htmlSha256": "c34d40880c7c8ec62722cc68d52e6301ff5e9e4465c17c1f359b22d1bb25aaf9",
+  "checkedAt": "2026-10-17T10:15:53.665Z",
+  "sourceSha256": "6de05ecad202b253ee0637d65cd6a1fde9ad5f31eb15290bbd6cc29eceeb7e8d",
+  "htmlSha256": "66db83dbb2b1e776335006e663bb4b3118c8a5978a2cbd2ec80fbe9699a6c1f8",
   "results": [
     {
       "browser": "Chrome",
@@ -179,7 +179,7 @@
       "assets/images/view-b.svg",
       "index.html"
     ],
-    "sha256": "282e2586d69677234e0212a35b256d603a8fcada8642386fcd67ff43a759776c",
+    "sha256": "c9460995d258310b8c27b490895d0b6398fb1407956ce0c1af69abdf26ac4b56",
     "extractedLocally": true
   }
 }

@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-10-14T17:32:47.554Z",
+  "checkedAt": "2026-10-17T10:11:25.927Z",
   "status": "passed",
-  "passages": 10,
-  "sourceSha256": "ed70e22d527404048a167c3ab32b8885d4d7585a05211d77fe42ffd91b05cbad",
+  "passages": 12,
+  "sourceSha256": "6de05ecad202b253ee0637d65cd6a1fde9ad5f31eb15290bbd6cc29eceeb7e8d",
   "authorText": {
     "TextShort": "759175070a2df96c9746f8f0b2a71056bfec948fddee01fd1a170d35a9d2a86b",
     "TextLong": "c776468aa3a73c4155f7cf0acebb42779ef25d93414b419963f0812499986c51"

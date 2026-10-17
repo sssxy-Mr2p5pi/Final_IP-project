@@ -34,16 +34,16 @@ async function verifyOne(browser, browserName, size, entry) {
   try {
     await page.goto(pathToFileURL(entry).href);
     await page.getByRole('link',{name:'Start prototype',exact:true}).click();
-    await page.getByRole('button',{name:'Option A',exact:true}).click();
+    await page.getByRole('link',{name:'Option A',exact:true}).click();
     assert.equal(await page.locator('.choice-value').innerText(),'Option A');
     await verifyTarget(page,'A');
-    await page.locator('.scene a').click();
+    await page.locator('.scene tw-link').click();
     await page.getByRole('heading',{name:/View B/}).waitFor();
     assert.equal(await page.locator('.choice-value').innerText(),'Option A');
     await verifyTarget(page,'B');
     assert(await page.evaluate(()=>document.documentElement.scrollWidth<=window.innerWidth),'No horizontal page overflow');
-    await page.getByRole('button',{name:'Option B',exact:true}).click();
-    await page.locator('.scene a').click();
+    await page.getByRole('link',{name:'Option B',exact:true}).click();
+    await page.locator('.scene tw-link').click();
     await page.getByRole('heading',{name:/View A/}).waitFor();
     assert.equal(await page.locator('.choice-value').innerText(),'Option B');
     await page.getByRole('button',{name:'Inspect target'}).click();
@@ -57,7 +57,7 @@ async function verifyOne(browser, browserName, size, entry) {
     await page.locator('#font-size').focus();
     await page.keyboard.press('End');
     assert.equal(await page.locator('#font-output').innerText(),'28 px');
-    const underlying=await page.getByRole('button',{name:'Option A',exact:true}).boundingBox();
+    const underlying=await page.getByRole('link',{name:'Option A',exact:true}).boundingBox();
     await page.mouse.click(underlying.x+underlying.width/2,underlying.y+underlying.height/2);
     assert.equal(await page.locator('.choice-value').innerText(),'Option B','Modal prevents background choice');
     const scrolling=await page.locator('#reader-body').evaluate(el=>{
@@ -69,26 +69,27 @@ async function verifyOne(browser, browserName, size, entry) {
     await page.screenshot({path:path.join(resultDir,'screenshots',`${browserName}-${size.width}-reader.png`)});
     await page.locator('#reader-close').click();
     await page.getByRole('button',{name:'Play sound',exact:true}).click();
-    await until(()=>page.evaluate(()=>!SugarCube.setup.testAudio.paused && SugarCube.setup.testAudio.currentTime>0.15),'audio playback');
-    const first=await page.evaluate(()=>SugarCube.setup.testAudio.currentTime);
+    await until(()=>page.evaluate(()=>!FinalIP.audio.paused && FinalIP.audio.currentTime>0.15),'audio playback');
+    const first=await page.evaluate(()=>FinalIP.audio.currentTime);
     await page.getByRole('button',{name:'Play sound',exact:true}).click();
-    const second=await page.evaluate(()=>SugarCube.setup.testAudio.currentTime);
+    const second=await page.evaluate(()=>FinalIP.audio.currentTime);
     assert(second>=first,'Repeated play does not restart the sound');
-    await page.locator('.scene a').click();
+    await page.locator('.scene tw-link').click();
     await page.getByRole('heading',{name:/View B/}).waitFor();
     assert.equal(await page.locator('.audio-status').innerText(),'Sound playing.');
     await page.getByRole('button',{name:'Stop',exact:true}).click();
-    assert(await page.evaluate(()=>SugarCube.setup.testAudio.paused && SugarCube.setup.testAudio.currentTime===0));
+    assert(await page.evaluate(()=>FinalIP.audio.paused && FinalIP.audio.currentTime===0));
     const visible=await page.locator('main').innerText();
     assert(!/[\u3400-\u9fff]/.test(visible),'English player interface');
     assert(await page.locator('img').evaluateAll(imgs=>imgs.every(i=>i.complete && i.naturalWidth===1280)),'Images load locally');
     await page.screenshot({path:path.join(resultDir,'screenshots',`${browserName}-${size.width}-scene.png`)});
-    await page.getByRole('button',{name:'Restart',exact:true}).click();
+    await page.getByRole('link',{name:'Restart',exact:true}).click();
     await page.getByRole('link',{name:'Start prototype',exact:true}).click();
     assert.equal(await page.locator('.choice-value').innerText(),'Not selected');
     assert.equal(await page.locator('.audio-status').innerText(),'Sound stopped.');
     assert.deepEqual(remote,[],'No network requests');
     assert.deepEqual(errors,[],'No script errors');
+    assert.equal(await page.locator('tw-error').count(),0,'No Harlowe errors');
     return {browser:browserName,viewport:size,status:'passed',longTextWords:words,offline:true,remoteRequests:remote.length,checks:['local images','hotspot alignment A/B','A/B state across views','short text','long text scroll','text size','modal isolation','visible close','audio decode and time advance','repeat play','audio across view changes','stop','English UI','restart']};
   } finally {await context.close();}
 }

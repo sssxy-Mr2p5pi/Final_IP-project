@@ -49,8 +49,12 @@ function compare(expected,actual){
  const {passages}=await import(pathToFileURL(path.join(root,'scripts/project.mjs')).href);
  const profile=path.join(root,'.local','twine-test-'+Date.now());
  fs.mkdirSync(profile,{recursive:true});
- fs.writeFileSync(path.join(profile,'prefs.json'),JSON.stringify({locale:'en-us',welcomeSeen:true,storyFormat:{name:'SugarCube',version:'2.37.3'}}));
+ fs.writeFileSync(path.join(profile,'prefs.json'),JSON.stringify({locale:'en-us',welcomeSeen:true,storyFormat:{name:'Harlowe',version:'3.3.9'}}));
  const library=path.join(profile,'stories'),backups=path.join(profile,'backups');
+ const scratch=path.join(profile,'scratch');
+ fs.mkdirSync(scratch,{recursive:true});
+ fs.cpSync(path.join(root,'dist/assets'),path.join(scratch,'assets'),{recursive:true});
+ fs.writeFileSync(path.join(profile,'app-prefs.json'),JSON.stringify({storyLibraryFolderPath:library,backupFolderPath:backups,scratchFolderPath:scratch}));
  const report={checkedAt:new Date().toISOString(),status:'running',sourceSha256:hash(path.join(root,'src/story.twee')),humanEditorTrial:'pending',method:'Actual Twine desktop import and Export As Twee. Native download destination set by the test.'};
  let app;
  try{
@@ -59,12 +63,26 @@ function compare(expected,actual){
   await window.getByRole('tab',{name:'Library',exact:true}).waitFor();
   await importStory(window,path.join(root,'dist/index.html'));
   const first=path.join(profile,'first-export.twee');await exportStory(app,window,first);
+  await app.evaluate(({shell})=>{
+   globalThis.finalIPPreviewPath=null;
+   shell.openExternal=async url=>{globalThis.finalIPPreviewPath=url;};
+   shell.openPath=async file=>{globalThis.finalIPPreviewPath=file;return '';};
+  });
+  await window.getByRole('button',{name:'Play',exact:true}).click();
+  let nativePreview;
+  for(let i=0;i<100;i++){
+   nativePreview=await app.evaluate(()=>globalThis.finalIPPreviewPath);
+   if(nativePreview)break;
+   await sleep(100);
+  }
+  assert(nativePreview,'Twine Play opens a local preview');
+  console.log('Twine Play path: '+nativePreview);
   const original=passages(fs.readFileSync(path.join(root,'src/story.twee'),'utf8'));
   const exported=passages(fs.readFileSync(first,'utf8'));
   report.firstExportPassages=compare(original,exported);
   const runtime=path.join(profile,'runtime');fs.mkdirSync(runtime,{recursive:true});
   const compiled=path.join(runtime,'index.html');
-  const build=spawnSync(path.join(root,'.tools/tweego/tweego.exe'),['-f','sugarcube-2','-o',compiled,first],{encoding:'utf8',windowsHide:true,env:{...process.env,TWEEGO_PATH:path.join(root,'.tools/storyformats')}});
+  const build=spawnSync(path.join(root,'.tools/tweego/tweego.exe'),['-f','harlowe-3','-o',compiled,first],{encoding:'utf8',windowsHide:true,env:{...process.env,TWEEGO_PATH:path.join(root,'.tools/storyformats')}});
   assert.equal(build.status,0,build.stderr);
   fs.cpSync(path.join(root,'dist/assets'),path.join(runtime,'assets'),{recursive:true});
   await importStory(window,compiled);
@@ -77,11 +95,19 @@ function compare(expected,actual){
   await window.screenshot({path:path.join(root,'evidence/tests/screenshots/twine-story-map.png')});
   const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
   try{
-   const context=await browser.newContext({offline:true});const page=await context.newPage();
+   const context=await browser.newContext({offline:true});let page=await context.newPage();
+   await page.goto(nativePreview.startsWith('file:')?nativePreview:pathToFileURL(nativePreview).href);
+   await page.getByRole('link',{name:'Start prototype',exact:true}).click();
+   assert(await page.locator('.scene img').evaluate(img=>img.complete&&img.naturalWidth===1280),'Twine native Play loads its local image');
+   await page.getByRole('button',{name:'Play sound',exact:true}).click();
+   await page.waitForFunction(()=>!FinalIP.audio.paused&&FinalIP.audio.currentTime>0.1);
+   report.nativePlay='passed: offline image and audio in the configured scratch folder';
+   // A fresh tab avoids Harlowe's per-tab recovery for the same story IFID.
+   await page.close();page=await context.newPage();
    await page.goto(pathToFileURL(compiled).href);
    await page.getByRole('link',{name:'Start prototype',exact:true}).click();
-   await page.getByRole('button',{name:'Option B',exact:true}).click();
-   await page.locator('.scene a').click();
+   await page.getByRole('link',{name:'Option B',exact:true}).click();
+   await page.locator('.scene tw-link').click();
    await page.getByRole('heading',{name:/View B/}).waitFor();
    assert.equal(await page.locator('.choice-value').innerText(),'Option B');
    await page.getByRole('button',{name:/Open long text/}).click();

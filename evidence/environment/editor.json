@@ -1,10 +1,14 @@
 {
-  "checkedAt": "2026-10-14T17:35:37.023Z",
+  "checkedAt": "2026-10-17T10:15:06.210Z",
   "status": "passed",
   "locale": "en-us",
-  "storyFormat": "SugarCube 2.37.3",
+  "storyFormat": "Harlowe 3.3.9",
   "profile": ".local/twine-editor",
   "storyLibrary": ".local/twine-library",
+  "templateUpdated": true,
+  "oldStoryBackup": ".local\\before-harlowe-20261017-180402\\twine-library\\Final IP — Technical Prototype.html",
+  "authorText": "unchanged; checkpoint comparison passed",
+  "manualHumanEditing": "pending",
   "templateVisible": true,
-  "manualHumanEditing": "pending"
+  "method": "Opened the project Twine profile and verified the story format selection in Story Details."
 }

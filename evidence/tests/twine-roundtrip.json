@@ -1,7 +1,7 @@
 {
-  "checkedAt": "2026-10-14T17:33:00.142Z",
+  "checkedAt": "2026-10-17T10:11:26.903Z",
   "status": "passed",
-  "sourceSha256": "ed70e22d527404048a167c3ab32b8885d4d7585a05211d77fe42ffd91b05cbad",
+  "sourceSha256": "6de05ecad202b253ee0637d65cd6a1fde9ad5f31eb15290bbd6cc29eceeb7e8d",
   "humanEditorTrial": "pending",
   "method": "Actual Twine desktop import and Export As Twee. Native download destination set by the test.",
   "firstExportPassages": [
@@ -13,6 +13,8 @@
     "ViewB",
     "TextShort",
     "TextLong",
+    "Controls",
+    "Reader",
     "__script",
     "__style"
   ],
@@ -25,13 +27,16 @@
     "ViewB",
     "TextShort",
     "TextLong",
+    "Controls",
+    "Reader",
     "__script",
     "__style"
   ],
   "exportSha256": [
-    "e1d5911e2d0ce994583129f566c1a64fe239d0819f3a8696b116dca26e93acc8",
-    "e1d5911e2d0ce994583129f566c1a64fe239d0819f3a8696b116dca26e93acc8"
+    "0003f55a66c652fb3c433af2daaafa7c369766816de3ff2fbf3e250f867e1e53",
+    "0003f55a66c652fb3c433af2daaafa7c369766816de3ff2fbf3e250f867e1e53"
   ],
   "ifid": "68419E4A-05BC-4A6D-904C-7F7E391BA8A2",
+  "nativePlay": "passed: offline image and audio in the configured scratch folder",
   "recompiledRuntime": "passed: offline navigation, shared state and long text"
 }

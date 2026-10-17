@@ -1,11 +1,12 @@
-﻿{
-    "checkedAt":  "2026-10-15T01:35:35.0024202+08:00",
-    "git":  "git version 2.55.0.windows.3",
-    "node":  "v24.21.0",
-    "twine":  "2.12.1.0",
-    "blender":  "Blender 4.5.14 LTS",
-    "tweego":  "tweego, version 2.1.1+81d1d71 (2020-02-25T07:09:26Z) [windows/amd64]",
-    "sugarcube":  true,
-    "chrome":  true,
-    "edge":  true
+{
+  "checkedAt": "2026-10-17T18:11:32.1626970+08:00",
+  "git": "git version 2.55.0.windows.3",
+  "node": "v24.21.0",
+  "twine": "2.12.1.0",
+  "blender": "Blender 4.5.14 LTS",
+  "tweego": "tweego, version 2.1.1+81d1d71 (2020-02-25T07:09:26Z) [windows/amd64]",
+  "storyFormat": "Harlowe 3.3.9",
+  "harlowe": true,
+  "chrome": true,
+  "edge": true
 }

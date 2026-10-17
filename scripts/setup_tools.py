@@ -34,3 +34,6 @@ for item in records:
         if not version.startswith(item['version']):
             subprocess.run([str(destination),'/S','/currentuser'],check=True,creationflags=subprocess.CREATE_NO_WINDOW)
     print('Ready: '+item['name']+' '+item['version'])
+
+from install_harlowe import install
+install()

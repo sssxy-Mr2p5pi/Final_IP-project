@@ -21,7 +21,7 @@
 
 ## 日常编辑
 
-本机已配置项目专用英文 Twine 编辑器并导入技术模板，使用 05-open-twine.cmd 打开。它使用 .local/twine-editor 配置和 .local/twine-library 故事库，与通用启动入口分开。换机或新增故事时，从 Import 导入构建得到的 dist/index.html。选择 SugarCube 2.37.3；详细步骤见仓库外指南。
+本机已配置项目专用英文 Twine 编辑器并导入技术模板，使用 05-open-twine.cmd 打开。它使用 .local/twine-editor 配置和 .local/twine-library 故事库，与通用启动入口分开。换机或新增故事时，从 Import 导入构建得到的 dist/index.html。选择 Harlowe 3.3.9；详细步骤见仓库外指南。
 
 正文节点 TextShort、TextLong 带 author-text 标签，供组员人工编辑。Start、ViewA、ViewB 带 technical 标签，当前含技术控件与测试选项。
 新增正式文字节点时使用 author-text 标签。技术节点中的测试选项改为正式文案时，交还作者自行填写并纳入文本保护范围。
@@ -47,7 +47,7 @@
 
 Windows x64，需要 Git、Node.js 和 Python 3.12 或更新版本。先执行 00-setup.cmd，再执行环境检查、构建、打包和测试。
 工具版本与 SHA-256 见 tools.lock.json。下载脚本读取系统代理；不修改全局代理或 PATH。项目本地依赖采用 package-lock.json 锁定。
-Twine 按当前用户安装；Blender、Tweego 和 SugarCube 位于 .tools。测试使用已有 Chrome、Edge，不下载额外浏览器。
+Twine 按当前用户安装；Blender、Tweego 和 Harlowe 位于 .tools。测试使用已有 Chrome、Edge，不下载额外浏览器。
 
 ## 内容和提交边界
 
@@ -59,7 +59,7 @@ Twine 按当前用户安装；Blender、Tweego 和 SugarCube 位于 .tools。测
 具体实测结果见 evidence/tests/browser-tests.json、twine-roundtrip.json 和 evidence/environment/blender-render.json。
 实际扬声器听感、另一台电脑运行和组员亲手完成 Twine 交接仍分别列为人工验收项。
 
-## 本轮验收结果
+## 初始验收记录（SugarCube，2026-10-15）
 
 2026-10-15：Chrome、Edge各三个窗口配置共六组离线包检查通过；Twine实际导出和重新导入保真检查通过；作者文本保护器的正反例检查通过；Blender默认场景保存与CPU渲染通过。
 图像与阅读面板截图已检查，视口横向溢出和热点位置检查通过。人工听感、另一台电脑与作者亲手交接仍待确认。
@@ -69,3 +69,18 @@ Twine 按当前用户安装；Blender、Tweego 和 SugarCube 位于 .tools。测
 
 应用偏好：Twine和Blender均使用项目专用英文配置。重新配置入口为 `python scripts/configure_twine.py`，此操作保留已存在的编辑器故事。
 Blender入口使用 .local/blender-config，操作系统的全局应用偏好保持独立。
+
+## 当前格式与验证（Harlowe，2026-10-17）
+
+当前源码、项目专用 Twine 故事和构建均采用 Harlowe 3.3.9。格式文件来自已锁定的官方 Twine 2.12.1 安装包。
+初始化使用 startup 标签；选择、变量、条件、复用节点和重启使用 Harlowe 宏。阅读弹窗与单音轨播放由项目技术脚本补充。
+Controls、Reader 是共用技术节点；TextShort、TextLong 的正文保持迁移前内容。
+
+Harlowe 的 Chrome/Edge 六组离线检查、Twine 导出往返、内置 Play 图像与音频检查、正文保护器检查已通过。
+新手操作见仓库外 `../Final_IP-guide/04-Harlowe入门与ViewA操作.md`。
+图片和热点定位继续使用 HTML/CSS。Harlowe 的地图卡片用于管理节点，图片内热点坐标在 Stylesheet 中调整。
+
+每次构建会把登记素材同步到项目的 Twine scratch 和 library 目录。
+在 05 入口中使用 Build → Play 可以查看当前编辑；新增素材后需登记、导出并构建一次。
+03-preview 读取导出的 src/story.twee。技术更新重新导入前，先备份 Twine 当前故事。
+旧格式的故事与验证记录保存在本机 .local/before-harlowe-*，Git 也保留初始版本。

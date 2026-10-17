@@ -7,6 +7,7 @@ const root=path.resolve(path.dirname(fileURLToPath(import.meta.url)),'..');
 const temp=path.join(root,'.local','author-guard-'+Date.now());
 fs.mkdirSync(path.join(temp,'scripts'),{recursive:true});fs.mkdirSync(path.join(temp,'src'));
 fs.copyFileSync(path.join(root,'scripts/project.mjs'),path.join(temp,'scripts/project.mjs'));
+fs.copyFileSync(path.join(root,'tools.lock.json'),path.join(temp,'tools.lock.json'));
 const original=fs.readFileSync(path.join(root,'src/story.twee'),'utf8');
 const source=path.join(temp,'src/story.twee');fs.writeFileSync(source,original);
 const run=action=>spawnSync(process.execPath,[path.join(temp,'scripts/project.mjs'),action],{encoding:'utf8',windowsHide:true});

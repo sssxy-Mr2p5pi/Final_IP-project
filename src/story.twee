@@ -4,17 +4,17 @@ Final IP — Technical Prototype
 :: StoryData
 {
   "ifid": "68419E4A-05BC-4A6D-904C-7F7E391BA8A2",
-  "format": "SugarCube",
-  "format-version": "2.37.3",
+  "format": "Harlowe",
+  "format-version": "3.3.9",
   "start": "Start",
   "zoom": 1
 }
 
-:: StoryInit [technical]
-<<set $choice = null>>
-<<set $fontSize = 18>>
+:: StoryInit [startup technical]
+(set: $choice to "")
 
 :: Start [technical] {"position":"100,200","size":"100,100"}
+{
 <main class="landing">
 <div class="eyebrow"><span class="signal"></span> FINAL IP / SYSTEM CHECK</div>
 <div class="landing-grid">
@@ -22,18 +22,57 @@ Final IP — Technical Prototype
 <aside class="spec-card"><div class="card-top">PROTOTYPE 01 <span>READY</span></div><img src="assets/images/view-a.svg" alt="Geometric placeholder for view A"><dl><div><dt>VISUALS</dt><dd>Placeholder images</dd></div><div><dt>TEXT</dt><dd>Layout test labels</dd></div><div><dt>AUDIO</dt><dd>Local test tone</dd></div><div><dt>RUNTIME</dt><dd>Offline browser</dd></div></dl></aside>
 </div><footer>TECHNICAL FIXTURE <span>Replace all test content before final submission.</span></footer>
 </main>
+}
 
 :: ViewA [technical] {"position":"300,200","size":"100,100"}
+{
 <main class="workspace">
-<header class="workspace-header"><div><div class="eyebrow"><span class="signal"></span> FINAL IP / SYSTEM CHECK</div><h1>View A <span class="view-description">Observation test</span></h1></div><button data-action="restart" class="subtle">Restart</button></header>
-<div class="work-grid"><section class="visual-panel" aria-label="View A scene"><div class="scene-top"><span>CAMERA 01</span><span>1280 × 720 / PLACEHOLDER</span></div><div class="scene"><img src="assets/images/view-a.svg" alt="Placeholder room with an observation target on the left"><button class="hotspot target-a" data-action="short" aria-label="Inspect target"><span>01</span> Inspect</button><div class="hotspot move-a">[[View B →->ViewB]]</div></div><div class="scene-bottom"><span>Click a marked area to interact.</span><span class="fixture">TEST FIXTURE</span></div></section><aside class="control-panel"><p class="kicker">INTERACTION CHECK</p><h2>Choose a test value.</h2><p class="muted">Your selection stays the same when you switch views.</p><div class="choice-buttons"><button data-action="choice-a" aria-pressed="false">Option A</button><button data-action="choice-b" aria-pressed="false">Option B</button></div><div class="state-row"><span>CURRENT VALUE</span><strong class="choice-value" aria-live="polite">Not selected</strong></div><hr><p class="kicker">READING CHECK</p><button class="wide" data-action="long">Open long text <span>↗</span></button><p class="quiet">2,500 test words · Adjustable text size</p><hr><p class="kicker">AUDIO CHECK</p><div class="audio-buttons"><button data-action="play">Play sound</button><button data-action="stop" class="subtle">Stop</button></div><p class="audio-status quiet" role="status">Sound stopped.</p></aside></div><footer>01 / 02 <span>[[Switch to View B->ViewB]]</span></footer>
+<header class="workspace-header">
+<div><div class="eyebrow"><span class="signal"></span> FINAL IP / SYSTEM CHECK</div>
+<h1>View A <span class="view-description">Observation test</span></h1></div>
+<span class="action-link subtle">(link: "Restart")[(restart:)]</span>
+</header>
+<div class="work-grid">
+<section class="visual-panel" aria-label="View A scene">
+<div class="scene-top"><span>CAMERA 01</span><span>1280 × 720 / PLACEHOLDER</span></div>
+<div class="scene">
+<img src="assets/images/view-a.svg" alt="Placeholder room with an observation target on the left">
+<button class="hotspot target-a" data-action="short" aria-label="Inspect target"><span>01</span> Inspect</button>
+<div class="hotspot move-a">[[View B →->ViewB]]</div>
+</div>
+<div class="scene-bottom"><span>Click a marked area to interact.</span><span class="fixture">TEST FIXTURE</span></div>
+</section>
+<aside class="control-panel">(display: "Controls")</aside>
+</div>
+<footer>01 / 02 <span>[[Switch to View B->ViewB]]</span></footer>
 </main>
+}
+(display: "Reader")
 
 :: ViewB [technical] {"position":"500,200","size":"100,100"}
+{
 <main class="workspace">
-<header class="workspace-header"><div><div class="eyebrow"><span class="signal"></span> FINAL IP / SYSTEM CHECK</div><h1>View B <span class="view-description">State persistence test</span></h1></div><button data-action="restart" class="subtle">Restart</button></header>
-<div class="work-grid"><section class="visual-panel" aria-label="View B scene"><div class="scene-top"><span>CAMERA 02</span><span>1280 × 720 / PLACEHOLDER</span></div><div class="scene"><img src="assets/images/view-b.svg" alt="Placeholder room with an observation target on the right"><button class="hotspot target-b" data-action="short" aria-label="Inspect target"><span>02</span> Inspect</button><div class="hotspot move-b">[[← View A->ViewA]]</div></div><div class="scene-bottom"><span>Click a marked area to interact.</span><span class="fixture">TEST FIXTURE</span></div></section><aside class="control-panel"><p class="kicker">STATE CHECK</p><h2>One shared selection.</h2><p class="muted">This view reads the same value as View A.</p><div class="choice-buttons"><button data-action="choice-a" aria-pressed="false">Option A</button><button data-action="choice-b" aria-pressed="false">Option B</button></div><div class="state-row"><span>CURRENT VALUE</span><strong class="choice-value" aria-live="polite">Not selected</strong></div><hr><p class="kicker">READING CHECK</p><button class="wide" data-action="long">Open long text <span>↗</span></button><p class="quiet">2,500 test words · Adjustable text size</p><hr><p class="kicker">AUDIO CHECK</p><div class="audio-buttons"><button data-action="play">Play sound</button><button data-action="stop" class="subtle">Stop</button></div><p class="audio-status quiet" role="status">Sound stopped.</p></aside></div><footer>02 / 02 <span>[[Switch to View A->ViewA]]</span></footer>
+<header class="workspace-header">
+<div><div class="eyebrow"><span class="signal"></span> FINAL IP / SYSTEM CHECK</div>
+<h1>View B <span class="view-description">State persistence test</span></h1></div>
+<span class="action-link subtle">(link: "Restart")[(restart:)]</span>
+</header>
+<div class="work-grid">
+<section class="visual-panel" aria-label="View B scene">
+<div class="scene-top"><span>CAMERA 02</span><span>1280 × 720 / PLACEHOLDER</span></div>
+<div class="scene">
+<img src="assets/images/view-b.svg" alt="Placeholder room with an observation target on the right">
+<button class="hotspot target-b" data-action="short" aria-label="Inspect target"><span>02</span> Inspect</button>
+<div class="hotspot move-b">[[← View A->ViewA]]</div>
+</div>
+<div class="scene-bottom"><span>Click a marked area to interact.</span><span class="fixture">TEST FIXTURE</span></div>
+</section>
+<aside class="control-panel">(display: "Controls")</aside>
+</div>
+<footer>02 / 02 <span>[[Switch to View A->ViewA]]</span></footer>
 </main>
+}
+(display: "Reader")
 
 :: TextShort [author-text] {"position":"300,400","size":"100,100"}
 TEST CONTENT ONLY.
@@ -143,108 +182,212 @@ Write your own English text in this passage. Keep the passage name unchanged.
 
 <p>TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK.</p>
 
-:: Story JavaScript [script]
-/* Technical code only. Authors edit TextShort and TextLong in Twine. */
-Config.ui.stowBarInitially = true;
-Config.history.controls = false;
-Config.history.maxStates = 20;
-Config.passages.nobr = true;
-Config.passages.transitionOut = null;
-Config.saves.maxAutoSaves = 0;
-Config.saves.maxSlotSaves = 0;
+:: Controls [technical] {"position":"700,200","size":"100,100"}
+{
+<p class="kicker">INTERACTION CHECK</p><h2>Choose a test value.</h2>
+<p class="muted">Your selection stays the same when you switch views.</p>
+<div class="choice-buttons">
+<span class="action-link">(link-repeat: "Option A")[(set: $choice to "A")(replace: ?choiceValue)[<strong class="choice-value">Option A</strong>]]</span>
+<span class="action-link">(link-repeat: "Option B")[(set: $choice to "B")(replace: ?choiceValue)[<strong class="choice-value">Option B</strong>]]</span>
+</div>
+<div class="state-row"><span>CURRENT VALUE</span>
+<span aria-live="polite">|choiceValue>[<strong class="choice-value">(if: $choice is "")[Not selected](else:)[Option (print: $choice)]</strong>]</span>
+</div>
+<hr><p class="kicker">READING CHECK</p>
+<button class="wide" data-action="long">Open long text <span>↗</span></button>
+<p class="quiet">2,500 test words · Adjustable text size</p>
+<hr><p class="kicker">AUDIO CHECK</p>
+<div class="audio-buttons"><button data-action="play">Play sound</button><button data-action="stop" class="subtle">Stop</button></div>
+<p class="audio-status quiet" role="status">Sound stopped.</p>
+}
 
-setup.testAudio = new Audio('assets/audio/test-tone.wav');
-setup.testAudio.preload = 'none';
-setup.testAudio.volume = 0.2;
-setup.audioMessage = 'Sound stopped.';
-setup.playPending = false;
-setup.audioGeneration = 0;
-setup.syncUI = function () {
-    const value = State.variables.choice;
-    document.querySelectorAll('.choice-value').forEach(el => { el.textContent = value ? 'Option ' + value : 'Not selected'; });
-    document.querySelectorAll('[data-action="choice-a"], [data-action="choice-b"]').forEach(el => {
-        el.setAttribute('aria-pressed', String(el.dataset.action === 'choice-' + String(value).toLowerCase()));
-    });
-    document.querySelectorAll('.audio-status').forEach(el => { el.textContent = setup.audioMessage; });
-};
-setup.stopAudio = function () {
-    setup.audioGeneration += 1;
-    setup.testAudio.pause();
-    setup.testAudio.currentTime = 0;
-    setup.playPending = false;
-    setup.audioMessage = 'Sound stopped.';
-    setup.syncUI();
-};
-setup.testAudio.addEventListener('ended', function () {
-    setup.audioMessage = 'Sound finished.';
-    setup.syncUI();
-});
-setup.openReader = function (longText) {
-    let dialog = document.getElementById('reader');
-    if (!dialog) {
-        dialog = document.createElement('dialog');
-        dialog.id = 'reader';
-        dialog.setAttribute('aria-labelledby', 'reader-title');
-        dialog.innerHTML = '<div class="reader-top"><div><p class="kicker">READING CHECK</p><h2 id="reader-title"></h2></div><button id="reader-close" aria-label="Close reading panel">Close ×</button></div><div class="reader-tools"><label for="font-size">Text size</label><input id="font-size" type="range" min="16" max="28" step="2"><output id="font-output" for="font-size"></output></div><div id="reader-body" tabindex="0"></div><div class="reader-bottom">TEST CONTENT ONLY · Scroll to read the full passage.</div>';
-        document.body.appendChild(dialog);
-        document.getElementById('reader-close').addEventListener('click', function () { dialog.close(); });
-        document.getElementById('font-size').addEventListener('input', function (event) {
-            State.variables.fontSize = Number(event.target.value);
-            document.getElementById('reader-body').style.fontSize = event.target.value + 'px';
-            document.getElementById('font-output').textContent = event.target.value + ' px';
+:: Reader [technical] {"position":"700,400","size":"100,100"}
+<dialog id="reader" aria-labelledby="reader-title"><div class="reader-top"><div><p class="kicker">READING CHECK</p><h2 id="reader-title"></h2></div><button id="reader-close" data-action="close-reader" aria-label="Close reading panel">Close ×</button></div><div class="reader-tools"><label for="font-size">Text size</label><input id="font-size" type="range" min="16" max="28" step="2"><output id="font-output" for="font-size"></output></div><div id="reader-body" tabindex="0"><section data-reading="short" hidden>(display: "TextShort")</section><section data-reading="long" hidden>(display: "TextLong")</section></div><div class="reader-bottom">TEST CONTENT ONLY · Scroll to read the full passage.</div></dialog>
+
+:: Story JavaScript [script]
+/* Presentation helpers only. Harlowe manages story variables and navigation. */
+window.FinalIP = (() => {
+    const audio = new Audio('assets/audio/test-tone.wav');
+    audio.preload = 'none';
+    audio.volume = 0.2;
+    let audioMessage = 'Sound stopped.';
+    let pending = false;
+    let generation = 0;
+    let fontSize = 18;
+    function syncAudio() {
+        document.querySelectorAll('tw-link').forEach(el => {
+            if (!el.hasAttribute('role')) el.setAttribute('role', 'link');
+        });
+        document.querySelectorAll('.audio-status').forEach(el => {
+            if (el.textContent !== audioMessage) el.textContent = audioMessage;
         });
     }
-    const passage = longText ? 'TextLong' : 'TextShort';
-    document.getElementById('reader-title').textContent = longText ? 'Long text / layout test' : 'Short text / observation test';
-    const body = document.getElementById('reader-body');
-    body.replaceChildren();
-    new Wikifier(body, Story.get(passage).text);
-    const size = State.variables.fontSize || 18;
-    body.style.fontSize = size + 'px';
-    document.getElementById('font-size').value = size;
-    document.getElementById('font-output').textContent = size + ' px';
-    dialog.showModal();
-    body.scrollTop = 0;
-    document.getElementById('reader-close').focus();
-};
-$(document).on(':passagedisplay', setup.syncUI);
-document.addEventListener('click', async function (event) {
-    const button = event.target.closest('[data-action]');
-    if (!button) return;
-    switch (button.dataset.action) {
-    case 'short': setup.openReader(false); break;
-    case 'long': setup.openReader(true); break;
-    case 'choice-a': State.variables.choice = 'A'; setup.syncUI(); break;
-    case 'choice-b': State.variables.choice = 'B'; setup.syncUI(); break;
-    case 'restart': setup.stopAudio(); Engine.restart(); break;
-    case 'stop': setup.stopAudio(); break;
-    case 'play': {
-        if (setup.playPending || !setup.testAudio.paused) return;
-        const generation = ++setup.audioGeneration;
-        setup.playPending = true;
-        setup.audioMessage = 'Loading sound…'; setup.syncUI();
+    function stopAudio() {
+        generation += 1;
+        pending = false;
+        audio.pause();
+        audio.currentTime = 0;
+        audioMessage = 'Sound stopped.';
+        syncAudio();
+    }
+    async function playAudio() {
+        if (pending || !audio.paused) return;
+        const request = ++generation;
+        pending = true;
+        audioMessage = 'Loading sound…'; syncAudio();
         try {
-            setup.testAudio.currentTime = 0;
-            await setup.testAudio.play();
-            if (generation === setup.audioGeneration) setup.audioMessage = 'Sound playing.';
+            audio.currentTime = 0;
+            await audio.play();
+            if (request === generation) audioMessage = 'Sound playing.';
         } catch (error) {
-            if (generation === setup.audioGeneration) setup.audioMessage = 'Sound unavailable. Check the local audio file, then try again.';
+            if (request === generation) audioMessage = 'Sound unavailable. Check the local audio file, then try again.';
         } finally {
-            if (generation === setup.audioGeneration) setup.playPending = false;
-            setup.syncUI();
+            if (request === generation) pending = false;
+            syncAudio();
         }
-        break;
     }
+    audio.addEventListener('ended', () => {audioMessage = 'Sound finished.'; syncAudio();});
+    function openReader(kind) {
+        const dialog = document.querySelector('tw-passage:last-of-type #reader');
+        if (!dialog) return;
+        dialog.querySelector('#reader-title').textContent = kind === 'long' ? 'Long text / layout test' : 'Short text / observation test';
+        dialog.querySelectorAll('[data-reading]').forEach(el => {el.hidden = el.dataset.reading !== kind;});
+        const body = dialog.querySelector('#reader-body');
+        body.style.fontSize = fontSize + 'px';
+        dialog.querySelector('#font-size').value = fontSize;
+        dialog.querySelector('#font-output').textContent = fontSize + ' px';
+        dialog.showModal();
+        body.scrollTop = 0;
+        dialog.querySelector('#reader-close').focus();
     }
-});
+    document.addEventListener('click', event => {
+        const button = event.target.closest('[data-action]');
+        if (!button) return;
+        switch (button.dataset.action) {
+        case 'short': openReader('short'); break;
+        case 'long': openReader('long'); break;
+        case 'close-reader': button.closest('dialog').close(); break;
+        case 'play': playAudio(); break;
+        case 'stop': stopAudio(); break;
+        }
+    });
+    document.addEventListener('input', event => {
+        if (event.target.id !== 'font-size') return;
+        fontSize = Number(event.target.value);
+        const dialog = event.target.closest('dialog');
+        dialog.querySelector('#reader-body').style.fontSize = fontSize + 'px';
+        dialog.querySelector('#font-output').textContent = fontSize + ' px';
+    });
+    new MutationObserver(syncAudio).observe(document.documentElement, {childList:true, subtree:true});
+    return {audio, playAudio, stopAudio};
+})();
 
 :: Story Stylesheet [stylesheet]
 :root{color-scheme:dark;--bg:#0d1419;--panel:#162129;--edge:#30404a;--text:#eaf1ef;--muted:#a7b8bc;--accent:#a4e7cf;--warm:#e9c28c}
-*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.55}#ui-bar{display:none}#story{margin:0}#passages{max-width:none}.passage{max-width:none;margin:0}a{color:var(--accent)}a:hover{color:white;text-decoration:none}button{font:inherit;cursor:pointer;border:1px solid var(--edge);border-radius:4px;padding:10px 15px;background:#24353f;color:var(--text);transition:background .12s}button:hover{background:#344a56;border-color:var(--accent)}button:focus-visible,a:focus-visible,input:focus-visible{outline:3px solid var(--warm);outline-offset:4px}button[aria-pressed=true]{background:var(--accent);color:#0d251d;border-color:var(--accent)}h1,h2,p{margin-top:0}h1{letter-spacing:-.045em;line-height:1.08}h2{font-size:22px;line-height:1.25}hr{border:0;border-top:1px solid var(--edge);margin:23px 0}.eyebrow,.kicker,.quiet,.scene-top,.scene-bottom,.state-row,.card-top,footer{font-family:Arial,Helvetica,sans-serif}.eyebrow{font-size:11px;letter-spacing:2px;font-weight:700;display:flex;align-items:center;gap:10px}.signal{display:inline-block;width:7px;height:7px;background:var(--accent);border-radius:50%}.kicker{color:var(--accent);font-size:10px;letter-spacing:1.7px;font-weight:700;margin-bottom:14px}.quiet{font-size:12px;color:var(--muted)}.muted{font-size:14px;color:var(--muted)}.subtle{background:transparent}.landing,.workspace{width:min(1320px,94vw);margin:0 auto;padding:38px 0 24px}.landing-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:90px;align-items:center;min-height:73vh}.landing h1{font-size:clamp(48px,6vw,88px);font-weight:500;margin-bottom:24px}.lead{font-size:19px;color:var(--muted);line-height:1.6}.notice{font-size:10px;letter-spacing:1.1px;color:var(--warm);margin:30px 0 18px}.start-link{margin-bottom:15px}.start-link a{display:inline-block;background:var(--accent);color:#10281e;padding:14px 26px;border-radius:4px;font-weight:700}.spec-card{border:1px solid var(--edge);padding:24px;border-radius:8px;background:var(--panel)}.card-top{display:flex;justify-content:space-between;font-size:11px;letter-spacing:1.5px;margin-bottom:18px}.card-top span{color:var(--accent)}.spec-card img{display:block;width:100%;border:1px solid var(--edge)}dl{margin:20px 0 0}dl>div{display:flex;justify-content:space-between;border-bottom:1px solid var(--edge);padding:12px 0;font-size:12px}dt{color:var(--muted);font-size:10px;letter-spacing:1px}dd{margin:0}footer{border-top:1px solid var(--edge);padding-top:17px;color:var(--muted);display:flex;justify-content:space-between;font-size:11px;letter-spacing:.7px;gap:15px}.workspace-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px}.workspace-header h1{font-size:32px;margin:15px 0 0}.view-description{font-weight:400;color:var(--muted);font-size:14px;letter-spacing:0;margin-left:16px}.work-grid{display:grid;grid-template-columns:minmax(0,1fr) 285px;gap:26px;align-items:start;margin-bottom:32px}.visual-panel{border:1px solid var(--edge);border-radius:6px;overflow:hidden;background:var(--panel)}.scene-top,.scene-bottom{display:flex;justify-content:space-between;padding:15px 18px;font-size:10px;letter-spacing:.8px;color:var(--muted);gap:12px}.scene{position:relative;aspect-ratio:16/9}.scene>img{display:block;width:100%;height:100%;object-fit:contain}.hotspot{position:absolute;background:#132a25e8;border:1px solid var(--accent);border-radius:4px;min-width:44px;min-height:44px;font-size:12px;padding:8px 12px;display:flex;align-items:center;gap:10px;box-shadow:0 0 0 4px #a4e7cf16}.hotspot span{color:var(--accent);font-size:10px}.hotspot a{display:block;padding:4px}.target-a{left:24%;top:48%}.target-b{left:64%;top:44%}.move-a{left:76%;top:71%}.move-b{left:9%;top:71%}.fixture{color:var(--warm)}.control-panel{padding:6px 0}.choice-buttons,.audio-buttons{display:flex;gap:10px}.choice-buttons button{flex:1}.state-row{display:flex;justify-content:space-between;align-items:center;font-size:10px;margin-top:20px;color:var(--muted)}.state-row strong{font-size:13px;color:var(--accent)}.wide{width:100%;display:flex;justify-content:space-between}.control-panel .quiet{margin:10px 0 0}.audio-buttons button:first-child{flex:1}dialog{background:#19262e;color:var(--text);border:1px solid #52656f;border-radius:8px;padding:0;width:min(740px,94vw);max-width:94vw;height:min(760px,88dvh);max-height:88dvh;box-shadow:0 24px 90px #0009}dialog[open]{display:flex;flex-direction:column}dialog::backdrop{background:#050c12bb;backdrop-filter:blur(3px)}.reader-top{padding:22px 24px 12px;display:flex;justify-content:space-between;align-items:start;gap:18px}.reader-top h2{margin-bottom:10px}.reader-top .kicker{margin-bottom:8px}.reader-top button{white-space:nowrap}.reader-tools{display:flex;align-items:center;gap:15px;padding:10px 24px 20px;font-size:12px;border-bottom:1px solid var(--edge)}.reader-tools input{width:130px;accent-color:var(--accent)}#reader-body{padding:24px;overflow-y:auto;min-height:0;line-height:1.8;flex:1}#reader-body p{margin:0 0 1.4em}.reader-bottom{padding:13px 24px;font-size:10px;letter-spacing:.7px;border-top:1px solid var(--edge);color:var(--warm)}
-@media(min-width:1600px){.workspace{padding-top:60px}.work-grid{grid-template-columns:minmax(0,1fr) 300px;gap:34px}}
-@media(max-width:850px){.landing,.workspace{width:92vw;padding-top:24px}.landing-grid{gap:30px;grid-template-columns:1fr;padding:40px 0}.spec-card{max-width:550px}.work-grid{grid-template-columns:1fr;gap:22px}.control-panel{border:1px solid var(--edge);padding:20px;border-radius:6px}.view-description{display:block;margin:8px 0 0}.workspace-header h1{font-size:26px}.scene-top,.scene-bottom{font-size:9px;padding:10px}.hotspot{font-size:10px;padding:6px;gap:5px}.move-a{left:70%}.target-b{left:60%}footer{flex-wrap:wrap}}
+
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
+a,tw-link{color:var(--accent)}
+a:hover,tw-link:hover{color:white;text-decoration:none}
+button{font:inherit;cursor:pointer;border:1px solid var(--edge);border-radius:4px;padding:10px 15px;background:#24353f;color:var(--text);transition:background .12s}
+button:hover{background:#344a56;border-color:var(--accent)}
+button:focus-visible,a:focus-visible,tw-link:focus-visible,input:focus-visible{outline:3px solid var(--warm);outline-offset:4px}
+button[aria-pressed=true]{background:var(--accent);color:#0d251d;border-color:var(--accent)}
+h1,h2,p{margin-top:0}
+h1{letter-spacing:-.045em;line-height:1.08}
+h2{font-size:22px;line-height:1.25}
+hr{border:0;border-top:1px solid var(--edge);margin:23px 0}
+.eyebrow,.kicker,.quiet,.scene-top,.scene-bottom,.state-row,.card-top,footer{font-family:Arial,Helvetica,sans-serif}
+.eyebrow{font-size:11px;letter-spacing:2px;font-weight:700;display:flex;align-items:center;gap:10px}
+.signal{display:inline-block;width:7px;height:7px;background:var(--accent);border-radius:50%}
+.kicker{color:var(--accent);font-size:10px;letter-spacing:1.7px;font-weight:700;margin-bottom:14px}
+.quiet{font-size:12px;color:var(--muted)}
+.muted{font-size:14px;color:var(--muted)}
+.subtle{background:transparent}
+.landing,.workspace{width:min(1320px,94vw);margin:0 auto;padding:38px 0 24px}
+.landing-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:90px;align-items:center;min-height:73vh}
+.landing h1{font-size:clamp(48px,6vw,88px);font-weight:500;margin-bottom:24px}
+.lead{font-size:19px;color:var(--muted);line-height:1.6}
+.notice{font-size:10px;letter-spacing:1.1px;color:var(--warm);margin:30px 0 18px}
+.start-link{margin-bottom:15px}
+.start-link tw-link{display:inline-block;background:var(--accent);color:#10281e;padding:14px 26px;border-radius:4px;font-weight:700}
+.spec-card{border:1px solid var(--edge);padding:24px;border-radius:8px;background:var(--panel)}
+.card-top{display:flex;justify-content:space-between;font-size:11px;letter-spacing:1.5px;margin-bottom:18px}
+.card-top span{color:var(--accent)}
+.spec-card img{display:block;width:100%;border:1px solid var(--edge)}
+dl{margin:20px 0 0}
+dl>div{display:flex;justify-content:space-between;border-bottom:1px solid var(--edge);padding:12px 0;font-size:12px}
+dt{color:var(--muted);font-size:10px;letter-spacing:1px}
+dd{margin:0}
+footer{border-top:1px solid var(--edge);padding-top:17px;color:var(--muted);display:flex;justify-content:space-between;font-size:11px;letter-spacing:.7px;gap:15px}
+.workspace-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px}
+.workspace-header h1{font-size:32px;margin:15px 0 0}
+.view-description{font-weight:400;color:var(--muted);font-size:14px;letter-spacing:0;margin-left:16px}
+.work-grid{display:grid;grid-template-columns:minmax(0,1fr) 285px;gap:26px;align-items:start;margin-bottom:32px}
+.visual-panel{border:1px solid var(--edge);border-radius:6px;overflow:hidden;background:var(--panel)}
+.scene-top,.scene-bottom{display:flex;justify-content:space-between;padding:15px 18px;font-size:10px;letter-spacing:.8px;color:var(--muted);gap:12px}
+.scene{position:relative;aspect-ratio:16/9}
+.scene>img{display:block;width:100%;height:100%;object-fit:contain}
+.hotspot{position:absolute;background:#132a25e8;border:1px solid var(--accent);border-radius:4px;min-width:44px;min-height:44px;font-size:12px;padding:8px 12px;display:flex;align-items:center;gap:10px;box-shadow:0 0 0 4px #a4e7cf16}
+.hotspot span{color:var(--accent);font-size:10px}
+.hotspot tw-link{display:block;padding:4px}
+.fixture{color:var(--warm)}
+.control-panel{padding:6px 0}
+.choice-buttons,.audio-buttons{display:flex;gap:10px}
+.choice-buttons button{flex:1}
+.state-row{display:flex;justify-content:space-between;align-items:center;font-size:10px;margin-top:20px;color:var(--muted)}
+.state-row strong{font-size:13px;color:var(--accent)}
+.wide{width:100%;display:flex;justify-content:space-between}
+.control-panel .quiet{margin:10px 0 0}
+.audio-buttons button:first-child{flex:1}
+dialog{background:#19262e;color:var(--text);border:1px solid #52656f;border-radius:8px;padding:0;width:min(740px,94vw);max-width:94vw;height:min(760px,88dvh);max-height:88dvh;box-shadow:0 24px 90px #0009}
+dialog[open]{display:flex;flex-direction:column}
+dialog::backdrop{background:#050c12bb;backdrop-filter:blur(3px)}
+.reader-top{padding:22px 24px 12px;display:flex;justify-content:space-between;align-items:start;gap:18px}
+.reader-top h2{margin-bottom:10px}
+.reader-top .kicker{margin-bottom:8px}
+.reader-top button{white-space:nowrap}
+.reader-tools{display:flex;align-items:center;gap:15px;padding:10px 24px 20px;font-size:12px;border-bottom:1px solid var(--edge)}
+.reader-tools input{width:130px;accent-color:var(--accent)}
+#reader-body{padding:24px;overflow-y:auto;min-height:0;line-height:1.8;flex:1}
+#reader-body p{margin:0 0 1.4em}
+.reader-bottom{padding:13px 24px;font-size:10px;letter-spacing:.7px;border-top:1px solid var(--edge);color:var(--warm)}
+
+@media(min-width:1600px){.workspace{padding-top:60px}
+.work-grid{grid-template-columns:minmax(0,1fr) 300px;gap:34px}
+}
+
+@media(max-width:850px){.landing,.workspace{width:92vw;padding-top:24px}
+.landing-grid{gap:30px;grid-template-columns:1fr;padding:40px 0}
+.spec-card{max-width:550px}
+.work-grid{grid-template-columns:1fr;gap:22px}
+.control-panel{border:1px solid var(--edge);padding:20px;border-radius:6px}
+.view-description{display:block;margin:8px 0 0}
+.workspace-header h1{font-size:26px}
+.scene-top,.scene-bottom{font-size:9px;padding:10px}
+.hotspot{font-size:10px;padding:6px;gap:5px}
+footer{flex-wrap:wrap}
+}
+
 
 /* Keep view changes immediate; no transparent incoming frame. */
-.passage,.passage.passage-in{opacity:1;transition:none}
 
-#story,#ui-bar.stowed~#story{margin:0;padding:0}
+
+
+/* Harlowe page frame. Hotspots stay relative to the image at every window size. */
+tw-story {display:block;margin:0;padding:0;background:var(--bg);color:var(--text);font:inherit;min-height:100vh;}
+tw-passage {display:block;max-width:none;}
+tw-sidebar {display:none;}
+tw-link {font-weight:inherit;cursor:pointer;text-decoration:none;}
+tw-link.visited {color:var(--accent);}
+tw-transition-container {animation:none !important;}
+[hidden] {display:none !important;}
+.action-link {display:inline-block;}
+.action-link tw-link {display:block;border:1px solid var(--edge);border-radius:4px;padding:10px 15px;background:#24353f;color:var(--text);text-align:center;}
+.action-link tw-link:hover {background:#344a56;border-color:var(--accent);}
+.action-link.subtle tw-link {background:transparent;}
+.choice-buttons .action-link {flex:1;}
+.target-a {left:24%;top:48%;}
+.target-b {left:64%;top:44%;}
+.move-a {left:76%;top:71%;}
+.move-b {left:9%;top:71%;}

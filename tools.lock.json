@@ -14,16 +14,6 @@
       "checksum_verification": "publisher checksum matched"
     },
     {
-      "name": "SugarCube",
-      "version": "2.37.3",
-      "filename": "sugarcube-2.37.3-for-twine-2.1-local.zip",
-      "url": "https://www.motoslave.net/sugarcube/download.php/2/sugarcube-2.37.3-for-twine-2.1-local.zip",
-      "expected": null,
-      "extract": "storyformats",
-      "sha256": "da00a8c15ec4e88a9e231a3ff6c516c57055f84231bb999f869ed34ade353dab",
-      "checksum_verification": "local fingerprint; publisher checksum unavailable"
-    },
-    {
       "name": "Tweego",
       "version": "2.1.1",
       "filename": "tweego-2.1.1-windows-x64.zip",
@@ -43,5 +33,18 @@
       "sha256": "0e6f772064f40af5514db78b0384d317491bf068291769252566c3dfda8094f5",
       "checksum_verification": "publisher checksum matched"
     }
-  ]
+  ],
+  "storyFormat": {
+    "name": "Harlowe",
+    "version": "3.3.9",
+    "compilerId": "harlowe-3",
+    "source": "https://github.com/klembot/twinejs/releases/tag/2.12.1",
+    "bundledWith": "Twine 2.12.1",
+    "bundledPath": "electron-build/renderer/story-formats/harlowe-3.3.9/format.js",
+    "sha256": "803a0d9d4fb8c3c1c99eaf16f37db6feaad72e36fc7e5f6c5a168465419895f3",
+    "checksum_verification": "matches the SHA-256 integrity entry in the official Twine archive",
+    "license": "Zlib",
+    "author": "Leon Arnott",
+    "manual": "https://twine2.neocities.org/"
+  }
 }

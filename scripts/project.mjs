@@ -5,6 +5,7 @@ import { spawnSync, spawn } from 'node:child_process';
 import { fileURLToPath } from 'node:url';
 
 export const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
+export const storyFormat = JSON.parse(fs.readFileSync(path.join(root, 'tools.lock.json'), 'utf8')).storyFormat;
 const src = path.join(root, 'src', 'story.twee');
 const dist = path.join(root, 'dist');
 const hash = data => crypto.createHash('sha256').update(data).digest('hex');
@@ -44,7 +45,7 @@ export function check() {
     if (!names.has(required)) throw new Error('Missing passage: '+required);
   }
   const data = JSON.parse(list.find(p=>p.name==='StoryData').body);
-  if (data.format !== 'SugarCube' || data['format-version'] !== '2.37.3') throw new Error('Unexpected story format');
+  if (data.format !== storyFormat.name || data['format-version'] !== storyFormat.version) throw new Error('Unexpected story format');
   for (const match of text.matchAll(/\[\[([^\]]+)\]\]/g)) {
     const target = match[1].includes('->') ? match[1].split('->').at(-1) : match[1].includes('<-') ? match[1].split('<-')[0] : match[1].includes('|') ? match[1].split('|').at(-1) : match[1];
     if (!names.has(target.trim())) throw new Error('Broken passage link: '+target);
@@ -63,20 +64,23 @@ export function build() {
   const compiler = path.join(root,'.tools/tweego/tweego.exe');
   const formats = path.join(root,'.tools/storyformats');
   if (!fs.existsSync(compiler)) throw new Error('Tweego is missing. Run 00-setup.cmd.');
-  const formatFile = path.join(formats,'sugarcube-2/format.js');
-  if (!fs.existsSync(formatFile) || !read(formatFile).includes('2.37.3')) throw new Error('SugarCube 2.37.3 is missing. Run 00-setup.cmd.');
+  const formatFile = path.join(formats,storyFormat.compilerId,'format.js');
+  if (!fs.existsSync(formatFile) || hash(fs.readFileSync(formatFile)) !== storyFormat.sha256) throw new Error('The pinned Harlowe format is missing. Run 00-setup.cmd.');
   fs.mkdirSync(dist,{recursive:true});
   const temporary = path.join(root,'.local','build-'+crypto.randomUUID()+'.html');
   fs.mkdirSync(path.dirname(temporary),{recursive:true});
-  run(compiler,['-f','sugarcube-2','-o',temporary,src],{env:{...process.env,TWEEGO_PATH:formats}});
+  run(compiler,['-f',storyFormat.compilerId,'-o',temporary,src],{env:{...process.env,TWEEGO_PATH:formats}});
   fs.copyFileSync(temporary,path.join(dist,'index.html'));
   for (const entry of manifest()) {
     const target = path.join(dist,entry.path); fs.mkdirSync(path.dirname(target),{recursive:true}); fs.copyFileSync(assetPath(entry.path),target);
+    // Twine Play writes HTML into scratch. Keep relative asset paths usable there.
+    for (const folder of ['.local/twine-scratch', '.local/twine-library']) {
+      const previewAsset = path.join(root,folder,entry.path);
+      fs.mkdirSync(path.dirname(previewAsset),{recursive:true});
+      fs.copyFileSync(assetPath(entry.path),previewAsset);
+    }
   }
   for (const name of ['README.txt','CREDITS.txt']) fs.copyFileSync(path.join(root,'delivery',name),path.join(dist,name));
-  const licenseFile=path.join(root,'.tools/storyformats/sugarcube-2/LICENSE');
-  const credits=read(path.join(dist,'CREDITS.txt'))+'\n\nSUGAR CUBE LICENSE\n'+read(licenseFile);
-  save(path.join(dist,'CREDITS.txt'),credits);
   return path.join(dist,'index.html');
 }
 function psQuote(value) { return "'"+value.replaceAll("'","''")+"'"; }
