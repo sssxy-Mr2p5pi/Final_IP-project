@@ -1,0 +1,157 @@
+@font-face{font-family:"FIP Barlow";src:url("fonts/Barlow-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"FIP Barlow";src:url("fonts/Barlow-SemiBold.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
+@font-face{font-family:"FIP Barlow Condensed";src:url("fonts/BarlowCondensed-Bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
+
+/* All presentation rules are scoped to this study, for later Harlowe integration. */
+.ui-study{--paper:#f1efe6;--ink:#292b27;--muted:#65675f;--edge:#77786c;--drawer-height:clamp(130px,26svh,250px);--terminal-height:70px;margin:0;background:#e5e3da;color:var(--ink);font-family:"FIP Barlow",Arial,sans-serif;font-weight:400;font-size:22px;line-height:1.6}
+.ui-study *{box-sizing:border-box}
+.ui-study [hidden]{display:none!important}
+.ui-study button{font:inherit;color:inherit;cursor:pointer}
+.ui-study button:focus-visible,.ui-study [tabindex]:focus-visible{outline:2px solid #635a3e;outline-offset:5px}
+.ui-study button:focus:not(:focus-visible){outline:none}
+.ui-study ::selection{background:#d3c8a2;color:#252620}
+.ui-study .filter-definitions{position:absolute;pointer-events:none}
+.ui-study .study-shell{max-width:1560px;min-height:100svh;margin:auto;padding:22px 44px 14px;display:flex;flex-direction:column;gap:17px}
+.ui-study .preview-tools{min-height:46px;display:flex;align-items:center;justify-content:space-between;gap:24px}
+.ui-study .study-brand{display:flex;align-items:center;gap:15px;line-height:1.2;flex-shrink:0}
+.ui-study .study-number{font-family:"FIP Barlow Condensed",sans-serif;font-size:32px;border-right:1px solid #b4b4a7;padding-right:15px}
+.ui-study .study-brand strong{font-size:13px;font-weight:600;letter-spacing:2px;display:block}
+.ui-study .study-brand div>span{display:block;font-size:10px;letter-spacing:1.7px;color:var(--muted);margin-top:5px}
+.ui-study .tool-controls{display:flex;align-items:center;gap:20px;font-size:13px}
+.ui-study .mode-switch{display:flex;gap:3px;padding:3px;border:1px solid #c5c3b7}
+.ui-study .mode-switch button{background:none;border:0;padding:7px 13px;font-size:13px;white-space:nowrap}
+.ui-study .mode-switch button[aria-pressed=true]{background:var(--ink);color:var(--paper)}
+.ui-study .long-toggle{background:transparent;border:0;border-bottom:1px solid #999b8c;padding:5px 0;font-size:13px;white-space:nowrap}
+.ui-study .long-toggle[aria-pressed=true]{font-weight:600;border-bottom:2px solid var(--ink)}
+.ui-study .long-toggle span{margin-left:10px}
+.ui-study .paper-grid{height:calc(100svh - 135px);min-height:430px;max-height:1040px;display:grid;grid-template-columns:30% minmax(0,1fr);grid-template-rows:minmax(0,1fr) var(--terminal-height);position:relative;isolation:isolate;background:var(--paper);box-shadow:0 8px 35px #3133260c}
+.ui-study .paper-grid:before{content:"";position:absolute;inset:0;background:url("assets/paper.svg");opacity:.5;z-index:5;pointer-events:none}
+.ui-study .paper-grid:after{content:"";position:absolute;inset:-2px;background:url("assets/frame.svg") 0 0/100% 100%;pointer-events:none;z-index:6}
+.ui-study .left-rail{grid-column:1;grid-row:1;min-height:0;display:flex;flex-direction:column;position:relative}
+.ui-study .left-rail:after{content:"";position:absolute;right:0;top:0;bottom:0;width:3px;background:var(--ink);opacity:.7;transform:rotate(.12deg);box-shadow:2px 0 0 #292b2718;pointer-events:none}
+.ui-study .self-panel{padding:28px 34px 20px;flex:0 0 49%;min-height:0;position:relative}
+.ui-study .panel-title{font-family:"FIP Barlow Condensed",sans-serif;font-weight:700;font-size:32px;line-height:1.1;letter-spacing:.3px;margin:0 0 26px;display:flex;align-items:baseline;justify-content:space-between;gap:10px}
+.ui-study .section-mark{font-family:"FIP Barlow",sans-serif;font-size:12px;line-height:1;font-weight:400;color:#75776c;font-style:italic}
+.ui-study .self-copy{font-size:clamp(20px,1.6vw,25px);line-height:1.5}
+.ui-study .self-copy p{margin:0 0 18px}
+.ui-study .self-copy .here{color:var(--muted);margin-top:26px}
+.ui-study .pencil-stroke{position:absolute;bottom:0;left:0;right:0;height:3px;background:#404237;opacity:.72;transform:rotate(-.35deg);box-shadow:0 2px 0 #30322630}
+.ui-study .camera-panel{padding:25px 34px 20px;min-height:0;flex:1;display:flex;flex-direction:column}
+.ui-study .camera-panel .panel-title{margin-bottom:24px}
+.ui-study figure{margin:0;min-height:0;flex:1;display:flex;flex-direction:column}
+.ui-study .camera-frame{position:relative;min-height:0;max-height:210px;border:1px solid #818273;padding:6px;overflow:hidden}
+.ui-study .camera-frame img{display:block;width:100%;height:100%;max-height:196px;object-fit:contain;filter:grayscale(1) sepia(.18) contrast(.85);opacity:.87}
+.ui-study .camera-scratches{position:absolute;inset:6px;pointer-events:none;background:repeating-linear-gradient(174deg,transparent 0 12px,#f6f3e80b 13px 14px,transparent 15px 41px);box-shadow:inset 0 0 26px #eee7d130}
+.ui-study figcaption{font-size:10px;line-height:1.5;letter-spacing:.6px;color:var(--muted);margin-top:12px}
+.ui-study .thinking-panel{grid-row:1;grid-column:2;padding:28px 49px 16px;min-height:0;min-width:0;display:flex;flex-direction:column}
+.ui-study .thinking-header{display:flex;align-items:baseline;justify-content:space-between;gap:15px;flex-shrink:0;margin-bottom:27px}
+.ui-study h1{font-family:"FIP Barlow Condensed",sans-serif;font-weight:700;font-size:clamp(42px,4.4vw,64px);line-height:1;margin:0;letter-spacing:-.5px}
+.ui-study .reading-scroll{min-height:0;flex:1;overflow:auto;scrollbar-width:thin;scrollbar-color:#a6a698 transparent;padding:4px 12px 12px 0;scrollbar-gutter:stable}
+.ui-study .short-copy{max-width:700px}
+.ui-study .short-copy p{margin:0 0 22px}
+.ui-study .short-copy .opening-line{color:var(--muted);font-size:22px;margin-bottom:5px}
+.ui-study .lead-copy{font-size:clamp(28px,2.8vw,40px);line-height:1.3}
+.ui-study .thought-break{width:40px;height:2px;background:#787a69;margin:30px 0;transform:rotate(-2deg);opacity:.65}
+.ui-study .emphasis-line{font-family:"FIP Barlow Condensed",sans-serif;font-weight:700;font-size:clamp(30px,3vw,43px);text-transform:uppercase;letter-spacing:.3px;line-height:1.25}
+.ui-study .quiet-copy{color:var(--muted)}
+.ui-study .word-control{position:relative;display:inline-block;vertical-align:baseline;border:0;background:transparent;font-weight:600;padding:0;line-height:inherit;isolation:isolate;text-decoration:none;text-transform:inherit}
+.ui-study .word-control:after{content:"";position:absolute;left:0;right:0;bottom:0;height:1px;background:currentColor;opacity:.45;transform:rotate(-1deg);pointer-events:none}
+.ui-study .word-control:hover:after,.ui-study .word-control[aria-pressed=true]:after{height:2px;opacity:.85}
+.ui-study .word-control[aria-pressed=true]:before{content:"";position:absolute;inset:55% -3px 5%;background:#a49e7025;pointer-events:none}
+.ui-study .glyph{display:inline-block;position:relative;pointer-events:none}
+.ui-study .glyph:after{content:attr(data-echo);position:absolute;inset:0 auto auto 0;white-space:nowrap;pointer-events:none;opacity:0}
+.ui-study[data-mode=ink] .fx-echo .glyph:after,.ui-study[data-mode=motion] .fx-echo .glyph:after{opacity:.2;transform:translate(1.4px,-1px);mask-image:repeating-linear-gradient(4deg,#000 0 2px,transparent 2px 4px)}
+.ui-study[data-mode=ink] .fx-dust .glyph,.ui-study[data-mode=motion] .fx-dust .glyph{mask-image:linear-gradient(103deg,#000 0 22%,#0007 33%,#000b 39%,#000 46% 100%)}
+.ui-study[data-mode=ink] .word-control[aria-pressed=true] .glyph:after,.ui-study[data-mode=motion] .word-control[aria-pressed=true] .glyph:after{opacity:.3;transform:translate(-1.7px,.7px);mask-image:repeating-linear-gradient(0deg,#000 0 1px,transparent 1px 3px)}
+.ui-study:not([data-mode=clean]) h1,.ui-study:not([data-mode=clean]) .panel-title,.ui-study:not([data-mode=clean]) .terminal-title{filter:url("#ui-ink-edge")}
+.ui-study .sentence-choices{display:flex;flex-wrap:wrap;gap:12px 20px;margin-top:30px;padding-bottom:10px;font-size:20px}
+.ui-study .phrase-control{font-weight:400}
+.ui-study .choice-divider{color:#9b9c90}
+.ui-study .reading-tail{display:flex;align-items:center;justify-content:center;gap:11px;flex:0 0 20px;color:#898b7f;margin-top:4px}
+.ui-study .reading-tail span:not(:nth-child(2)){height:1px;width:22px;background:#999b8b;opacity:.5}
+.ui-study #long-copy{font-size:22px;line-height:1.6;max-width:68ch}
+.ui-study #long-copy p{margin:0 0 1.3em}
+.ui-study .terminal-bar{grid-row:2;grid-column:1/-1;display:flex;align-items:center;gap:25px;padding:0 33px;position:relative;z-index:4}
+.ui-study .terminal-bar:before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--ink);opacity:.65;transform:rotate(.08deg);box-shadow:0 -2px 0 #292b271c;pointer-events:none}
+.ui-study .terminal-title{font-family:"FIP Barlow Condensed",sans-serif;font-size:30px;font-weight:700;width:calc(30% - 30px);flex-shrink:0}
+.ui-study .terminal-items{display:flex;gap:clamp(20px,4vw,60px);align-items:center}
+.ui-study .terminal-items button{font-family:"FIP Barlow Condensed",sans-serif;font-size:25px;font-weight:700;border:0;background:transparent;position:relative;padding:6px 0;white-space:nowrap}
+.ui-study .terminal-items button:after{content:"";position:absolute;bottom:4px;left:-2px;right:-2px;height:2px;background:var(--ink);transform:rotate(-1deg);opacity:0}
+.ui-study .terminal-items button:hover:after{opacity:.35}
+.ui-study .terminal-items button[aria-expanded=true]:after{opacity:.9}
+.ui-study .drawer{position:absolute;z-index:3;left:2px;right:2px;bottom:var(--terminal-height);height:var(--drawer-height);background:var(--paper) url("assets/paper.svg");border-top:2px solid #56584b;box-shadow:0 -12px 25px #292b2708;display:grid;grid-template-columns:30% minmax(0,1fr);padding:22px 32px;gap:30px}
+.ui-study .drawer-label h2{font-family:"FIP Barlow Condensed",sans-serif;font-weight:700;font-size:30px;line-height:1.2;margin:0 0 8px}
+.ui-study .drawer-note{font-size:10px;letter-spacing:1.5px;color:var(--muted)}
+.ui-study .drawer-copy{overflow:auto;min-width:0;font-size:21px;line-height:1.6;scrollbar-width:thin}
+.ui-study .drawer-copy p{margin:0 0 12px}
+.ui-study .has-drawer .reading-scroll{margin-bottom:var(--drawer-height)}
+.ui-study .has-drawer .short-copy,.ui-study .has-drawer #long-copy{opacity:.76}
+.ui-study .preview-footer{display:flex;justify-content:space-between;align-items:center;gap:15px;font-size:11px;color:#606355;line-height:1.4}
+.ui-study .preview-footer p{margin:0}
+.ui-study .preview-footer p:first-child{letter-spacing:.8px}
+.ui-study .preview-footer p:first-child span{margin:0 7px;color:#8f9282}
+.ui-study #motion-status{min-width:125px;text-align:right}
+.ui-study .is-moving .glyph{animation:ui-ink-twitch .28s steps(2,end) 1}
+.ui-study .is-moving .glyph:after{animation:ui-ink-echo .28s steps(2,end) 1}
+.ui-study[data-mode=clean] .paper-grid:before{opacity:0}
+.ui-study[data-mode=clean] .glyph{filter:none;mask-image:none}
+.ui-study[data-mode=clean] .glyph:after{opacity:0}
+@keyframes ui-ink-twitch{0%,100%{transform:translate(0,0)}25%{transform:translate(-1px,1px)}50%{transform:translate(1.5px,-.6px)}75%{transform:translate(.5px,.5px)}}
+@keyframes ui-ink-echo{0%,100%{opacity:.15}40%{opacity:.35;transform:translate(-1.5px,1px)}70%{opacity:.2;transform:translate(1px,-1px)}}
+@media(min-height:900px) and (min-width:1000px){
+  .ui-study .self-panel{padding-top:40px}
+  .ui-study .self-copy p{margin-bottom:28px}
+  .ui-study .self-copy .here{margin-top:40px}
+  .ui-study .thinking-panel{padding-top:38px}
+  .ui-study .thinking-header{margin-bottom:42px}
+  .ui-study .short-copy p{margin-bottom:30px}
+  .ui-study .thought-break{margin:40px 0}
+}
+@media(max-width:1000px){
+  .ui-study .study-shell{padding:16px 22px 12px;gap:14px}
+  .ui-study .paper-grid{height:calc(100svh - 125px);min-height:430px;--terminal-height:60px}
+  .ui-study .self-panel,.ui-study .camera-panel{padding:22px}
+  .ui-study .self-panel{flex-basis:53%}
+  .ui-study .panel-title{font-size:28px;margin-bottom:18px}
+  .ui-study .self-copy{font-size:20px;line-height:1.45}
+  .ui-study .self-copy p{margin-bottom:13px}
+  .ui-study .self-copy .here{margin-top:17px}
+  .ui-study .camera-panel .panel-title{margin-bottom:15px}
+  .ui-study .thinking-panel{padding:23px 26px 10px}
+  .ui-study .thinking-header{margin-bottom:18px}
+  .ui-study .terminal-bar{padding:0 22px;gap:20px}
+  .ui-study .terminal-title{font-size:27px}
+  .ui-study .terminal-items{gap:26px}
+  .ui-study .terminal-items button{font-size:23px}
+  .ui-study .drawer{padding:16px 22px;gap:20px}
+  .ui-study .drawer-copy{font-size:20px}
+  .ui-study .preview-footer .interaction-hint{display:none}
+}
+@media(max-width:620px){
+  .ui-study .preview-tools{flex-wrap:wrap;gap:12px}
+  .ui-study .study-shell{padding:12px}
+  .ui-study .tool-controls{width:100%;justify-content:space-between;gap:10px}
+  .ui-study .paper-grid{grid-template-columns:34% minmax(0,1fr);min-height:540px;height:calc(100svh - 180px);--terminal-height:94px}
+  .ui-study .self-panel,.ui-study .camera-panel{padding:18px 12px}
+  .ui-study .self-copy{font-size:17px}
+  .ui-study .self-copy br{display:none}
+  .ui-study .panel-title{font-size:25px}
+  .ui-study .section-mark{display:none}
+  .ui-study .thinking-panel{padding:19px 15px 8px}
+  .ui-study h1{font-size:39px}
+  .ui-study .reading-scroll,.ui-study #long-copy{font-size:20px}
+  .ui-study .lead-copy{font-size:26px}
+  .ui-study .sentence-choices{font-size:18px;gap:8px}
+  .ui-study .terminal-bar{display:block;padding:9px 16px}
+  .ui-study .terminal-title{display:block;font-size:24px;width:auto;line-height:1}
+  .ui-study .terminal-items{justify-content:space-between;gap:10px;margin-top:6px}
+  .ui-study .terminal-items button{font-size:21px}
+  .ui-study .drawer{grid-template-columns:1fr;padding:12px 16px;gap:8px}
+  .ui-study .drawer-label{display:flex;justify-content:space-between;align-items:center}
+  .ui-study .drawer-label h2{font-size:25px;margin:0}
+  .ui-study .drawer-copy{font-size:18px}
+  .ui-study .preview-footer{font-size:10px}
+}
+@media(prefers-reduced-motion:reduce){
+  .ui-study .is-moving .glyph,.ui-study .is-moving .glyph:after{animation:none!important}
+}

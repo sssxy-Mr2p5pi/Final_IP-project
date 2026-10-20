@@ -1,0 +1,7 @@
+# Keep the offline study reproducible across Windows and other checkouts.
+* text=auto eol=lf
+*.woff2 binary
+# Preserve upstream license bytes and its original trailing space.
+fonts/OFL.txt -text whitespace=-blank-at-eol
+# Preserve the unchanged project fixture, including its original line endings.
+assets/camera-placeholder.svg -text whitespace=cr-at-eol

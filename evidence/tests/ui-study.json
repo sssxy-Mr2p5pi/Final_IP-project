@@ -1,0 +1,282 @@
+{
+  "checkedAt": "2026-10-20T05:03:55.999Z",
+  "scope": "Standalone visual study; not Harlowe integration or formal story validation",
+  "results": [
+    {
+      "channel": "chrome",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "status": "passed",
+      "fonts": [
+        {
+          "family": "FIP Barlow",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Barlow",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Barlow Condensed",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "longWords": 2040,
+      "checks": [
+        "offline assets",
+        "geometry",
+        "stable click targets",
+        "max two animated words",
+        "keyboard words",
+        "three treatments",
+        "reduced motion",
+        "four drawers",
+        "Thinking visibility",
+        "scrollable long text",
+        "English-only display"
+      ],
+      "screenshots": [
+        "screenshots/ui-study/chrome-1920x1080-normal.png",
+        "screenshots/ui-study/chrome-1920x1080-motion.png",
+        "screenshots/ui-study/chrome-1920x1080-selected.png",
+        "screenshots/ui-study/chrome-1920x1080-drawer.png",
+        "screenshots/ui-study/chrome-1920x1080-long.png"
+      ]
+    },
+    {
+      "channel": "chrome",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "status": "passed",
+      "fonts": [
+        {
+          "family": "FIP Barlow",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Barlow",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Barlow Condensed",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "longWords": 2040,
+      "checks": [
+        "offline assets",
+        "geometry",
+        "stable click targets",
+        "max two animated words",
+        "keyboard words",
+        "three treatments",
+        "reduced motion",
+        "four drawers",
+        "Thinking visibility",
+        "scrollable long text",
+        "English-only display"
+      ],
+      "screenshots": [
+        "screenshots/ui-study/chrome-1366x768-normal.png",
+        "screenshots/ui-study/chrome-1366x768-motion.png",
+        "screenshots/ui-study/chrome-1366x768-selected.png",
+        "screenshots/ui-study/chrome-1366x768-drawer.png",
+        "screenshots/ui-study/chrome-1366x768-long.png"
+      ]
+    },
+    {
+      "channel": "chrome",
+      "viewport": {
+        "width": 800,
+        "height": 600
+      },
+      "status": "passed",
+      "fonts": [
+        {
+          "family": "FIP Barlow",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Barlow",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Barlow Condensed",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "longWords": 2040,
+      "checks": [
+        "offline assets",
+        "geometry",
+        "stable click targets",
+        "max two animated words",
+        "keyboard words",
+        "three treatments",
+        "reduced motion",
+        "four drawers",
+        "Thinking visibility",
+        "scrollable long text",
+        "English-only display"
+      ],
+      "screenshots": [
+        "screenshots/ui-study/chrome-800x600-normal.png",
+        "screenshots/ui-study/chrome-800x600-motion.png",
+        "screenshots/ui-study/chrome-800x600-selected.png",
+        "screenshots/ui-study/chrome-800x600-drawer.png",
+        "screenshots/ui-study/chrome-800x600-long.png"
+      ]
+    },
+    {
+      "channel": "msedge",
+      "viewport": {
+        "width": 1920,
+        "height": 1080
+      },
+      "status": "passed",
+      "fonts": [
+        {
+          "family": "FIP Barlow",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Barlow",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Barlow Condensed",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "longWords": 2040,
+      "checks": [
+        "offline assets",
+        "geometry",
+        "stable click targets",
+        "max two animated words",
+        "keyboard words",
+        "three treatments",
+        "reduced motion",
+        "four drawers",
+        "Thinking visibility",
+        "scrollable long text",
+        "English-only display"
+      ],
+      "screenshots": [
+        "screenshots/ui-study/msedge-1920x1080-normal.png",
+        "screenshots/ui-study/msedge-1920x1080-motion.png",
+        "screenshots/ui-study/msedge-1920x1080-selected.png",
+        "screenshots/ui-study/msedge-1920x1080-drawer.png",
+        "screenshots/ui-study/msedge-1920x1080-long.png"
+      ]
+    },
+    {
+      "channel": "msedge",
+      "viewport": {
+        "width": 1366,
+        "height": 768
+      },
+      "status": "passed",
+      "fonts": [
+        {
+          "family": "FIP Barlow",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Barlow",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Barlow Condensed",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "longWords": 2040,
+      "checks": [
+        "offline assets",
+        "geometry",
+        "stable click targets",
+        "max two animated words",
+        "keyboard words",
+        "three treatments",
+        "reduced motion",
+        "four drawers",
+        "Thinking visibility",
+        "scrollable long text",
+        "English-only display"
+      ],
+      "screenshots": [
+        "screenshots/ui-study/msedge-1366x768-normal.png",
+        "screenshots/ui-study/msedge-1366x768-motion.png",
+        "screenshots/ui-study/msedge-1366x768-selected.png",
+        "screenshots/ui-study/msedge-1366x768-drawer.png",
+        "screenshots/ui-study/msedge-1366x768-long.png"
+      ]
+    },
+    {
+      "channel": "msedge",
+      "viewport": {
+        "width": 800,
+        "height": 600
+      },
+      "status": "passed",
+      "fonts": [
+        {
+          "family": "FIP Barlow",
+          "weight": "400",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Barlow",
+          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Barlow Condensed",
+          "weight": "700",
+          "status": "loaded"
+        }
+      ],
+      "longWords": 2040,
+      "checks": [
+        "offline assets",
+        "geometry",
+        "stable click targets",
+        "max two animated words",
+        "keyboard words",
+        "three treatments",
+        "reduced motion",
+        "four drawers",
+        "Thinking visibility",
+        "scrollable long text",
+        "English-only display"
+      ],
+      "screenshots": [
+        "screenshots/ui-study/msedge-800x600-normal.png",
+        "screenshots/ui-study/msedge-800x600-motion.png",
+        "screenshots/ui-study/msedge-800x600-selected.png",
+        "screenshots/ui-study/msedge-800x600-drawer.png",
+        "screenshots/ui-study/msedge-800x600-long.png"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1000" height="700" viewBox="0 0 1000 700" preserveAspectRatio="none">
+  <g fill="none" stroke="#32352d" stroke-linejoin="round" stroke-linecap="round">
+    <path d="M3 4 Q245 1 501 3 T997 4 L998 347 996 696 Q746 698 499 696 T4 697 L3 351 Z" stroke-width="2.8" opacity=".8" vector-effect="non-scaling-stroke"/>
+    <path d="M5 6 L347 5 994 6 995 696 654 694 6 695 5 290Z" stroke-width="1" opacity=".3" vector-effect="non-scaling-stroke"/>
+    <path d="M3 16 L4 145 M996 480 L997 660 M90 697 L222 696 M810 3 L931 4" stroke-width="1.5" opacity=".4" vector-effect="non-scaling-stroke"/>
+  </g>
+</svg>

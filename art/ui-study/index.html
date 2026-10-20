@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="color-scheme" content="light">
+  <title>Final IP — Type &amp; texture study</title>
+  <link rel="stylesheet" href="study.css">
+  <script src="study.js" defer></script>
+</head>
+<body class="ui-study" data-mode="motion">
+  <svg class="filter-definitions" aria-hidden="true" width="0" height="0">
+    <defs>
+      <filter id="ui-ink-edge" x="-8%" y="-12%" width="116%" height="124%">
+        <feTurbulence type="fractalNoise" baseFrequency=".64" numOctaves="2" seed="13" result="grain"/>
+        <feDisplacementMap in="SourceGraphic" in2="grain" scale=".7" xChannelSelector="R" yChannelSelector="G"/>
+      </filter>
+    </defs>
+  </svg>
+  <div class="study-shell">
+    <header class="preview-tools" aria-label="Preview tools">
+      <div class="study-brand"><span class="study-number">01</span><div><strong>TYPE &amp; TEXTURE</strong><span>FINAL IP / VISUAL STUDY</span></div></div>
+      <div class="tool-controls">
+        <div class="mode-switch" role="group" aria-label="Text treatment">
+          <button type="button" data-mode-choice="clean" aria-pressed="false">Clean</button>
+          <button type="button" data-mode-choice="ink" aria-pressed="false">Ink</button>
+          <button type="button" data-mode-choice="motion" aria-pressed="true">Local motion</button>
+        </div>
+        <button class="long-toggle" type="button" aria-pressed="false" aria-controls="long-copy">Long text <span aria-hidden="true">↗</span></button>
+      </div>
+    </header>
+
+    <main class="paper-grid" aria-label="Interface study">
+      <div class="left-rail">
+        <section class="self-panel" aria-labelledby="self-title">
+          <h2 id="self-title" class="panel-title">Self<span class="section-mark" aria-hidden="true">i.</span></h2>
+          <div class="self-copy">
+            <p>I'm fine.</p>
+            <p>They still talk<br>to me.</p>
+            <p class="here">I'm here.</p>
+          </div>
+          <span class="pencil-stroke" aria-hidden="true"></span>
+        </section>
+        <section class="camera-panel" aria-labelledby="camera-title">
+          <h2 id="camera-title" class="panel-title">Camera<span class="section-mark" aria-hidden="true">ii.</span></h2>
+          <figure>
+            <div class="camera-frame"><img src="assets/camera-placeholder.svg" alt="Technical placeholder: a room with a doorway and an observation target." width="1280" height="720"><span class="camera-scratches" aria-hidden="true"></span></div>
+            <figcaption>Technical placeholder / existing project asset</figcaption>
+          </figure>
+        </section>
+      </div>
+
+      <section class="thinking-panel" aria-labelledby="thinking-title">
+        <div class="thinking-header"><h1 id="thinking-title">Thinking</h1><span class="section-mark" aria-hidden="true">iii.</span></div>
+        <div class="reading-scroll" tabindex="0" role="region" aria-label="Thinking text">
+          <div class="short-copy">
+            <p class="opening-line">Fourth time.</p>
+            <p class="lead-copy">The first three were <button class="word-control fx-echo" type="button" aria-pressed="false" data-motion-word><span class="glyph" data-echo="fine">fine</span></button>.</p>
+            <div class="thought-break" aria-hidden="true"></div>
+            <p>Someone's out there.<br>That's a suit <button class="word-control fx-dust" type="button" aria-pressed="false" data-motion-word><span class="glyph" data-echo="moving">moving</span></button>.</p>
+            <p class="emphasis-line">People. <button class="word-control fx-echo" type="button" aria-pressed="false" data-motion-word><span class="glyph" data-echo="Two of them">Two of them</span></button>.</p>
+            <p class="quiet-copy">They still talk to me.</p>
+            <div class="sentence-choices" aria-label="Word treatment examples">
+              <button class="word-control phrase-control" type="button" aria-pressed="false"><span class="glyph" data-echo="Take another look">Take another look</span></button>
+              <span class="choice-divider" aria-hidden="true">/</span>
+              <button class="word-control phrase-control" type="button" aria-pressed="false"><span class="glyph" data-echo="Leave it">Leave it</span></button>
+            </div>
+          </div>
+          <div id="long-copy" hidden></div>
+        </div>
+        <div class="reading-tail" aria-hidden="true"><span></span><span>·</span><span></span></div>
+      </section>
+
+      <section class="drawer" id="terminal-drawer" aria-labelledby="drawer-title" hidden>
+        <div class="drawer-label"><h2 id="drawer-title">Pending</h2><span class="drawer-note">TEST EXCERPT</span></div>
+        <div class="drawer-copy" tabindex="0"></div>
+      </section>
+
+      <nav class="terminal-bar" aria-label="Terminal drawers">
+        <span class="terminal-title">Terminal</span>
+        <div class="terminal-items">
+          <button type="button" data-drawer="pending" aria-expanded="false" aria-controls="terminal-drawer">Pending</button>
+          <button type="button" data-drawer="reports" aria-expanded="false" aria-controls="terminal-drawer">Reports</button>
+          <button type="button" data-drawer="diary" aria-expanded="false" aria-controls="terminal-drawer">Diary</button>
+          <button type="button" data-drawer="crew" aria-expanded="false" aria-controls="terminal-drawer">Crew log</button>
+        </div>
+      </nav>
+    </main>
+
+    <footer class="preview-footer">
+      <p>TECHNICAL PREVIEW <span aria-hidden="true">/</span> Existing text only</p>
+      <p class="interaction-hint">Select a word. Open a drawer. Esc closes it.</p>
+      <p id="motion-status" role="status">Local motion</p>
+    </footer>
+  </div>
+</body>
+</html>

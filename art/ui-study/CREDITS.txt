@@ -1,0 +1,31 @@
+FINAL IP — TYPE & TEXTURE STUDY
+
+This is a technical visual prototype, not the finished game.
+
+TYPEFACES
+Barlow Regular, Barlow SemiBold, Barlow Condensed Bold
+Principal designer: Jeremy Tribby
+Copyright: The Barlow Project Authors
+Source: https://github.com/jpt/barlow
+Pinned repository commit: dc2940e2e04ef4ec96c07e23e0f02aefbddd343b
+License: SIL Open Font License, Version 1.1
+The original license is included in fonts/OFL.txt.
+The font files are unmodified. Text effects are applied during display.
+Downloaded on 2026-10-20. Exact source URLs and SHA-256 values are in sources.json.
+
+DESIGN REFERENCE AND TEXT
+Layout and visual direction: the user's two UI sketches and UI design draft.
+Existing English excerpts from the draft are arranged and repeated as test
+content. Sentence punctuation is normalized in the repeated reading fixture.
+No new formal narrative, character dialogue or ending content is supplied.
+
+VISUAL FIXTURES
+Camera: an unchanged copy of the project's assets/images/view-a.svg, originally
+made by scripts/create_fixtures.py as an AI-assisted diagnostic fixture.
+It is displayed in grayscale. It is not final student artwork.
+Paper texture and frame: procedural SVG test fixtures implemented with code.
+No image-generation service, third-party texture pack or animation library is used.
+
+IMPLEMENTATION
+AI-assisted HTML, CSS, JavaScript and offline browser checks.
+This folder contains a standalone preview, not a second story source.

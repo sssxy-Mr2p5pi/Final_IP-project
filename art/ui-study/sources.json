@@ -1,0 +1,74 @@
+{
+  "retrieved": "2026-10-20",
+  "repository": "https://github.com/jpt/barlow",
+  "commit": "dc2940e2e04ef4ec96c07e23e0f02aefbddd343b",
+  "assets": [
+    {
+      "file": "fonts/Barlow-Regular.woff2",
+      "source": "https://raw.githubusercontent.com/jpt/barlow/dc2940e2e04ef4ec96c07e23e0f02aefbddd343b/fonts/woff2/Barlow-Regular.woff2",
+      "author": "The Barlow Project Authors; principal designer Jeremy Tribby",
+      "license": "SIL Open Font License 1.1",
+      "modifications": "None",
+      "bytes": 58964,
+      "sha256": "2904d763039d78176366e8e32c2c8cebecf2da19e249a7c077cd8c8a736c5cd4"
+    },
+    {
+      "file": "fonts/Barlow-SemiBold.woff2",
+      "source": "https://raw.githubusercontent.com/jpt/barlow/dc2940e2e04ef4ec96c07e23e0f02aefbddd343b/fonts/woff2/Barlow-SemiBold.woff2",
+      "author": "The Barlow Project Authors; principal designer Jeremy Tribby",
+      "license": "SIL Open Font License 1.1",
+      "modifications": "None",
+      "bytes": 59936,
+      "sha256": "444b951177325b7a2f1ee61412a0d66c04d0e1ee438ef14430025f1b128d557f"
+    },
+    {
+      "file": "fonts/BarlowCondensed-Bold.woff2",
+      "source": "https://raw.githubusercontent.com/jpt/barlow/dc2940e2e04ef4ec96c07e23e0f02aefbddd343b/fonts/woff2/BarlowCondensed-Bold.woff2",
+      "author": "The Barlow Project Authors; principal designer Jeremy Tribby",
+      "license": "SIL Open Font License 1.1",
+      "modifications": "None",
+      "bytes": 61060,
+      "sha256": "2a68cbc9b65c87d7805b4e912545dc8f2426f9134affc0f07bec252782bd0bd0"
+    },
+    {
+      "file": "fonts/OFL.txt",
+      "source": "https://raw.githubusercontent.com/jpt/barlow/dc2940e2e04ef4ec96c07e23e0f02aefbddd343b/OFL.txt",
+      "author": "The Barlow Project Authors; principal designer Jeremy Tribby",
+      "license": "SIL Open Font License 1.1",
+      "modifications": "None",
+      "bytes": 4377,
+      "sha256": "186d750eb496a4c17a76385f82be6aea2ac1cf2de074a811d63786cf374ea73f"
+    },
+    {
+      "file": "assets/camera-placeholder.svg",
+      "author": "AI-assisted diagnostic code; not student creative work",
+      "source": "../../assets/images/view-a.svg (original); scripts/create_fixtures.py",
+      "license": "Project diagnostic fixture",
+      "modifications": "File copied unchanged; displayed with a CSS grayscale filter",
+      "bytes": 1484,
+      "sha256": "d509f0b8d90d3d73fa22cd938502a44e7bba08a6adfad2b06e06a31c5f4782d4"
+    },
+    {
+      "file": "assets/paper.svg",
+      "author": "AI-assisted preview implementation",
+      "source": "Generated SVG fractal noise in this study",
+      "license": "Project diagnostic fixture",
+      "modifications": "Static procedural paper texture; not formal artwork",
+      "bytes": 529,
+      "sha256": "f28def836cd5a3f78704c135f952f46f182aa69258b0fb4770a1fb1b6bf3303c"
+    },
+    {
+      "file": "assets/frame.svg",
+      "author": "AI-assisted preview implementation",
+      "source": "SVG paths based on the user-approved layout direction",
+      "license": "Project diagnostic fixture",
+      "modifications": "Procedural frame for visual testing; not formal artwork",
+      "bytes": 644,
+      "sha256": "cfa61ea9d60f6648f1da250e42ef0024aea1f9b07ae144e97d57d3a958fadcf0"
+    }
+  ],
+  "text": {
+    "source": "../UI设计草案.md",
+    "use": "Existing English excerpts arranged and repeated as a visual test fixture; sentence punctuation normalized in repeated text. No formal story content added."
+  }
+}
