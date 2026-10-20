@@ -1,6 +1,6 @@
 {
-  "checkedAt": "2026-10-20T05:03:55.999Z",
-  "scope": "Standalone visual study; not Harlowe integration or formal story validation",
+  "checkedAt": "2026-10-20T06:22:50.865Z",
+  "scope": "Standalone handwriting study; not Harlowe integration; background visibility event simulated",
   "results": [
     {
       "channel": "chrome",
@@ -11,18 +11,31 @@
       "status": "passed",
       "fonts": [
         {
-          "family": "FIP Barlow",
-          "weight": "400",
+          "family": "FIP Rock Salt",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Caveat",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Kalam",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Reenie",
           "status": "loaded"
         },
         {
           "family": "FIP Barlow",
-          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Barlow",
           "status": "loaded"
         },
         {
           "family": "FIP Barlow Condensed",
-          "weight": "700",
           "status": "loaded"
         }
       ],
@@ -35,7 +48,14 @@
         "keyboard words",
         "three treatments",
         "reduced motion",
-        "four drawers",
+        "five drawers",
+        "scatter with bounded layers",
+        "font roles",
+        "sentence add remove reorder clear",
+        "ephemeral composition",
+        "camera selection and history",
+        "reading position",
+        "simulated visibility event",
         "Thinking visibility",
         "scrollable long text",
         "English-only display"
@@ -44,7 +64,12 @@
         "screenshots/ui-study/chrome-1920x1080-normal.png",
         "screenshots/ui-study/chrome-1920x1080-motion.png",
         "screenshots/ui-study/chrome-1920x1080-selected.png",
+        "screenshots/ui-study/chrome-1920x1080-scatter.png",
         "screenshots/ui-study/chrome-1920x1080-drawer.png",
+        "screenshots/ui-study/chrome-1920x1080-diary.png",
+        "screenshots/ui-study/chrome-1920x1080-terminal.png",
+        "screenshots/ui-study/chrome-1920x1080-camera.png",
+        "screenshots/ui-study/chrome-1920x1080-camera-terminal.png",
         "screenshots/ui-study/chrome-1920x1080-long.png"
       ]
     },
@@ -57,18 +82,31 @@
       "status": "passed",
       "fonts": [
         {
-          "family": "FIP Barlow",
-          "weight": "400",
+          "family": "FIP Rock Salt",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Caveat",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Kalam",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Reenie",
           "status": "loaded"
         },
         {
           "family": "FIP Barlow",
-          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Barlow",
           "status": "loaded"
         },
         {
           "family": "FIP Barlow Condensed",
-          "weight": "700",
           "status": "loaded"
         }
       ],
@@ -81,7 +119,14 @@
         "keyboard words",
         "three treatments",
         "reduced motion",
-        "four drawers",
+        "five drawers",
+        "scatter with bounded layers",
+        "font roles",
+        "sentence add remove reorder clear",
+        "ephemeral composition",
+        "camera selection and history",
+        "reading position",
+        "simulated visibility event",
         "Thinking visibility",
         "scrollable long text",
         "English-only display"
@@ -90,7 +135,12 @@
         "screenshots/ui-study/chrome-1366x768-normal.png",
         "screenshots/ui-study/chrome-1366x768-motion.png",
         "screenshots/ui-study/chrome-1366x768-selected.png",
+        "screenshots/ui-study/chrome-1366x768-scatter.png",
         "screenshots/ui-study/chrome-1366x768-drawer.png",
+        "screenshots/ui-study/chrome-1366x768-diary.png",
+        "screenshots/ui-study/chrome-1366x768-terminal.png",
+        "screenshots/ui-study/chrome-1366x768-camera.png",
+        "screenshots/ui-study/chrome-1366x768-camera-terminal.png",
         "screenshots/ui-study/chrome-1366x768-long.png"
       ]
     },
@@ -103,18 +153,31 @@
       "status": "passed",
       "fonts": [
         {
-          "family": "FIP Barlow",
-          "weight": "400",
+          "family": "FIP Rock Salt",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Caveat",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Kalam",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Reenie",
           "status": "loaded"
         },
         {
           "family": "FIP Barlow",
-          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Barlow",
           "status": "loaded"
         },
         {
           "family": "FIP Barlow Condensed",
-          "weight": "700",
           "status": "loaded"
         }
       ],
@@ -127,7 +190,14 @@
         "keyboard words",
         "three treatments",
         "reduced motion",
-        "four drawers",
+        "five drawers",
+        "scatter with bounded layers",
+        "font roles",
+        "sentence add remove reorder clear",
+        "ephemeral composition",
+        "camera selection and history",
+        "reading position",
+        "simulated visibility event",
         "Thinking visibility",
         "scrollable long text",
         "English-only display"
@@ -136,7 +206,12 @@
         "screenshots/ui-study/chrome-800x600-normal.png",
         "screenshots/ui-study/chrome-800x600-motion.png",
         "screenshots/ui-study/chrome-800x600-selected.png",
+        "screenshots/ui-study/chrome-800x600-scatter.png",
         "screenshots/ui-study/chrome-800x600-drawer.png",
+        "screenshots/ui-study/chrome-800x600-diary.png",
+        "screenshots/ui-study/chrome-800x600-terminal.png",
+        "screenshots/ui-study/chrome-800x600-camera.png",
+        "screenshots/ui-study/chrome-800x600-camera-terminal.png",
         "screenshots/ui-study/chrome-800x600-long.png"
       ]
     },
@@ -149,18 +224,31 @@
       "status": "passed",
       "fonts": [
         {
-          "family": "FIP Barlow",
-          "weight": "400",
+          "family": "FIP Rock Salt",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Caveat",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Kalam",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Reenie",
           "status": "loaded"
         },
         {
           "family": "FIP Barlow",
-          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Barlow",
           "status": "loaded"
         },
         {
           "family": "FIP Barlow Condensed",
-          "weight": "700",
           "status": "loaded"
         }
       ],
@@ -173,7 +261,14 @@
         "keyboard words",
         "three treatments",
         "reduced motion",
-        "four drawers",
+        "five drawers",
+        "scatter with bounded layers",
+        "font roles",
+        "sentence add remove reorder clear",
+        "ephemeral composition",
+        "camera selection and history",
+        "reading position",
+        "simulated visibility event",
         "Thinking visibility",
         "scrollable long text",
         "English-only display"
@@ -182,7 +277,12 @@
         "screenshots/ui-study/msedge-1920x1080-normal.png",
         "screenshots/ui-study/msedge-1920x1080-motion.png",
         "screenshots/ui-study/msedge-1920x1080-selected.png",
+        "screenshots/ui-study/msedge-1920x1080-scatter.png",
         "screenshots/ui-study/msedge-1920x1080-drawer.png",
+        "screenshots/ui-study/msedge-1920x1080-diary.png",
+        "screenshots/ui-study/msedge-1920x1080-terminal.png",
+        "screenshots/ui-study/msedge-1920x1080-camera.png",
+        "screenshots/ui-study/msedge-1920x1080-camera-terminal.png",
         "screenshots/ui-study/msedge-1920x1080-long.png"
       ]
     },
@@ -195,18 +295,31 @@
       "status": "passed",
       "fonts": [
         {
-          "family": "FIP Barlow",
-          "weight": "400",
+          "family": "FIP Rock Salt",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Caveat",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Kalam",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Reenie",
           "status": "loaded"
         },
         {
           "family": "FIP Barlow",
-          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Barlow",
           "status": "loaded"
         },
         {
           "family": "FIP Barlow Condensed",
-          "weight": "700",
           "status": "loaded"
         }
       ],
@@ -219,7 +332,14 @@
         "keyboard words",
         "three treatments",
         "reduced motion",
-        "four drawers",
+        "five drawers",
+        "scatter with bounded layers",
+        "font roles",
+        "sentence add remove reorder clear",
+        "ephemeral composition",
+        "camera selection and history",
+        "reading position",
+        "simulated visibility event",
         "Thinking visibility",
         "scrollable long text",
         "English-only display"
@@ -228,7 +348,12 @@
         "screenshots/ui-study/msedge-1366x768-normal.png",
         "screenshots/ui-study/msedge-1366x768-motion.png",
         "screenshots/ui-study/msedge-1366x768-selected.png",
+        "screenshots/ui-study/msedge-1366x768-scatter.png",
         "screenshots/ui-study/msedge-1366x768-drawer.png",
+        "screenshots/ui-study/msedge-1366x768-diary.png",
+        "screenshots/ui-study/msedge-1366x768-terminal.png",
+        "screenshots/ui-study/msedge-1366x768-camera.png",
+        "screenshots/ui-study/msedge-1366x768-camera-terminal.png",
         "screenshots/ui-study/msedge-1366x768-long.png"
       ]
     },
@@ -241,18 +366,31 @@
       "status": "passed",
       "fonts": [
         {
-          "family": "FIP Barlow",
-          "weight": "400",
+          "family": "FIP Rock Salt",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Caveat",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Kalam",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Reenie",
           "status": "loaded"
         },
         {
           "family": "FIP Barlow",
-          "weight": "600",
+          "status": "loaded"
+        },
+        {
+          "family": "FIP Barlow",
           "status": "loaded"
         },
         {
           "family": "FIP Barlow Condensed",
-          "weight": "700",
           "status": "loaded"
         }
       ],
@@ -265,7 +403,14 @@
         "keyboard words",
         "three treatments",
         "reduced motion",
-        "four drawers",
+        "five drawers",
+        "scatter with bounded layers",
+        "font roles",
+        "sentence add remove reorder clear",
+        "ephemeral composition",
+        "camera selection and history",
+        "reading position",
+        "simulated visibility event",
         "Thinking visibility",
         "scrollable long text",
         "English-only display"
@@ -274,7 +419,12 @@
         "screenshots/ui-study/msedge-800x600-normal.png",
         "screenshots/ui-study/msedge-800x600-motion.png",
         "screenshots/ui-study/msedge-800x600-selected.png",
+        "screenshots/ui-study/msedge-800x600-scatter.png",
         "screenshots/ui-study/msedge-800x600-drawer.png",
+        "screenshots/ui-study/msedge-800x600-diary.png",
+        "screenshots/ui-study/msedge-800x600-terminal.png",
+        "screenshots/ui-study/msedge-800x600-camera.png",
+        "screenshots/ui-study/msedge-800x600-camera-terminal.png",
         "screenshots/ui-study/msedge-800x600-long.png"
       ]
     }

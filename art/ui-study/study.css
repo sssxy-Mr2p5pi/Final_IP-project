@@ -1,9 +1,13 @@
+@font-face{font-family:"FIP Rock Salt";src:url("fonts/RockSalt-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"FIP Caveat";src:url("fonts/Caveat.ttf") format("truetype");font-weight:400 700;font-display:swap}
+@font-face{font-family:"FIP Kalam";src:url("fonts/Kalam-Regular.ttf") format("truetype");font-weight:400;font-display:swap}
+@font-face{font-family:"FIP Reenie";src:url("fonts/ReenieBeanie.ttf") format("truetype");font-weight:400;font-display:swap}
 @font-face{font-family:"FIP Barlow";src:url("fonts/Barlow-Regular.woff2") format("woff2");font-weight:400;font-style:normal;font-display:swap}
 @font-face{font-family:"FIP Barlow";src:url("fonts/Barlow-SemiBold.woff2") format("woff2");font-weight:600;font-style:normal;font-display:swap}
 @font-face{font-family:"FIP Barlow Condensed";src:url("fonts/BarlowCondensed-Bold.woff2") format("woff2");font-weight:700;font-style:normal;font-display:swap}
 
 /* All presentation rules are scoped to this study, for later Harlowe integration. */
-.ui-study{--paper:#f1efe6;--ink:#292b27;--muted:#65675f;--edge:#77786c;--drawer-height:clamp(130px,26svh,250px);--terminal-height:70px;margin:0;background:#e5e3da;color:var(--ink);font-family:"FIP Barlow",Arial,sans-serif;font-weight:400;font-size:22px;line-height:1.6}
+.ui-study{--paper:#f1efe6;--ink:#292b27;--muted:#65675f;--edge:#77786c;--drawer-height:clamp(150px,28svh,260px);--terminal-height:70px;margin:0;background:#e5e3da;color:var(--ink);font-family:"FIP Barlow",Arial,sans-serif;font-weight:400;font-size:22px;line-height:1.6}
 .ui-study *{box-sizing:border-box}
 .ui-study [hidden]{display:none!important}
 .ui-study button{font:inherit;color:inherit;cursor:pointer}
@@ -24,12 +28,12 @@
 .ui-study .long-toggle{background:transparent;border:0;border-bottom:1px solid #999b8c;padding:5px 0;font-size:13px;white-space:nowrap}
 .ui-study .long-toggle[aria-pressed=true]{font-weight:600;border-bottom:2px solid var(--ink)}
 .ui-study .long-toggle span{margin-left:10px}
-.ui-study .paper-grid{height:calc(100svh - 135px);min-height:430px;max-height:1040px;display:grid;grid-template-columns:30% minmax(0,1fr);grid-template-rows:minmax(0,1fr) var(--terminal-height);position:relative;isolation:isolate;background:var(--paper);box-shadow:0 8px 35px #3133260c}
+.ui-study .paper-grid{height:calc(100svh - 135px);min-height:430px;max-height:1040px;display:grid;grid-template-columns:30% minmax(0,1fr);grid-template-rows:minmax(0,1fr) auto var(--terminal-height);position:relative;isolation:isolate;background:var(--paper);box-shadow:0 8px 35px #3133260c}
 .ui-study .paper-grid:before{content:"";position:absolute;inset:0;background:url("assets/paper.svg");opacity:.5;z-index:5;pointer-events:none}
 .ui-study .paper-grid:after{content:"";position:absolute;inset:-2px;background:url("assets/frame.svg") 0 0/100% 100%;pointer-events:none;z-index:6}
 .ui-study .left-rail{grid-column:1;grid-row:1;min-height:0;display:flex;flex-direction:column;position:relative}
 .ui-study .left-rail:after{content:"";position:absolute;right:0;top:0;bottom:0;width:3px;background:var(--ink);opacity:.7;transform:rotate(.12deg);box-shadow:2px 0 0 #292b2718;pointer-events:none}
-.ui-study .self-panel{padding:28px 34px 20px;flex:0 0 49%;min-height:0;position:relative}
+.ui-study .self-panel{padding:28px 34px 20px;flex:0 0 49%;min-height:0;position:relative;overflow:auto}
 .ui-study .panel-title{font-family:"FIP Barlow Condensed",sans-serif;font-weight:700;font-size:32px;line-height:1.1;letter-spacing:.3px;margin:0 0 26px;display:flex;align-items:baseline;justify-content:space-between;gap:10px}
 .ui-study .section-mark{font-family:"FIP Barlow",sans-serif;font-size:12px;line-height:1;font-weight:400;color:#75776c;font-style:italic}
 .ui-study .self-copy{font-size:clamp(20px,1.6vw,25px);line-height:1.5}
@@ -71,7 +75,7 @@
 .ui-study .reading-tail span:not(:nth-child(2)){height:1px;width:22px;background:#999b8b;opacity:.5}
 .ui-study #long-copy{font-size:22px;line-height:1.6;max-width:68ch}
 .ui-study #long-copy p{margin:0 0 1.3em}
-.ui-study .terminal-bar{grid-row:2;grid-column:1/-1;display:flex;align-items:center;gap:25px;padding:0 33px;position:relative;z-index:4}
+.ui-study .terminal-bar{grid-row:3;grid-column:1/-1;display:flex;align-items:center;gap:25px;padding:0 33px;position:relative;z-index:4}
 .ui-study .terminal-bar:before{content:"";position:absolute;left:0;right:0;top:0;height:3px;background:var(--ink);opacity:.65;transform:rotate(.08deg);box-shadow:0 -2px 0 #292b271c;pointer-events:none}
 .ui-study .terminal-title{font-family:"FIP Barlow Condensed",sans-serif;font-size:30px;font-weight:700;width:calc(30% - 30px);flex-shrink:0}
 .ui-study .terminal-items{display:flex;gap:clamp(20px,4vw,60px);align-items:center}
@@ -79,12 +83,12 @@
 .ui-study .terminal-items button:after{content:"";position:absolute;bottom:4px;left:-2px;right:-2px;height:2px;background:var(--ink);transform:rotate(-1deg);opacity:0}
 .ui-study .terminal-items button:hover:after{opacity:.35}
 .ui-study .terminal-items button[aria-expanded=true]:after{opacity:.9}
-.ui-study .drawer{position:absolute;z-index:3;left:2px;right:2px;bottom:var(--terminal-height);height:var(--drawer-height);background:var(--paper) url("assets/paper.svg");border-top:2px solid #56584b;box-shadow:0 -12px 25px #292b2708;display:grid;grid-template-columns:30% minmax(0,1fr);padding:22px 32px;gap:30px}
+.ui-study .drawer{position:relative;grid-row:2;grid-column:1/-1;z-index:3;min-height:0;height:var(--drawer-height);background:var(--paper) url("assets/paper.svg");border-top:2px solid #56584b;box-shadow:0 -12px 25px #292b2708;display:grid;grid-template-columns:30% minmax(0,1fr);padding:22px 32px;gap:30px}
 .ui-study .drawer-label h2{font-family:"FIP Barlow Condensed",sans-serif;font-weight:700;font-size:30px;line-height:1.2;margin:0 0 8px}
 .ui-study .drawer-note{font-size:10px;letter-spacing:1.5px;color:var(--muted)}
 .ui-study .drawer-copy{overflow:auto;min-width:0;font-size:21px;line-height:1.6;scrollbar-width:thin}
 .ui-study .drawer-copy p{margin:0 0 12px}
-.ui-study .has-drawer .reading-scroll{margin-bottom:var(--drawer-height)}
+.ui-study .has-drawer .reading-scroll{margin-bottom:0}
 .ui-study .has-drawer .short-copy,.ui-study .has-drawer #long-copy{opacity:.76}
 .ui-study .preview-footer{display:flex;justify-content:space-between;align-items:center;gap:15px;font-size:11px;color:#606355;line-height:1.4}
 .ui-study .preview-footer p{margin:0}
@@ -154,4 +158,119 @@
 }
 @media(prefers-reduced-motion:reduce){
   .ui-study .is-moving .glyph,.ui-study .is-moving .glyph:after{animation:none!important}
+}
+
+/* Handwritten study: retain Barlow only in the external preview tools. */
+.ui-study .paper-grid{font-family:"FIP Kalam",cursive;font-synthesis:none}
+.ui-study .paper-grid a{color:inherit;text-decoration-thickness:1px;text-underline-offset:6px}
+.ui-study a:focus-visible{outline:2px solid #635a3e;outline-offset:5px}
+.ui-study .self-panel .panel-title,.ui-study .self-copy{font-family:"FIP Caveat",cursive}
+.ui-study .self-panel .panel-title{font-size:38px;font-weight:600;margin-bottom:16px}
+.ui-study .self-copy{font-size:28px;line-height:1.25}
+.ui-study .self-copy p{margin-bottom:12px}
+.ui-study .self-copy .here{margin-top:15px}
+.ui-study .camera-panel .panel-title{font-family:"FIP Kalam",cursive;font-weight:400;font-size:28px}
+.ui-study .thinking-panel{padding:24px 36px 12px;overflow:hidden}
+.ui-study .thinking-header{margin-bottom:18px}
+.ui-study h1{font-family:"FIP Rock Salt",cursive;font-weight:400;font-size:clamp(27px,3.2vw,45px);line-height:1.6;letter-spacing:0}
+.ui-study .short-copy{font-family:"FIP Rock Salt",cursive;font-size:22px;line-height:1.95;overflow-wrap:break-word}
+.ui-study .short-copy p{margin:0 0 24px}
+.ui-study .short-copy .opening-line{font-size:19px;margin-bottom:12px}
+.ui-study .lead-copy{font-size:26px;line-height:1.9}
+.ui-study .emphasis-line{font:inherit;font-size:25px;text-transform:none;letter-spacing:0}
+.ui-study .thought-break{margin:25px 0}
+.ui-study .word-control{font-weight:400;white-space:nowrap}
+.ui-study .short-copy .sentence-choices{font-family:"FIP Kalam",cursive;font-size:22px}
+.ui-study .reading-scroll{line-height:1.95;padding:10px 20px 18px 4px}
+.ui-study #long-copy{font-family:"FIP Kalam",cursive;font-size:22px;line-height:1.6}
+.ui-study:has(#long-copy:not([hidden])) .reading-scroll{line-height:1.6}
+.ui-study:not([data-mode=clean]) .short-copy{text-shadow:.35px .25px .7px #292b2760}
+.ui-study:not([data-mode=clean]) .short-copy .glyph{filter:url("#ui-ink-bleed")}
+.ui-study .ink-fragments{position:absolute;left:0;top:0;width:100%;height:100%;pointer-events:none;opacity:0;mask-image:url("data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSI4MCIgaGVpZ2h0PSI1NiIgdmlld0JveD0iMCAwIDgwIDU2Ij4KICA8IS0tIFRyYW5zcGFyZW50IGdhcHMgaXNvbGF0ZSBzbWFsbCBwaWVjZXMgb2YgdGhlIGFjdHVhbCB3b3JkIHVuZGVybmVhdGguIC0tPgogIDxnIGZpbGw9IndoaXRlIj4KICAgIDxjaXJjbGUgY3g9IjMiIGN5PSI2IiByPSIxLjIiLz48Y2lyY2xlIGN4PSIxMSIgY3k9IjEzIiByPSIxLjgiLz4KICAgIDxjaXJjbGUgY3g9IjI0IiBjeT0iNCIgcj0iMSIvPjxjaXJjbGUgY3g9IjM2IiBjeT0iMTEiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9IjUwIiBjeT0iNSIgcj0iMS40Ii8+PGNpcmNsZSBjeD0iNjQiIGN5PSIxNCIgcj0iMS44Ii8+CiAgICA8Y2lyY2xlIGN4PSI3NiIgY3k9IjMiIHI9IjEiLz48Y2lyY2xlIGN4PSI1IiBjeT0iMjYiIHI9IjIiLz4KICAgIDxjaXJjbGUgY3g9IjIwIiBjeT0iMjMiIHI9IjEuMyIvPjxjaXJjbGUgY3g9IjMwIiBjeT0iMzIiIHI9IjIuMiIvPgogICAgPGNpcmNsZSBjeD0iNDUiIGN5PSIyNCIgcj0iMS44Ii8+PGNpcmNsZSBjeD0iNTYiIGN5PSIzMiIgcj0iMS4zIi8+CiAgICA8Y2lyY2xlIGN4PSI3MSIgY3k9IjI2IiByPSIyLjEiLz48Y2lyY2xlIGN4PSIxMiIgY3k9IjQzIiByPSIxLjUiLz4KICAgIDxjaXJjbGUgY3g9IjI1IiBjeT0iNTIiIHI9IjEuOCIvPjxjaXJjbGUgY3g9IjQwIiBjeT0iNDQiIHI9IjEuNSIvPgogICAgPGNpcmNsZSBjeD0iNTUiIGN5PSI1MCIgcj0iMiIvPjxjaXJjbGUgY3g9IjY4IiBjeT0iNDQiIHI9IjEiLz4KICAgIDxwYXRoIGQ9Ik0xNCAzMWgzdjJoLTN6bTIwLTEyaDR2MWgtNHptMjMgMjJoM3YyaC0zem0xNy0yNGgydjRoLTJ6Ii8+CiAgPC9nPgo8L3N2Zz4K");mask-repeat:repeat;mask-size:80px 56px;transform-origin:center;white-space:nowrap}
+.ui-study .fragments-1{mask-position:21px 15px;--scatter-x:19px;--scatter-y:-12px;--scatter-turn:7deg}
+.ui-study .fragments-2{mask-position:43px 31px;--scatter-x:-15px;--scatter-y:14px;--scatter-turn:-6deg}
+.ui-study .fragments-0{--scatter-x:-8px;--scatter-y:-18px;--scatter-turn:3deg}
+.ui-study .is-scattering .ink-fragments{animation:ui-ink-scatter .7s ease-out 1}
+@keyframes ui-ink-scatter{0%{opacity:.7;transform:translate(0,0) rotate(0deg) scale(1)}35%{opacity:.65}100%{opacity:0;transform:translate(var(--scatter-x),var(--scatter-y)) rotate(var(--scatter-turn)) scale(1.12)}}
+.ui-study .terminal-title,.ui-study .terminal-items button,.ui-study .drawer-label h2{font-family:"FIP Kalam",cursive;font-weight:400}
+.ui-study .terminal-title{border:0;background:transparent;text-align:left;padding:6px 0;text-decoration:underline;text-decoration-thickness:1px;text-underline-offset:6px}
+.ui-study .terminal-title[aria-expanded=true]{text-decoration-thickness:2px}
+.ui-study .drawer{gap:20px;padding:16px 28px}
+.ui-study .drawer-label{min-width:0}
+.ui-study .drawer-note{font-family:"FIP Barlow",sans-serif;display:block;font-size:10px}
+.ui-study .drawer-copy{font-family:"FIP Kalam",cursive;font-size:22px;line-height:1.6}
+.ui-study .drawer[data-kind=diary] .drawer-copy{font-family:"FIP Reenie",cursive;font-size:32px;line-height:1.3}
+.ui-study .composer{min-height:0;overflow:auto;padding:4px 10px 12px 4px;scrollbar-width:thin}
+.ui-study .composer button{background:transparent;border:0;padding:2px 4px;text-decoration:underline;text-underline-offset:4px}
+.ui-study .composer button:disabled{opacity:.28;cursor:default;text-decoration:none}
+.ui-study .word-bank{display:flex;gap:16px;flex-wrap:wrap;border-bottom:1px dashed #88887780;padding-bottom:8px}
+.ui-study .assembled-words{display:flex;gap:10px 16px;flex-wrap:wrap;min-height:42px;padding-top:8px}
+.ui-study .chosen-token{display:inline-flex;gap:1px;align-items:center}
+.ui-study .chosen-token button:not([data-action]){font-family:"FIP Barlow",sans-serif;font-size:16px;text-decoration:none;padding:5px}
+.ui-study .sentence-result{display:flex;align-items:baseline;justify-content:space-between;gap:20px;margin-top:8px}
+.ui-study output{overflow-wrap:anywhere}
+.ui-study .clear-sentence{font-size:18px}
+.ui-study .camera-open{grid-template-columns:60% minmax(0,1fr)}
+.ui-study .camera-view{grid-column:1;grid-row:1;min-height:0;min-width:0;padding:24px 28px;display:flex;flex-direction:column;border-right:2px solid #404237a0;overflow:auto}
+.ui-study .camera-view-header{display:flex;justify-content:space-between;align-items:baseline;gap:14px;flex-wrap:wrap}
+.ui-study .camera-view-header h2{margin:0;font-size:30px;font-weight:400}
+.ui-study .camera-view-header a{font-size:18px}
+.ui-study .fixture-note{font-family:"FIP Barlow",sans-serif;font-size:11px;color:var(--muted);margin:5px 0 18px}
+.ui-study .camera-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px;align-content:start}
+.ui-study .camera-tile{min-width:0;padding:7px;background:transparent;border:1px solid #999b8b;text-align:left}
+.ui-study .camera-tile[aria-pressed=true]{outline:2px solid var(--ink);outline-offset:2px}
+.ui-study .camera-tile img{display:block;width:100%;height:auto;filter:grayscale(1) sepia(.18) contrast(.85)}
+.ui-study .camera-tile span{display:block;font-size:18px;padding:4px 3px 0}
+.ui-study .camera-open .thinking-panel{padding-left:26px;padding-right:22px}
+.ui-study .camera-open .short-copy{font-size:20px}
+.ui-study .camera-open .lead-copy,.ui-study .camera-open .emphasis-line{font-size:22px}
+@media(max-width:1000px){
+  .ui-study .thinking-panel{padding:18px 24px 8px}
+  .ui-study .thinking-header{margin-bottom:10px}
+  .ui-study .short-copy{font-size:20px}
+  .ui-study .lead-copy,.ui-study .emphasis-line{font-size:22px}
+  .ui-study .self-panel .panel-title{font-size:30px;margin-bottom:10px}
+  .ui-study .self-copy{font-size:24px}
+  .ui-study .self-copy p{margin-bottom:10px}
+  .ui-study .self-copy .here{margin-top:8px}
+  .ui-study .camera-panel .panel-title{font-size:24px;margin-bottom:12px}
+  .ui-study .drawer{grid-template-columns:24% minmax(0,1fr);padding:12px 20px;gap:16px}
+  .ui-study .drawer-label h2{font-size:27px}
+  .ui-study .terminal-title{font-size:26px}
+  .ui-study .terminal-items button{font-size:22px}
+  .ui-study .camera-view{padding:18px}
+  .ui-study .camera-grid{gap:12px}
+  .ui-study .camera-tile span{font-size:16px}
+  .ui-study .camera-open .thinking-panel{padding-left:18px;padding-right:14px}
+  .ui-study .camera-open h1{font-size:26px}
+  .ui-study .camera-open .short-copy{font-size:18px}
+  .ui-study .camera-open .lead-copy,.ui-study .camera-open .emphasis-line{font-size:20px}
+}
+@media(max-width:620px){
+  .ui-study .drawer{grid-template-columns:1fr}
+  .ui-study .camera-open{grid-template-columns:50% minmax(0,1fr)}
+  .ui-study .camera-grid{grid-template-columns:1fr}
+  .ui-study .thinking-panel{padding:16px 10px 8px}
+  .ui-study h1,.ui-study .camera-open h1{font-size:20px}
+  .ui-study .short-copy,.ui-study .camera-open .short-copy{font-size:16px}
+  .ui-study .self-copy{font-size:21px}
+  .ui-study .terminal-title{width:auto}
+}
+@media(prefers-reduced-motion:reduce){
+  .ui-study .ink-fragments{animation:none!important;opacity:0!important}
+}
+/* Keep the small Camera thumbnail usable while a drawer occupies the lower row. */
+.ui-study .has-drawer .camera-panel{overflow:auto}
+.ui-study .has-drawer .camera-panel figure{flex:none;min-height:90px}
+.ui-study .has-drawer .camera-frame{height:80px;min-height:80px;flex-shrink:0}
+.ui-study .has-drawer .camera-panel figcaption{display:none}
+/* The assembled sentence remains visible while its editable word list scrolls. */
+.ui-study .composer{display:grid;grid-template-rows:auto minmax(0,1fr) auto;overflow:hidden}
+.ui-study .word-bank{max-height:64px;overflow:auto}
+.ui-study .assembled-words{min-height:0;overflow:auto;padding:8px 5px 5px;align-content:start}
+.ui-study .sentence-result{min-width:0;margin-top:4px}
+@media(max-width:1000px){
+  .ui-study .composer{font-size:20px;padding-bottom:2px}
+  .ui-study .chosen-token button:not([data-action]){font-size:14px;padding:3px}
+  .ui-study .assembled-words{gap:8px 10px}
 }

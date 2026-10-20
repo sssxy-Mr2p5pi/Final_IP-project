@@ -29,3 +29,26 @@ No image-generation service, third-party texture pack or animation library is us
 IMPLEMENTATION
 AI-assisted HTML, CSS, JavaScript and offline browser checks.
 This folder contains a standalone preview, not a second story source.
+
+HANDWRITING UPDATE — 2026-10-20
+Official distribution repository: https://github.com/google/fonts
+Pinned repository commit: 47d54ca1ebb14fd864695f1d39dc734f39017c33
+Rock Salt Regular — Sideshow — Apache License 2.0 (fonts/RockSalt-LICENSE.txt)
+Caveat variable — Impallari Type — SIL OFL 1.1 (fonts/Caveat-OFL.txt)
+Kalam Regular — Indian Type Foundry — SIL OFL 1.1 (fonts/Kalam-OFL.txt)
+Reenie Beanie — James Grieshaber — SIL OFL 1.1 (fonts/ReenieBeanie-OFL.txt)
+All font files and licenses are unmodified. Font URLs, byte sizes and SHA-256
+checksums are listed in sources.json. No font service is contacted at runtime.
+
+Rock Salt is used for Thinking headings and short text. Caveat is used for Self.
+Kalam is used for long reading, Camera labels and Terminal interaction.
+Reenie Beanie is used for the labelled Diary font fixture, not a new diary entry.
+The existing Barlow files remain for external preview tools and small metadata.
+
+The camera study also includes an unchanged copy of assets/images/view-b.svg.
+Two existing diagnostic images are repeated in a temporary four-frame layout.
+Ink fragments use a procedural SVG mask applied to decorative text copies.
+The mask is embedded as a data URL in CSS for offline file:// compatibility;
+its exact original is assets/ink-fragments.svg. No raster artwork was generated.
+The sentence fixture splits the existing line "They still talk to me." into
+selectable words. It does not send, save, assess or generate story content.
