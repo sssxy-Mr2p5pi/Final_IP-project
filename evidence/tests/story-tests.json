@@ -1,0 +1,1195 @@
+{
+  "checkedAt": "2026-10-28T14:43:29.208Z",
+  "status": "passed",
+  "sourceSha256": "4d3ea284b6cca258810b5210f5debddc5d2d942030cfee2f9ad35e65ed8cafb5",
+  "runtimeSha256": "4935e71c01a7fb3567b9967eb5f69b6dea8f0943717bf0abccaac55ced0642b0",
+  "cases": [
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "reveal",
+      "order": [],
+      "ending": "E1",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "reveal",
+      "order": [
+        "R",
+        "P"
+      ],
+      "ending": "E2",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "reveal",
+      "order": [
+        "P",
+        "R"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "reveal",
+      "order": [
+        "P"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "reveal",
+      "order": [
+        "R"
+      ],
+      "ending": "E5",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "hide",
+      "order": [],
+      "ending": "E1",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "hide",
+      "order": [
+        "R",
+        "P"
+      ],
+      "ending": "E2",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "hide",
+      "order": [
+        "P",
+        "R"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "hide",
+      "order": [
+        "P"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "hide",
+      "order": [
+        "R"
+      ],
+      "ending": "E5",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "reveal",
+      "reason": "未执行预测",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "reveal",
+      "reason": "执行但无有效回答",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "reveal",
+      "reason": "预测正确但未告知",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "hide",
+      "reason": "未执行预测",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "hide",
+      "reason": "执行但无有效回答",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "hide",
+      "reason": "预测正确但未告知",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "reveal",
+      "order": [],
+      "ending": "E1",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "reveal",
+      "order": [
+        "R",
+        "P"
+      ],
+      "ending": "E2",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "reveal",
+      "order": [
+        "P",
+        "R"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "reveal",
+      "order": [
+        "P"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "reveal",
+      "order": [
+        "R"
+      ],
+      "ending": "E5",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "hide",
+      "order": [],
+      "ending": "E1",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "hide",
+      "order": [
+        "R",
+        "P"
+      ],
+      "ending": "E2",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "hide",
+      "order": [
+        "P",
+        "R"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "hide",
+      "order": [
+        "P"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "hide",
+      "order": [
+        "R"
+      ],
+      "ending": "E5",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "reveal",
+      "reason": "未执行预测",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "reveal",
+      "reason": "执行但无有效回答",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "reveal",
+      "reason": "预测正确但未告知",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "hide",
+      "reason": "未执行预测",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "hide",
+      "reason": "执行但无有效回答",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "hide",
+      "reason": "预测正确但未告知",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "reveal",
+      "order": [],
+      "ending": "E1",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "reveal",
+      "order": [
+        "R",
+        "P"
+      ],
+      "ending": "E2",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "reveal",
+      "order": [
+        "P",
+        "R"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "reveal",
+      "order": [
+        "P"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "reveal",
+      "order": [
+        "R"
+      ],
+      "ending": "E5",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "hide",
+      "order": [],
+      "ending": "E1",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "hide",
+      "order": [
+        "R",
+        "P"
+      ],
+      "ending": "E2",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "hide",
+      "order": [
+        "P",
+        "R"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "hide",
+      "order": [
+        "P"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "hide",
+      "order": [
+        "R"
+      ],
+      "ending": "E5",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "reveal",
+      "reason": "未执行预测",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "reveal",
+      "reason": "执行但无有效回答",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "reveal",
+      "reason": "预测正确但未告知",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "hide",
+      "reason": "未执行预测",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "hide",
+      "reason": "执行但无有效回答",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "chrome",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "hide",
+      "reason": "预测正确但未告知",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "reveal",
+      "order": [],
+      "ending": "E1",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "reveal",
+      "order": [
+        "R",
+        "P"
+      ],
+      "ending": "E2",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "reveal",
+      "order": [
+        "P",
+        "R"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "reveal",
+      "order": [
+        "P"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "reveal",
+      "order": [
+        "R"
+      ],
+      "ending": "E5",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "hide",
+      "order": [],
+      "ending": "E1",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "hide",
+      "order": [
+        "R",
+        "P"
+      ],
+      "ending": "E2",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "hide",
+      "order": [
+        "P",
+        "R"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "hide",
+      "order": [
+        "P"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "hide",
+      "order": [
+        "R"
+      ],
+      "ending": "E5",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "reveal",
+      "reason": "未执行预测",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "reveal",
+      "reason": "执行但无有效回答",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "reveal",
+      "reason": "预测正确但未告知",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "hide",
+      "reason": "未执行预测",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "hide",
+      "reason": "执行但无有效回答",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1920,
+        "height": 1080
+      },
+      "warning": "hide",
+      "reason": "预测正确但未告知",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "reveal",
+      "order": [],
+      "ending": "E1",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "reveal",
+      "order": [
+        "R",
+        "P"
+      ],
+      "ending": "E2",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "reveal",
+      "order": [
+        "P",
+        "R"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "reveal",
+      "order": [
+        "P"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "reveal",
+      "order": [
+        "R"
+      ],
+      "ending": "E5",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "hide",
+      "order": [],
+      "ending": "E1",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "hide",
+      "order": [
+        "R",
+        "P"
+      ],
+      "ending": "E2",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "hide",
+      "order": [
+        "P",
+        "R"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "hide",
+      "order": [
+        "P"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "hide",
+      "order": [
+        "R"
+      ],
+      "ending": "E5",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "reveal",
+      "reason": "未执行预测",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "reveal",
+      "reason": "执行但无有效回答",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "reveal",
+      "reason": "预测正确但未告知",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "hide",
+      "reason": "未执行预测",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "hide",
+      "reason": "执行但无有效回答",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 1366,
+        "height": 768
+      },
+      "warning": "hide",
+      "reason": "预测正确但未告知",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "reveal",
+      "order": [],
+      "ending": "E1",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "reveal",
+      "order": [
+        "R",
+        "P"
+      ],
+      "ending": "E2",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "reveal",
+      "order": [
+        "P",
+        "R"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "reveal",
+      "order": [
+        "P"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "reveal",
+      "order": [
+        "R"
+      ],
+      "ending": "E5",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "hide",
+      "order": [],
+      "ending": "E1",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "hide",
+      "order": [
+        "R",
+        "P"
+      ],
+      "ending": "E2",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "hide",
+      "order": [
+        "P",
+        "R"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "hide",
+      "order": [
+        "P"
+      ],
+      "ending": "E3",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "hide",
+      "order": [
+        "R"
+      ],
+      "ending": "E5",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "reveal",
+      "reason": "未执行预测",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "reveal",
+      "reason": "执行但无有效回答",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "reveal",
+      "reason": "预测正确但未告知",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "hide",
+      "reason": "未执行预测",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "hide",
+      "reason": "执行但无有效回答",
+      "ending": "E4",
+      "status": "passed"
+    },
+    {
+      "browser": "edge",
+      "size": {
+        "width": 800,
+        "height": 600
+      },
+      "warning": "hide",
+      "reason": "预测正确但未告知",
+      "ending": "E4",
+      "status": "passed"
+    }
+  ],
+  "screenshots": [
+    "story-chrome-1920.png",
+    "story-chrome-1366.png",
+    "story-chrome-800.png",
+    "story-edge-1920.png",
+    "story-edge-1366.png",
+    "story-edge-800.png"
+  ],
+  "authorTrial": "pending",
+  "anotherComputer": "pending",
+  "speakerListening": "pending"
+}

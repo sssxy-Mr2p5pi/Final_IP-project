@@ -41,14 +41,25 @@ export function check() {
   const list = passages(text);
   const names = new Set(list.map(p=>p.name));
   if (names.size !== list.length) throw new Error('Duplicate passage names');
-  for (const required of ['StoryTitle','StoryData','StoryInit','Start','ViewA','ViewB','TextShort','TextLong']) {
+  for (const required of ['StoryTitle','StoryData','StoryInit','Start','TMinus3','T0','T05','T3','T7','E1','E2','E3','E4','E5','FinalE2','FinalE5','TextShort','TextLong']) {
     if (!names.has(required)) throw new Error('Missing passage: '+required);
   }
   const data = JSON.parse(list.find(p=>p.name==='StoryData').body);
   if (data.format !== storyFormat.name || data['format-version'] !== storyFormat.version) throw new Error('Unexpected story format');
-  for (const match of text.matchAll(/\[\[([^\]]+)\]\]/g)) {
+  for (const match of list.filter(p=>!p.tags.includes('notes')).map(p=>p.body).join('\n').matchAll(/\[\[([^\]]+)\]\]/g)) {
     const target = match[1].includes('->') ? match[1].split('->').at(-1) : match[1].includes('<-') ? match[1].split('<-')[0] : match[1].includes('|') ? match[1].split('|').at(-1) : match[1];
     if (!names.has(target.trim())) throw new Error('Broken passage link: '+target);
+  }
+  const active = list.filter(p=>!p.tags.includes('notes')).map(p=>p.body).join('\n');
+  for (const m of active.matchAll(/\((?:goto|display):\s*"([^"]+)"\s*\)/g)) {
+    if (!names.has(m[1])) throw new Error('Missing macro target: '+m[1]);
+  }
+  for (const p of list.filter(p=>p.tags.includes('media-config'))) {
+    const media = JSON.parse(p.body);
+    if (!Array.isArray(media.camera) || !Array.isArray(media.subtitles)) throw new Error('Invalid media arrays: '+p.name);
+    for (const file of [...media.camera,media.prediction,media.closing,media.audio].filter(Boolean)) {
+      if (!manifest().some(a=>a.path===file)) throw new Error('Unregistered media asset: '+file);
+    }
   }
   for (const entry of manifest()) {
     if (!fs.existsSync(assetPath(entry.path))) throw new Error('Missing asset: '+entry.path);
@@ -90,7 +101,7 @@ function pack() {
   for(const file of runtimeFiles()) {
     const target=path.join(packageRoot,file);fs.mkdirSync(path.dirname(target),{recursive:true});fs.copyFileSync(path.join(dist,file),target);
   }
-  const target=path.join(root,'releases/final-ip-technical-prototype.zip');fs.mkdirSync(path.dirname(target),{recursive:true});
+  const target=path.join(root,'releases/final-ip-story-skeleton-dev.zip');fs.mkdirSync(path.dirname(target),{recursive:true});
   run('powershell.exe',['-NoProfile','-Command',`$ErrorActionPreference='Stop'; Compress-Archive -Path ${psQuote(path.join(packageRoot,'*'))} -DestinationPath ${psQuote(target)} -Force`]);
   save(path.join(root,'evidence/tests/package.json'),JSON.stringify({createdAt:new Date().toISOString(),sha256:hash(fs.readFileSync(target)),files:runtimeFiles(),sourceSha256:hash(read(src)),status:'packaged; browser verification is separate'},null,2)+'\n');
   return target;

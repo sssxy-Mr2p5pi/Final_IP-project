@@ -84,3 +84,11 @@ Harlowe 的 Chrome/Edge 六组离线检查、Twine 导出往返、内置 Play �
 在 05 入口中使用 Build → Play 可以查看当前编辑；新增素材后需登记、导出并构建一次。
 03-preview 读取导出的 src/story.twee。技术更新重新导入前，先备份 Twine 当前故事。
 旧格式的故事与验证记录保存在本机 .local/before-harlowe-*，Git 也保留初始版本。
+
+## 全故事开发骨架（2026-10-28）
+
+当前默认构建为中文开发预览，尚非正式作品。T−3 到 E1–E5 的流程与条件日志已接入 Harlowe，四区界面从 T−2 出现。作者已明确授权本轮中文提纲试玩，正式英文另行填充。
+
+src/story.twee 仍为唯一故事源。流程节点、内容节点与 Media 配置分开编辑；完整说明见 docs/story-skeleton.md。npm test 检查完整路线，npm run test:twine 检查桌面往返；npm run test:media 检查素材替换。旧 tests/offline.cjs 留作技术样例历史。
+
+当前离线包为 releases/final-ip-story-skeleton-dev.zip，含开发标识，不可作为成品提交。实测记录见 evidence/tests/story-tests.json、twine-roundtrip.json、story-media-tests.json。

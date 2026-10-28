@@ -1,4 +1,4 @@
-FINAL IP TECHNICAL PROTOTYPE — SOURCE CREDITS
+FINAL IP STORY SKELETON — SOURCE CREDITS
 
 Technical interface and fixture generator: AI-assisted code prepared with Codex.
 Story text: no final story supplied. The student group will write the story.
@@ -17,5 +17,9 @@ Upstream notices remain in index.html.
 Tweego 2.1.1 is a build tool. Its executable is not part of this package.
 Source: https://www.motoslave.net/tweego/
 
-The technical prototype uses system fonts. It does not load remote fonts.
+The development preview uses bundled handwriting fonts and system Chinese fonts. It does not load remote fonts.
 No third-party models or final creative assets are included.
+
+STORY SKELETON — 2026-10-28
+Chinese development outline supplied by the authors; technical structure and geometric placeholders prepared with AI assistance.
+Fonts copied unchanged from art/ui-study: Rock Salt (Apache 2.0), Caveat, Kalam, Reenie Beanie (SIL OFL). License texts accompany each local font. Original sources and hashes: assets/fonts/sources.json.

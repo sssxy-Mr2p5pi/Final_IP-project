@@ -6,7 +6,7 @@ const {createHash}=require('node:crypto');
 const root=path.resolve(__dirname,'..');
 const hash=file=>createHash('sha256').update(fs.readFileSync(file)).digest('hex');
 const sleep=ms=>new Promise(r=>setTimeout(r,ms));
-const title='Final IP — Technical Prototype';
+const title='Final IP — Story Skeleton';
 async function waitFile(file) {for(let i=0;i<100;i++){if(fs.existsSync(file)&&fs.statSync(file).size>0)return;await sleep(100);}throw new Error('Export file was not created');}
 async function importStory(window,file){
  await window.getByRole('tab',{name:'Library',exact:true}).click();
@@ -92,27 +92,26 @@ function compare(expected,actual){
   report.ifid='68419E4A-05BC-4A6D-904C-7F7E391BA8A2';
   await window.getByRole('button',{name:title,exact:true}).dblclick();
   await window.waitForTimeout(400);
-  await window.screenshot({path:path.join(root,'evidence/tests/screenshots/twine-story-map.png')});
+  await window.bringToFront();await window.screenshot({path:path.join(root,'evidence/tests/screenshots/twine-story-map.png'),timeout:15000});
   const browser=await chromium.launch({executablePath:'C:/Program Files/Google/Chrome/Application/chrome.exe',headless:true});
   try{
    const context=await browser.newContext({offline:true});let page=await context.newPage();
    await page.goto(nativePreview.startsWith('file:')?nativePreview:pathToFileURL(nativePreview).href);
-   await page.getByRole('link',{name:'Start prototype',exact:true}).click();
-   assert(await page.locator('.scene img').evaluate(img=>img.complete&&img.naturalWidth===1280),'Twine native Play loads its local image');
-   await page.getByRole('button',{name:'Play sound',exact:true}).click();
-   await page.waitForFunction(()=>!FinalIP.audio.paused&&FinalIP.audio.currentTime>0.1);
-   report.nativePlay='passed: offline image and audio in the configured scratch folder';
-   // A fresh tab avoids Harlowe's per-tab recovery for the same story IFID.
+   await page.getByText('进入故事',{exact:true}).click();
+   await page.waitForSelector('.story-shell[data-scene="TMinus3"]');
+   assert(await page.locator('.closing-image').evaluate(img=>img.complete&&img.naturalWidth>0),'Native Play image');
+   assert.equal(await page.locator('tw-error').count(),0);
+   report.nativePlay='passed: offline opening and image';
    await page.close();page=await context.newPage();
    await page.goto(pathToFileURL(compiled).href);
-   await page.getByRole('link',{name:'Start prototype',exact:true}).click();
-   await page.getByRole('link',{name:'Option B',exact:true}).click();
-   await page.locator('.scene tw-link').click();
-   await page.getByRole('heading',{name:/View B/}).waitFor();
-   assert.equal(await page.locator('.choice-value').innerText(),'Option B');
-   await page.getByRole('button',{name:/Open long text/}).click();
-   assert.equal((await page.locator('#reader-body').innerText()).trim().split(/\s+/).length,2500);
-   report.recompiledRuntime='passed: offline navigation, shared state and long text';
+   await page.getByText('进入故事',{exact:true}).click();
+   await page.waitForSelector('.story-shell[data-scene="TMinus3"]');
+   await page.locator('.developer summary').click();
+   await page.getByText('E2 检查',{exact:true}).click();
+   await page.waitForSelector('.story-shell[data-scene="T4"]');
+   assert.equal((await page.locator('#route-state').textContent()).trim(),'E2');
+   assert.equal(await page.locator('tw-error').count(),0);
+   report.recompiledRuntime='passed: coherent E2 preview jump and local images';
   }finally{await browser.close();}
   report.status='passed';console.log('Twine import / export / compile / reimport passed.');
  }catch(e){report.status='failed';report.error=e.stack;console.error(e);process.exitCode=1;}

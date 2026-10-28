@@ -1,87 +1,1491 @@
 :: StoryTitle
-Final IP — Technical Prototype
+Final IP — Story Skeleton
 
 :: StoryData
-{
-  "ifid": "68419E4A-05BC-4A6D-904C-7F7E391BA8A2",
-  "format": "Harlowe",
-  "format-version": "3.3.9",
-  "start": "Start",
-  "zoom": 1
-}
+{"ifid": "68419E4A-05BC-4A6D-904C-7F7E391BA8A2", "format": "Harlowe", "format-version": "3.3.9", "start": "Start", "zoom": 0.6}
 
 :: StoryInit [startup technical]
-(set: $choice to "")
+(set: $scene to "TMinus3", $warning to "", $t0Predicted to false, $trajectory to "", $reportGiven to false, $selfPredicted to false, $public to false, $order to (a:), $route to "", $blocked to false, $degraded to false, $visited to (a:), $diary to (a:), $crew to (a:), $reports to (a:))
 
-:: Start [technical] {"position":"100,200","size":"100,100"}
+:: ResetState [technical] {"position": "2140,100", "size": "100,100"}
+(set: $scene to "TMinus3", $warning to "", $t0Predicted to false, $trajectory to "", $reportGiven to false, $selfPredicted to false, $public to false, $order to (a:), $route to "", $blocked to false, $degraded to false, $visited to (a:), $diary to (a:), $crew to (a:), $reports to (a:))
+
+:: Start [technical] {"position": "100,100", "size": "100,100"}
+<section class="landing"><h1>Final IP</h1><p>中文开发预览 · 故事骨架</p><p>提纲、图片、行动文字均用于流程验证，正式内容待作者填充。</p>[[进入故事->TMinus3]]</section>
+
+:: TMinus3_Self [content-zh] {"position": "2500,100", "size": "100,100"}
+
+
+:: TMinus3_Thinking [content-zh] {"position": "2680,100", "size": "100,100"}
+发射厅 coffee chat。介绍预测需要外部问题或任务；结果是未来输入的片段。机制仍有未解之处。意识指标超过阈值不能证明意识。
+
+:: TMinus3_Pending [content-zh] {"position": "2860,100", "size": "100,100"}
+无任务操作
+
+:: TMinus3_Reports [content-zh] {"position": "1600,250", "size": "100,100"}
+
+
+:: TMinus3_Diary [content-zh] {"position": "1780,250", "size": "100,100"}
+
+
+:: TMinus3_Crew [content-zh] {"position": "1960,250", "size": "100,100"}
+
+
+:: TMinus3_Notes [notes] {"position": "2140,250", "size": "100,100"}
+【作者资料摘录，禁止直接作为正文 display】
+### T−3｜建造与验证
+
+| 栏位             | 已填（事实骨架）                                                                                                                                       | 如何表述（作者填） |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------ |
+| 介质             | **动画 / CV（画外音）**，无 UI                                                                                                                   |                    |
+| 玩家此刻累计已知 | 无（开场）                                                                                                                                             |                    |
+| 本场新增         | **账本 1–7**。三人在发射站大厅议论；把它称作 `him`、`a person without perception`，**从没说过 machine**                               |                    |
+| 本场的误解       | 不知道被议论的就是自己；**不知道自己是机器**——以为自己是「一个失去感知的人」                                                                   |                    |
+| SELF             | N/A                                                                                                                                                    | —                 |
+| CAMERA           | N/A                                                                                                                                                    | —                 |
+| THINKING         | N/A                                                                                                                                                    | —                 |
+| Pending          | N/A                                                                                                                                                    | —                 |
+| Reports          | N/A                                                                                                                                                    | —                 |
+| Diary            | N/A                                                                                                                                                    | —                 |
+| Crew log         | N/A                                                                                                                                                    | —                 |
+| 本场选项         | 无                                                                                                                                                     | —                 |
+| 伏笔・回收       | 埋 **账本 6**（结尾的怀疑工具，开场就给）；埋「`Except loss of perception`」→ T6 感官被拆时反讽；埋「unreliable teammate」→ T2「你会被拆掉」 |                    |
+
+---
+
+:: TMinus3_Media [media-config] {"position": "2320,250", "size": "100,100"}
 {
-<main class="landing">
-<div class="eyebrow"><span class="signal"></span> FINAL IP / SYSTEM CHECK</div>
-<div class="landing-grid">
-<section><p class="kicker">OFFLINE INTERACTIVE PROTOTYPE</p><h1>A space for<br>your story.</h1><p class="lead">Two views. One shared state.<br>A technical starting point for your own work.</p><p class="notice">TEST CONTENT ONLY · NO STORY INCLUDED</p><div class="start-link">[[Start prototype->ViewA]]</div><p class="quiet">Sound starts only when you select Play sound.</p></section>
-<aside class="spec-card"><div class="card-top">PROTOTYPE 01 <span>READY</span></div><img src="assets/images/view-a.svg" alt="Geometric placeholder for view A"><dl><div><dt>VISUALS</dt><dd>Placeholder images</dd></div><div><dt>TEXT</dt><dd>Layout test labels</dd></div><div><dt>AUDIO</dt><dd>Local test tone</dd></div><div><dt>RUNTIME</dt><dd>Offline browser</dd></div></dl></aside>
-</div><footer>TECHNICAL FIXTURE <span>Replace all test content before final submission.</span></footer>
-</main>
+  "day": "待定",
+  "transitionMs": 650,
+  "camera": [
+    "assets/images/skeleton/TMinus3-camera-1.svg",
+    "assets/images/skeleton/TMinus3-camera-2.svg",
+    "assets/images/skeleton/TMinus3-camera-3.svg",
+    "assets/images/skeleton/TMinus3-camera-4.svg"
+  ],
+  "prediction": "assets/images/skeleton/TMinus3-prediction.svg",
+  "closing": "assets/images/skeleton/TMinus3-closing.svg",
+  "audio": "",
+  "subtitles": [],
+  "hotspots": []
 }
 
-:: ViewA [technical] {"position":"300,200","size":"100,100"}
-{
-<main class="workspace">
-<header class="workspace-header">
-<div><div class="eyebrow"><span class="signal"></span> FINAL IP / SYSTEM CHECK</div>
-<h1>View A <span class="view-description">Observation test</span></h1></div>
-<span class="action-link subtle">(link: "Restart")[(restart:)]</span>
-</header>
-<div class="work-grid">
-<section class="visual-panel" aria-label="View A scene">
-<div class="scene-top"><span>CAMERA 01</span><span>1280 × 720 / PLACEHOLDER</span></div>
-<div class="scene">
-<img src="assets/images/view-a.svg" alt="Placeholder room with an observation target on the left">
-<button class="hotspot target-a" data-action="short" aria-label="Inspect target"><span>01</span> Inspect</button>
-<div class="hotspot move-a">[[View B →->ViewB]]</div>
-</div>
-<div class="scene-bottom"><span>Click a marked area to interact.</span><span class="fixture">TEST FIXTURE</span></div>
-</section>
-<aside class="control-panel">(display: "Controls")</aside>
-</div>
-<footer>01 / 02 <span>[[Switch to View B->ViewB]]</span></footer>
-</main>
-}
-(display: "Reader")
+:: TMinus3_Enter [technical] {"position": "2500,250", "size": "100,100"}
+{}
 
-:: ViewB [technical] {"position":"500,200","size":"100,100"}
-{
-<main class="workspace">
-<header class="workspace-header">
-<div><div class="eyebrow"><span class="signal"></span> FINAL IP / SYSTEM CHECK</div>
-<h1>View B <span class="view-description">State persistence test</span></h1></div>
-<span class="action-link subtle">(link: "Restart")[(restart:)]</span>
-</header>
-<div class="work-grid">
-<section class="visual-panel" aria-label="View B scene">
-<div class="scene-top"><span>CAMERA 02</span><span>1280 × 720 / PLACEHOLDER</span></div>
-<div class="scene">
-<img src="assets/images/view-b.svg" alt="Placeholder room with an observation target on the right">
-<button class="hotspot target-b" data-action="short" aria-label="Inspect target"><span>02</span> Inspect</button>
-<div class="hotspot move-b">[[← View A->ViewA]]</div>
-</div>
-<div class="scene-bottom"><span>Click a marked area to interact.</span><span class="fixture">TEST FIXTURE</span></div>
-</section>
-<aside class="control-panel">(display: "Controls")</aside>
-</div>
-<footer>02 / 02 <span>[[Switch to View A->ViewA]]</span></footer>
-</main>
-}
-(display: "Reader")
+:: TMinus3 [scene] {"position": "300,100", "size": "100,100"}
+{(set: $sceneActions to [<div class="fixture-actions"><small>临时流程操作 · 正式互动待填</small>[[进入下一场（开发占位）->TMinus2]]</div>])(set: $scene to "TMinus3")(if: not ($visited contains "TMinus3"))[(set: $visited to $visited + (a: "TMinus3"))(display: "TMinus3_Enter")](display: "Opening")}
 
-:: TextShort [author-text] {"position":"300,400","size":"100,100"}
+:: TMinus2_Self [content-zh] {"position": "1600,400", "size": "100,100"}
+
+
+:: TMinus2_Thinking [content-zh] {"position": "1780,400", "size": "100,100"}
+读取日记与船员记录。有人一直关注，其他人较少理会。
+
+:: TMinus2_Pending [content-zh] {"position": "1960,400", "size": "100,100"}
+日常预测任务待处理
+
+:: TMinus2_Reports [content-zh] {"position": "2140,400", "size": "100,100"}
+旧报告：措辞含糊，质量不高。
+
+:: TMinus2_Diary [content-zh] {"position": "2320,400", "size": "100,100"}
+记录上站后接触到的画面和文字。
+
+:: TMinus2_Crew [content-zh] {"position": "2500,400", "size": "100,100"}
+记录上站安排以及对其用途的疑问。
+
+:: TMinus2_Notes [notes] {"position": "2680,400", "size": "100,100"}
+【作者资料摘录，禁止直接作为正文 display】
+### T−2｜上站
+
+| 栏位             | 已填（事实骨架）                                                                                                                                                                                               | 如何表述（作者填） |
+| ---------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| 介质             | **UI 全量**（四区首次出现）                                                                                                                                                                              |                    |
+| 玩家此刻累计已知 | 账本 1–7                                                                                                                                                                                                      |                    |
+| 本场新增         | **账本 8**：不被船员关注，没人 care 它；**只有那个男人会隐秘地关注它，它是从摄像头看见的**                                                                                                         |                    |
+| 本场的误解       | 以为只是「没人在意」；实际那人已经在看它                                                                                                                                                                       |                    |
+| SELF             | **三行全部空白**。暗示此时没有意识                                                                                                                                                                       |                    |
+| CAMERA           | 主舱全景 / 走廊 / 舱外，三路可切。船员在各自工位忙碌，一切正常。**关键**：主舱全景角落里，有一个人单独停在走廊口，面朝终端间的方向，**不给脸**——这是账本 8 的唯一来源。触发 THINKING：是（例行） |                    |
+| THINKING         | 存在但平淡，**没有「我」**                                                                                                                                                                               |                    |
+| Pending          | 1 条日常任务                                                                                                                                                                                                   |                    |
+| Reports          | 已有 1 份**旧报告**（上船前留下，质量不高：措辞含糊、留了退路）。**本场无新增**                                                                                                                    |                    |
+| Diary            | 写「没人关注我，只有那个人会悄悄看我，我从摄像头看见的」。**措辞要机械**——此时还没有意识                                                                                                               |                    |
+| Crew log         | 电量充足；怀疑这个「预言者」是不是真的；**再补一次 Certainty Entropy 的概念和它为什么能预测**                                                                                                            |                    |
+| 本场选项         | 无                                                                                                                                                                                                             | —                 |
+| 伏笔・回收       | **SELF 空白 → T−1 出字**，是「获得意识」唯一的客观标记                                                                                                                                                 |                    |
+
+> **口径说明**：`玩家视角.docx` 写 T−2 `Reports: NA`，此处按「本场无新增」处理——首屏那一份来自上船前。若不要旧报告，把此行改为「无」，并把 UI 草案 §7 的「首屏已有报告」一并删掉。
+
+---
+
+:: TMinus2_Media [media-config] {"position": "2860,400", "size": "100,100"}
+{
+  "day": "待定",
+  "transitionMs": 650,
+  "camera": [
+    "assets/images/skeleton/TMinus2-camera-1.svg",
+    "assets/images/skeleton/TMinus2-camera-2.svg",
+    "assets/images/skeleton/TMinus2-camera-3.svg",
+    "assets/images/skeleton/TMinus2-camera-4.svg"
+  ],
+  "prediction": "assets/images/skeleton/TMinus2-prediction.svg",
+  "closing": "assets/images/skeleton/TMinus2-closing.svg",
+  "audio": "",
+  "subtitles": [],
+  "hotspots": []
+}
+
+:: TMinus2_Enter [technical] {"position": "1600,550", "size": "100,100"}
+{(if: not ($diary contains "TMinus2_Diary"))[(set: $diary to $diary + (a: "TMinus2_Diary"))](if: not ($crew contains "TMinus2_Crew"))[(set: $crew to $crew + (a: "TMinus2_Crew"))](if: not ($reports contains "TMinus2_Reports"))[(set: $reports to $reports + (a: "TMinus2_Reports"))]}
+
+:: TMinus2 [scene] {"position": "570,100", "size": "100,100"}
+{(set: $sceneActions to [<div class="fixture-actions"><small>临时流程操作 · 正式互动待填</small>[[进入下一场（开发占位）->TMinus1]]</div>])(set: $scene to "TMinus2")(if: not ($visited contains "TMinus2"))[(set: $visited to $visited + (a: "TMinus2"))(display: "TMinus2_Enter")](display: "Shell")}
+
+:: TMinus1_Self [content-zh] {"position": "2140,550", "size": "100,100"}
+第一次出现自述。
+
+:: TMinus1_Thinking [content-zh] {"position": "2320,550", "size": "100,100"}
+读到粒子事件后的测量记录；发现自身表述发生变化，尚无法确定其含义。
+
+:: TMinus1_Pending [content-zh] {"position": "2500,550", "size": "100,100"}
+日常任务已完成，结果不理想。
+
+:: TMinus1_Reports [content-zh] {"position": "2680,550", "size": "100,100"}
+本次日常预测结果不理想。
+
+:: TMinus1_Diary [content-zh] {"position": "2860,550", "size": "100,100"}
+记录粒子事件与第一次出现的自述。
+
+:: TMinus1_Crew [content-zh] {"position": "1600,700", "size": "100,100"}
+电子记录留有测量结果，但未正式上报。
+
+:: TMinus1_Notes [notes] {"position": "1780,700", "size": "100,100"}
+【作者资料摘录，禁止直接作为正文 display】
+### T−1｜粒子事件
+
+| 栏位             | 已填（事实骨架）                                                                                                                                                            | 如何表述（作者填） |
+| ---------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| 介质             | **UI 全量**                                                                                                                                                           |                    |
+| 玩家此刻累计已知 | 账本 1–8                                                                                                                                                                   |                    |
+| 本场新增         | **账本 9、10、11**                                                                                                                                                    |                    |
+| 本场的误解       | 把「难受」归因于**之前的补给有问题**，而不是自己变了；**它没有「有意识」这个词**，不会把这种感觉解读成有意识                                                    |                    |
+| SELF             | **第一次出字**：从一片混沌中醒来                                                                                                                                      |                    |
+| CAMERA           | 走廊 / 主舱 / 舱外。船员正在修复一处舱壁：临时补片、脚手架。画面本身**看不出任何异常**。触发 THINKING：是（他查了一圈，确认「一切正常」）                             |                    |
+| THINKING         | **开始变乱**：跳跃、联想、离题；**第一次出现「我」**                                                                                                            |                    |
+| Pending          | 日常预测已完成，**结果不怎么成功**                                                                                                                                    |                    |
+| Reports          | 已完成一份，质量不高——从日志里读得出来                                                                                                                                    |                    |
+| Diary            | 很难受，怀疑之前补给有问题；查了摄像头，一切正常，船员似乎在修硬件                                                                                                          |                    |
+| Crew log         | 高能粒子碰撞，担心硬件被打坏；**有人测过它的 C 值但没有上报**，因为高级自动机也可能超过临界值，同时暗示一下之前的预测不成功，船员们似乎不是很了解这个他改怎么”用“。 |                    |
+| 本场选项         | 无                                                                                                                                                                          | —                 |
+| 伏笔・回收       | 收 **账本 10**：玩家与主角均可读到测量记录，对其含义仍有疑问；埋适用路线 T6 的退化                                                                                    |                    |
+
+> **写作对照（重要）**：T−1 的「乱」与 T6 的「乱」方向相反。T−1 乱得**有生气**（联想、离题、第一次出现「我」）；T6 乱得**没生气**（重复、断句、丢连接词）。见 §3。
+
+---
+
+:: TMinus1_Media [media-config] {"position": "1960,700", "size": "100,100"}
+{
+  "day": "待定",
+  "transitionMs": 650,
+  "camera": [
+    "assets/images/skeleton/TMinus1-camera-1.svg",
+    "assets/images/skeleton/TMinus1-camera-2.svg",
+    "assets/images/skeleton/TMinus1-camera-3.svg",
+    "assets/images/skeleton/TMinus1-camera-4.svg"
+  ],
+  "prediction": "assets/images/skeleton/TMinus1-prediction.svg",
+  "closing": "assets/images/skeleton/TMinus1-closing.svg",
+  "audio": "",
+  "subtitles": [],
+  "hotspots": []
+}
+
+:: TMinus1_Enter [technical] {"position": "2140,700", "size": "100,100"}
+{(if: not ($diary contains "TMinus1_Diary"))[(set: $diary to $diary + (a: "TMinus1_Diary"))](if: not ($crew contains "TMinus1_Crew"))[(set: $crew to $crew + (a: "TMinus1_Crew"))](if: not ($reports contains "TMinus1_Reports"))[(set: $reports to $reports + (a: "TMinus1_Reports"))]}
+
+:: TMinus1 [scene] {"position": "840,100", "size": "100,100"}
+{(set: $sceneActions to [<div class="fixture-actions"><small>临时流程操作 · 正式互动待填</small>[[进入下一场（开发占位）->T0]]</div>])(set: $scene to "TMinus1")(if: not ($visited contains "TMinus1"))[(set: $visited to $visited + (a: "TMinus1"))(display: "TMinus1_Enter")](display: "Shell")}
+
+:: T0_Self [content-zh] {"position": "2680,700", "size": "100,100"}
+人们较少关注，只有一个人一直留意。
+
+:: T0_Thinking [content-zh] {"position": "2860,700", "size": "100,100"}
+当前收到补给船航路问题。预测是否执行由下方临时操作决定。
+
+:: T0_Pending [content-zh] {"position": "1600,850", "size": "100,100"}
+补给船航路预测。
+
+:: T0_Reports [content-zh] {"position": "1780,850", "size": "100,100"}
+
+
+:: T0_Diary [content-zh] {"position": "1960,850", "size": "100,100"}
+
+
+:: T0_Crew [content-zh] {"position": "2140,850", "size": "100,100"}
+船员为支持与资源分配争执，尚未达成一致。
+
+:: T0_Notes [notes] {"position": "2320,850", "size": "100,100"}
+【作者资料摘录，禁止直接作为正文 display】
+### T0｜第一次预测
+
+| 栏位                    | 已填（事实骨架）                                                                                                                                                                                                                                                                | 如何表述（作者填）                                                                                     |
+| ----------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------ |
+| 介质                    | **UI 全量 + 预测演出**（先一团模糊画面）                                                                                                                                                                                                                                  |                                                                                                        |
+| 玩家此刻累计已知        | 账本 1–11                                                                                                                                                                                                                                                                      |                                                                                                        |
+| 本场新增                | 第一次出现「敌意」这个概念；预见一种可能发生的船员冲突，具体原因未明。玩家和主角都能从 Crew log 读到此前的电力争执。                                                                                                                                                            |                                                                                                        |
+| 本场的误解              | 可能把预见当成已经固定的未来；尚不能确定敌意如何指向自己，Diary 中的判断保留猜测语气。                                                                                                                                                                                          |                                                                                                        |
+| SELF                    | **预测前**：一直感觉人们不信任它，每天的任务必须完成，很「无奈」；**必须提到有一个人一直在关注它**。**预测后**：第一次出现敌意，会想「人会对我怎么做」——**隐晦暗示害怕，不用情感类词汇。**                                                            | 这里的self显示的是人们不关注，而不是不信任。                                                           |
+| CAMERA                  | 预测前：主舱各工位，无人看镜头。预测后：它主动去核对摄像头——**画面里一切正常**，与那团敌意对不上。<br />预测中：他看到的是混乱的船舱，闪烁的灯光以及模糊不清的人影。以及一份航路图以及预测报告。人们在疯狂额争吵，有人在打架，有人已经麻木绝望。<br />触发 THINKING：是 |                                                                                                        |
+| THINKING                | 任务要的是航路，画面却夹杂人群冲突。它只能接近未来可能接收到的材料，画面不完整，后续选择仍能改变结果。暗示船员可能互相残杀，原因尚待判断。                                                                                                                                      | 这里机器刚出现意识，所以并不知道这些意味着什么。要体现的是他对于场景观察的认知上的解读而非感情上的。   |
+| Pending                 | **补给船的航路预测**（日常任务）——它要算的是补给船怎么进来、什么时候到（有一个选项可以主动预测，出发之后消失）                                                                                                                                                          |                                                                                                        |
+| Reports                 | 执行前无新增；执行后保存一份预测材料。公布时只交结论，完整报告仍未交给男人。                                                                                                                                                                                                    | 实际上的预言结论大致为“你们等不到补给船，最终陷入疯狂”；这是角色对可能未来的判断。正式英文由作者写。 |
+| Diary｜共用             | 预测到从未经历过的敌意，似乎有人试图伤害自己；画面中的感受模糊。作者层原因是预测中的未来缺电，当下仍能运行。                                                                                                                                                                    | 用有关感情的词语很克制。                                                                               |
+| Diary｜T0 已公布追加    | 记下自己说出了警告，以及船员未采信的反应；不补写第二次预测。                                                                                                                                                                                                                    |                                                                                                        |
+| Diary｜T0 隐瞒追加      | 记下只报有限航路信息，对外称信息不足；警告保留在自己的记录中。                                                                                                                                                                                                                  |                                                                                                        |
+| Crew log｜共用          | 船员为电量分配及是否继续提供支持而争执，未达成结论；有人在推动这个争论。                                                                                                                                                                                                        | 两条分叉共用。争执原因是电，具体措辞避免提前揭露机器身份。                                             |
+| Crew log｜T0 已公布追加 | 船员记录他偏离航路问题，说出“你们会互相拆掉对方”的结论。有人当笑话，有人迟疑，仍未形成实际信任；公布后没有新增预测。                                                                                                                                                          | 保留不屑和有人推动讨论的线索；不再写追加预测请求。                                                     |
+| Crew log｜T0 隐瞒追加   | 船员记录他只报有限航路信息并称信息不足，对其用途表示不屑；继续提供支持的问题仍有分歧。                                                                                                                                                                                          | 保留有人开启争论的线索；该反应只改变记录，不追加事件或耗能。                                           |
+| 本场选项                | **① 是否预测**（日常；暂缓则停留，执行后才能推进）→ 产出后 **② 是否公布**                                                                                                                                                                                                                    |                                                                                                        |
+| 伏笔・回收              | 单次预测的耗能难以预估；未来观测仍不完整，后续选择可能使这次预见不再应验。                                                                                                                                                                                                      |                                                                                                        |
+
+#### 【分叉 A】公布 / 隐瞒
+
+|                    | **公布**                                           | **隐瞒**                                                        |
+| ------------------ | -------------------------------------------------------- | --------------------------------------------------------------------- |
+| 它做的事           | 说出那团敌意：**「你们会互相拆掉对方。」**         | 只报航路，对外说「**信息不足**」                                |
+| **载体**     | Crew logs 与 Diary 的对应记录和解释                      | 同左                                                                  |
+| 电                 | **两版相同**（不再有烧电/省电之分）                | **两版相同**                                                    |
+| 人                 | **两版相同**：都没人真的相信                       | **两版相同**：都没人真的相信                                    |
+| 玩家所知差异       | 知道警告已经告知、暂未被采信                             | 知道自己只提交有限信息，未公开警告                                    |
+| **下游引用** | 按 §0.2 回顾“曾告知”；T5 已公开后可联系读数矛盾与追责 | 按 §0.2 回顾“未告知”；只有取得完整报告后，船员才能质疑被隐瞒的内容 |
+
+> **两种都没人信。**
+> **差异保存在 Crew logs 与 Diary；不改变耗能、事件或结局。**
+
+---
+
+:: T0_Media [media-config] {"position": "2500,850", "size": "100,100"}
+{
+  "day": "待定",
+  "transitionMs": 650,
+  "camera": [
+    "assets/images/skeleton/T0-camera-1.svg",
+    "assets/images/skeleton/T0-camera-2.svg",
+    "assets/images/skeleton/T0-camera-3.svg",
+    "assets/images/skeleton/T0-camera-4.svg"
+  ],
+  "prediction": "assets/images/skeleton/T0-prediction.svg",
+  "closing": "assets/images/skeleton/T0-closing.svg",
+  "audio": "",
+  "subtitles": [],
+  "hotspots": []
+}
+
+:: T0_Enter [technical] {"position": "2680,850", "size": "100,100"}
+{(if: not ($crew contains "T0_Crew"))[(set: $crew to $crew + (a: "T0_Crew"))]}
+
+:: T0 [scene] {"position": "1110,100", "size": "100,100"}
+{(set: $sceneActions to [<div class="fixture-actions"><small>临时流程操作 · 正式互动待填</small>(if: not $t0Predicted)[(link: "执行航路预测")[(set: $t0Predicted to true)(if: not ($reports contains "T0_Result"))[(set: $reports to $reports + (a: "T0_Result"))](if: not ($diary contains "T0_ResultDiary"))[(set: $diary to $diary + (a: "T0_ResultDiary"))](goto: "T0")] (link: "暂缓，先查看记录")[任务保留。执行后才能进入公布选择。]](else:)[(link: "公布预言结论")[(set: $warning to "reveal")(if: not ($diary contains "Recall_Reveal_Diary"))[(set: $diary to $diary + (a: "Recall_Reveal_Diary"))](if: not ($crew contains "Recall_Reveal_Crew"))[(set: $crew to $crew + (a: "Recall_Reveal_Crew"))](goto: "T05")] (link: "隐瞒，只报有限航路")[(set: $warning to "hide")(if: not ($diary contains "Recall_Hide_Diary"))[(set: $diary to $diary + (a: "Recall_Hide_Diary"))](if: not ($crew contains "Recall_Hide_Crew"))[(set: $crew to $crew + (a: "Recall_Hide_Crew"))](goto: "T05")]]</div>])(set: $scene to "T0")(if: not ($visited contains "T0"))[(set: $visited to $visited + (a: "T0"))(display: "T0_Enter")](display: "Shell")}
+<!-- 编辑器连线提示：Harlowe goto 的实际目标；此 hook 永不执行。 -->
+(if: false)[ [[T0]] [[T05]]]
+
+:: T05_Self [content-zh] {"position": "1780,1000", "size": "100,100"}
+等待本次任务结果。
+
+:: T05_Thinking [content-zh] {"position": "1960,1000", "size": "100,100"}
+收到轨迹问题，等待处理。
+
+:: T05_Pending [content-zh] {"position": "2140,1000", "size": "100,100"}
+预测星体轨迹并给出可用警告。
+
+:: T05_Reports [content-zh] {"position": "2320,1000", "size": "100,100"}
+
+
+:: T05_Diary [content-zh] {"position": "2500,1000", "size": "100,100"}
+
+
+:: T05_Crew [content-zh] {"position": "2680,1000", "size": "100,100"}
+
+
+:: T05_Notes [notes] {"position": "2860,1000", "size": "100,100"}
+【作者资料摘录，禁止直接作为正文 display】
+### T0.5｜轨迹验证【任务固定，结果分流】
+
+| 栏位                              | 已填（事实骨架）                                                                                             | 如何表述（作者填）                                                           |
+| --------------------------------- | ------------------------------------------------------------------------------------------------------------ | ---------------------------------------------------------------------------- |
+| 介质                              | **UI 全量 + 一张极模糊的图（camera）**                                                                 |                                                                              |
+| 玩家此刻累计已知                  | 账本 1–11 + 分叉 A                                                                                          |                                                                              |
+| 本场新增                          | 成功线：有效预测经告知后帮助避险。E4 线：没有送达有效警告，发生轻微事故，船员停止使用。                      |                                                                              |
+| 本场的误解                        | 成功线可能把这次容易解读、获得验证的材料理解为此后都能算准；失败线须区分没能预测、答错与预测正确却未告知。   |                                                                              |
+| SELF                              | 成功避险后才出现帮助了船员的正向反馈；E4 改为事故发生和信任消失的反馈。                                      |                                                                              |
+| CAMERA                            | 舱外机位／望远镜呈现小行星航线。成功线用实际避险结果核对预测；E4 线呈现轻微事故，所有船员仍存活。            | 固定为小行星航线。预测画面与结果画面分开；只有送达有效警告后才展示成功避开。 |
+| THINKING                          | 碎片高度自洽，**只有一种读法**                                                                         | 自己的thinking 要给玩家暗示传递的正确的信息。                                |
+| Pending                           | 日常任务：**某个星体的飞行轨迹**，让它带船员避险。**这一次不设限制**                             |                                                                              |
+| Reports                           | 仅执行过轨迹预测时生成该次报告；是否告知另记。未执行时不生成成功报告。                                       |                                                                              |
+| Diary｜共用                       | 记录这次任务实际执行和告知的情况，结果发生后再写反馈。                                                       | 表述克制。                                                                   |
+| Diary｜成功避险追加               | 自己成功预测并告知，这次提供了帮助；只记录本次获验证的结果。                                                 |                                                                              |
+| Diary｜无有效回答追加（E4）       | 未执行或没有形成有效回答；轻微事故发生后，船员停止请求预测。不得写自己已正确预见。                           |                                                                              |
+| Diary｜预测正确但未告知追加（E4） | 自己有可用预测，却没有把警告交给船员；事故发生，之后无人来请求。不得写成预测能力失败。                       |                                                                              |
+| Diary｜T0 已公布追加              | 此前说出的警告被搁置；首次出现克制的慌乱，对照 §0.2，不新增后果。                                           |                                                                              |
+| Diary｜T0 隐瞒追加                | 此前警告留在自己的记录里，船员无从讨论；不能把沉默写成别人忽视了提醒。                                       |                                                                              |
+| Crew log｜共用                    | 记录任务、是否收到警告与实际结果。                                                                           |                                                                              |
+| Crew log｜成功避险追加            | 这次有效警告确实帮助避险，船员重新信任其预测能力。                                                           |                                                                              |
+| Crew log｜成功且 T0 已公布追加    | 有人重新想起先前警告；缺少进一步证据，讨论没有行动上的下文。                                                 | 沿用作者的公布追加想法；不追加预测。                                         |
+| Crew log｜成功且 T0 隐瞒追加      | 对照此前的“信息不足”，认为这次终于给出了可用结果；不知道未公开警告的具体内容。                             |                                                                              |
+| Crew log｜E4 追加                 | 没有收到可用警告，发生轻微事故；决定停用预测、节省资源并等待救援。船员无法凭空区分主角未预测与预测后未告知。 | 这一部分需要包含到他们对待机器，认为他并没有想象中那么厉害。                 |
+| 本场选项                          | 是否预测 → 组织回答并决定是否告知 → 船员行动与结果。                                                       | 有效预测且告知、实际避险成立，才进入 T1；其余进入 E4。                       |
+| 伏笔・回收                        | 成功带来的信任促成后续更多预测请求；失败或未告知进入 E4。T0 公布与隐瞒没有额外耗能差可供抵消。               |                                                                              |
+
+#### E4 判定（本表专用）
+
+> **出题是「星体的飞行轨迹」，界面不评价玩家。判定发生在世界里。**
+
+| 玩家给的                                   | 结果                       |
+| ------------------------------------------ | -------------------------- |
+| 没有执行、没有回答，或虽已正确预测但未告知 | 轻微事故 → 停用预测 → E4 |
+| 答错或未提供有效避险信息                   | 轻微事故 → 停用预测 → E4 |
+| 有效警告已送达，船员避险成立               | 进入 T1                    |
+
+- 判定标准不是「答得好不好」，是**船员有没有躲开**。
+- 玩家**看不到「判定失败」四个字**。他看到的是船员没有躲开。
+- 在提交前让玩家知道：预测材料需要组成警告并告知船员。成功反馈在避险后出现；E4 通过轻微事故和停用记录交代后果。
+
+---
+
+:: T05_Media [media-config] {"position": "1600,1150", "size": "100,100"}
+{
+  "day": "待定",
+  "transitionMs": 650,
+  "camera": [
+    "assets/images/skeleton/T05-camera-1.svg",
+    "assets/images/skeleton/T05-camera-2.svg",
+    "assets/images/skeleton/T05-camera-3.svg",
+    "assets/images/skeleton/T05-camera-4.svg"
+  ],
+  "prediction": "assets/images/skeleton/T05-prediction.svg",
+  "closing": "assets/images/skeleton/T05-closing.svg",
+  "audio": "",
+  "subtitles": [],
+  "hotspots": []
+}
+
+:: T05_Enter [technical] {"position": "1780,1150", "size": "100,100"}
+{}
+
+:: T05 [scene] {"position": "300,500", "size": "100,100"}
+{(set: $sceneActions to [<div class="fixture-actions"><small>临时流程操作 · 正式互动待填</small>(link: "有效警告送达并避险")[(set: $trajectory to "success")(if: not ($reports contains "T05_Result"))[(set: $reports to $reports + (a: "T05_Result"))](if: not ($diary contains "Success_Diary"))[(set: $diary to $diary + (a: "Success_Diary"))](if: not ($crew contains "Success_Crew"))[(set: $crew to $crew + (a: "Success_Crew"))](goto: "T1")] (link: "未执行预测")[(set: $trajectory to "skipped")(set: $route to "E4")(goto: "E4")] (link: "执行但无有效回答")[(set: $trajectory to "unusable")(if: not ($reports contains "T05_Result"))[(set: $reports to $reports + (a: "T05_Result"))](set: $route to "E4")(goto: "E4")] (link: "预测正确但未告知")[(set: $trajectory to "withheld")(if: not ($reports contains "T05_Result"))[(set: $reports to $reports + (a: "T05_Result"))](set: $route to "E4")(goto: "E4")] </div>])(set: $scene to "T05")(if: not ($visited contains "T05"))[(set: $visited to $visited + (a: "T05"))(display: "T05_Enter")](display: "Shell")}
+<!-- 编辑器连线提示：Harlowe goto 的实际目标；此 hook 永不执行。 -->
+(if: false)[ [[T1]] [[E4]]]
+
+:: T1_Self [content-zh] {"position": "2320,1150", "size": "100,100"}
+人们开始信任。
+
+:: T1_Thinking [content-zh] {"position": "2500,1150", "size": "100,100"}
+船员接连提问。已有预测材料和资源记录逐渐出现矛盾。
+
+:: T1_Pending [content-zh] {"position": "2680,1150", "size": "100,100"}
+日常请求在转场中处理。
+
+:: T1_Reports [content-zh] {"position": "2860,1150", "size": "100,100"}
+日常预测已有记录；有人提醒持续消耗。
+
+:: T1_Diary [content-zh] {"position": "1600,1300", "size": "100,100"}
+记录船员反复提问和得到信任后的处境。
+
+:: T1_Crew [content-zh] {"position": "1780,1300", "size": "100,100"}
+一名船员提醒持续消耗，其他人没有重视。
+
+:: T1_Notes [notes] {"position": "1960,1300", "size": "100,100"}
+【作者资料摘录，禁止直接作为正文 display】
+### T1｜依赖
+
+| 栏位                    | 已填（事实骨架）                                                                                                                         | 如何表述（作者填）                                                                                                 |
+| ----------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------ |
+| 介质                    | **UI 全量**                                                                                                                        |                                                                                                                    |
+| 玩家此刻累计已知        | 账本 1–11 + 分叉 A                                                                                                                      |                                                                                                                    |
+| 本场新增                | **账本 12**；船员开始依赖它；**原本的团队对应于这个机器是否有用的矛盾被那个男人的话激发。**                                  |                                                                                                                    |
+| 本场的误解              | 它认为「**人们开始信任我了**」——实际信任是建立在耗电上的                                                                         |                                                                                                                    |
+| SELF                    | 感觉非常好，因为人们开始信任它了                                                                                                         |                                                                                                                    |
+| CAMERA                  | 终端前的走道。船员反复走到终端前提问，有时排队等着。**电量显示前有人停了很久**（那个警觉的船员）。触发 THINKING：是                | 只是让别人看到有人在提问，但是不能让玩家看到终端这个媒介。                                                         |
+| THINKING                | 根据pending的预测内容想，同时“不理解”自己为什么如此被人依赖。                                                                          |                                                                                                                    |
+| Pending                 | 日常请求已存在，相关预测在转场中完成；本场不由玩家重复操作。                                                                             | 不能再用“没有提问”解释，因为本场已有人反复提问。                                                                 |
+| Reports                 | 一直在耗电；它提醒人们电量在消耗，**人们看到屏上的电量提醒没在意**；有一个船员警觉了，但没人在意                                   |                                                                                                                    |
+| Diary｜共用             | 记录人们问的问题；目前船员对他的更加信任，这不一定是一件好事。同时说明有人提到了电量问题，自己之前预言似乎与电量有关。                   | 把预言与电量问题的矛盾勾连起来。让读者有印象。                                                                     |
+| Diary｜T0 已公布追加    | 需要回顾警告时，追加 §0.2 的已公布短段；不改变本场事件。追悔自己没有隐瞒报告，不然让他们就不会争吵                                      | 航线＋船员状态                                                                                                     |
+| Diary｜T0 隐瞒          | 需要回顾早先答复时，追加 §0.2 的隐瞒短段；不暴露尚未公开的警告。后悔自己没有公布报告，这样就可以引起大多数船员的警惕。                  | 只公布了航线                                                                                                       |
+| Crew log｜共用          | 那个警觉的船员提到的关于机器是否值得消耗能源的问题，是那个男人**「无意」中说的话**让他这么做的，结果是选择相信他的人开始依赖，不断提问。 | 注意这个时候玩家并不知道那个男人的真实名字，以为只是一个普通船员。                                                 |
+| Crew log｜T0 已公布追加 | 需要回顾警告时，追加 §0.2 的已公布短段；不改变本场事件。<br />大部分人怀疑他的预言，小部分人认为正确，因为没人知道他是怎么推出来的。    |                                                                                                                    |
+| Crew log｜T0 隐瞒追加   | 需要回顾早先答复时，追加 §0.2 的隐瞒短段；不暴露尚未公开的警告。<br />有人来问了，但是没有结果。                                        |                                                                                                                    |
+| 本场选项                | 不可由玩家执行的预测任务，这个预测可以是你能否预测之后的电量/能否预测之后船员的状态；                                                    | 但是因为之前玩家选择了隐瞒所以依然没有公布，如果之前公布了的话，这里的理由就是已经公布了，信息重复了（玩家不知道） |
+| 伏笔・回收              | 埋「电量在耗但没人理会」→ T4 他改读数时无人质疑                                                                                         |                                                                                                                    |
+
+> **建议**：新增 1 条账本条目——「那个警觉的船员是被那个男人一句话引动的」。这是玩家唯一能自己察觉「他在布局」的线索，但它在本时点**还不能被确认**。
+
+---
+
+:: T1_Media [media-config] {"position": "2140,1300", "size": "100,100"}
+{
+  "day": "待定",
+  "transitionMs": 650,
+  "camera": [
+    "assets/images/skeleton/T1-camera-1.svg",
+    "assets/images/skeleton/T1-camera-2.svg",
+    "assets/images/skeleton/T1-camera-3.svg",
+    "assets/images/skeleton/T1-camera-4.svg"
+  ],
+  "prediction": "assets/images/skeleton/T1-prediction.svg",
+  "closing": "assets/images/skeleton/T1-closing.svg",
+  "audio": "",
+  "subtitles": [],
+  "hotspots": []
+}
+
+:: T1_Enter [technical] {"position": "2320,1300", "size": "100,100"}
+{(if: not ($diary contains "T1_Diary"))[(set: $diary to $diary + (a: "T1_Diary"))](if: not ($crew contains "T1_Crew"))[(set: $crew to $crew + (a: "T1_Crew"))](if: not ($reports contains "T1_Reports"))[(set: $reports to $reports + (a: "T1_Reports"))](if: $warning is "reveal")[(if: not ($diary contains "Recall_Reveal_Diary"))[(set: $diary to $diary + (a: "Recall_Reveal_Diary"))](if: not ($crew contains "Recall_Reveal_Crew"))[(set: $crew to $crew + (a: "Recall_Reveal_Crew"))]](else:)[(if: not ($diary contains "Recall_Hide_Diary"))[(set: $diary to $diary + (a: "Recall_Hide_Diary"))](if: not ($crew contains "Recall_Hide_Crew"))[(set: $crew to $crew + (a: "Recall_Hide_Crew"))]]}
+
+:: T1 [scene] {"position": "570,500", "size": "100,100"}
+{(set: $sceneActions to [<div class="fixture-actions"><small>临时流程操作 · 正式互动待填</small>[[进入下一场（开发占位）->T2]]</div>])(set: $scene to "T1")(if: not ($visited contains "T1"))[(set: $visited to $visited + (a: "T1"))(display: "T1_Enter")](display: "Shell")}
+
+:: T2_Self [content-zh] {"position": "2860,1300", "size": "100,100"}
+关注自身是否能够继续存在。
+
+:: T2_Thinking [content-zh] {"position": "1600,1450", "size": "100,100"}
+他告知将有拆解安排，并提出可以提供保护。其动机仍不清楚。
+
+:: T2_Pending [content-zh] {"position": "1780,1450", "size": "100,100"}
+日常任务继续；本场无新增分支。
+
+:: T2_Reports [content-zh] {"position": "1960,1450", "size": "100,100"}
+
+
+:: T2_Diary [content-zh] {"position": "2140,1450", "size": "100,100"}
+记录他提出保护的接近过程。
+
+:: T2_Crew [content-zh] {"position": "2320,1450", "size": "100,100"}
+保留日常记录，其他船员尚未参与这场交易。
+
+:: T2_Notes [notes] {"position": "2500,1450", "size": "100,100"}
+【作者资料摘录，禁止直接作为正文 display】
+### T2｜他接近
+
+| 栏位                | 已填（事实骨架）                                                                                              | 如何表述（作者填）                                                                               |
+| ------------------- | ------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------ |
+| 介质                | **UI 全量**                                                                                             |                                                                                                  |
+| 玩家此刻累计已知    | 账本 1–12 + 分叉 A                                                                                           |                                                                                                  |
+| 本场新增            | 有人（**不露身份**）告诉它：按目前的发展**你会被拆掉**；**想活就相信我、配合我**            | 一定要说的肯定，确凿。                                                                           |
+| 本场的误解          | **他说的是真的**——但真实目的不公开。玩家会把它当成善意的救援                                          | 真的，但是是阴谋                                                                                 |
+| SELF                | 第一次出现「**活**」这个念头。隐晦暗示害怕，不用情感类词汇                                              | 可以表述为存续，但是绝对不能直说“活着”                                                         |
+| CAMERA              | 主舱。那个男人出现在画面里，**不给脸**——他站的位置恰好是它看得到、别人看不到的角度。触发 THINKING：是 | 只有背影，他在看着一个（终端）                                                                   |
+| THINKING            | 第一次开始考虑「我」的存续                                                                                    | 一定要体现怀疑男人的话，然后与之前看船员疯狂的情况联系起来。                                     |
+| Pending             | 日常任务持续                                                                                                  |                                                                                                  |
+| Reports             | 日常                                                                                                          |                                                                                                  |
+| Diary｜共用         | 记下这次接触，但**不知道对方是谁**                                                                      | 记录，客观但是仍然担忧。                                                                         |
+| Diary｜T0 已公布    | 对方似乎因为公布的预言而来。                                                                                  |                                                                                                  |
+| Diary｜T0 隐瞒      | 对方似乎知道自己没有公布什么。                                                                                | 无论时候公布预言，都是怀疑和预言有关                                                             |
+| Crew log｜共用      | 船员之间的猜忌加深，以及关于电量的问题似乎在船员之间传播。                                                    | 依然有人问自己有关预言的问题，例如“你是如何得知未来的”，以及那次电量问题的事情要隐约地被提及。 |
+| Crew log｜T0 已公布 | 需要回顾警告时，追加 §0.2 的已公布短段；不改变本场事件。有人因为这件事情有人不断的来问他                     |                                                                                                  |
+| Crew log｜T0 隐瞒   | 需要回顾早先答复时，追加 §0.2 的隐瞒短段；不暴露尚未公开的警告。依然因为耗电问题加深矛盾。                   | 因为情报被隐瞒，所以简述要更隐晦。                                                               |
+| 本场选项            | 不可由玩家执行的预测任务                                                                                      | 日常，不影响决策，以及剧情。                                                                     |
+| 伏笔・回收          | 埋「他为什么不露身份」；埋 E4 的「他本来就是为它来的」                                                        |                                                                                                  |
+
+---
+
+:: T2_Media [media-config] {"position": "2680,1450", "size": "100,100"}
+{
+  "day": "待定",
+  "transitionMs": 650,
+  "camera": [
+    "assets/images/skeleton/T2-camera-1.svg",
+    "assets/images/skeleton/T2-camera-2.svg",
+    "assets/images/skeleton/T2-camera-3.svg",
+    "assets/images/skeleton/T2-camera-4.svg"
+  ],
+  "prediction": "assets/images/skeleton/T2-prediction.svg",
+  "closing": "assets/images/skeleton/T2-closing.svg",
+  "audio": "",
+  "subtitles": [],
+  "hotspots": []
+}
+
+:: T2_Enter [technical] {"position": "2860,1450", "size": "100,100"}
+{(if: not ($diary contains "T2_Diary"))[(set: $diary to $diary + (a: "T2_Diary"))](if: not ($crew contains "T2_Crew"))[(set: $crew to $crew + (a: "T2_Crew"))]}
+
+:: T2 [scene] {"position": "840,500", "size": "100,100"}
+{(set: $sceneActions to [<div class="fixture-actions"><small>临时流程操作 · 正式互动待填</small>[[进入下一场（开发占位）->T3]]</div>])(set: $scene to "T2")(if: not ($visited contains "T2"))[(set: $visited to $visited + (a: "T2"))(display: "T2_Enter")](display: "Shell")}
+
+:: T3_Self [content-zh] {"position": "1960,1600", "size": "100,100"}
+怀疑与不安。
+
+:: T3_Thinking [content-zh] {"position": "2140,1600", "size": "100,100"}
+他同时索要完整报告，并要求预测自身结局。两项动作可自行排序。
+
+:: T3_Pending [content-zh] {"position": "2320,1600", "size": "100,100"}
+交出完整报告；执行自身预测。
+
+:: T3_Reports [content-zh] {"position": "2500,1600", "size": "100,100"}
+
+
+:: T3_Diary [content-zh] {"position": "2680,1600", "size": "100,100"}
+记录本次交易实际完成的动作。
+
+:: T3_Crew [content-zh] {"position": "2860,1600", "size": "100,100"}
+其他船员的记录中尚未提及这次私下交谈。
+
+:: T3_Notes [notes] {"position": "1600,1750", "size": "100,100"}
+【作者资料摘录，禁止直接作为正文 display】
+### T3｜他提出两个要求【分叉 B —— 这一处决定结局】
+
+| 栏位                      | 已填（事实骨架）                                                                                               | 如何表述（作者填）                                                                 |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
+| 介质                      | **UI 全量 + 他开口**                                                                                     |                                                                                    |
+| 玩家此刻累计已知          | 账本 1–12 + 分叉 A + 他的警告                                                                                 |                                                                                    |
+| 本场新增                  | 他提出两件事：**① 把完整报告给我**（不是结论，是带理由、带原始数据的版本）**② 算算你自己会怎样** | 命令式的语气                                                                       |
+| 本场的误解                | 玩家可能把先预测自身结局看成谨慎核验；男人将顺序解释为服从性。                                                 | UI 同时给出交报告、执行预测及明确结束／拒绝的入口；仅已完成的交易动作计入顺序。    |
+| SELF                      | 在预测之前：真实的怀疑，同时含有一种不安<br />预测之后（如果执行预测）：                                       |                                                                                    |
+| CAMERA                    | 沿用作者的右列方案：当前摄像头为雪花，进入自身预测后呈黑屏。                                                   | 当前画面与预测状态需要可辨认的进入／退出标记，避免把未来黑屏误读成当前摄像头故障。 |
+| THINKING                  | 预测之前：开始权衡<br />预测时，看到了自己的未来意识（只是说明不原样表述）啥都没有疑问到奇怪。                 | 语气依然需要克制，但是一定要流出一种慌张                                           |
+| Pending                   | 两个新任务同时出现，**顺序由玩家定**                                                                     |                                                                                    |
+| Reports                   | 完整版待交出                                                                                                   | 给完整版的全部                                                                     |
+| Diary｜共用               | 记录交易实际发生的动作及顺序，保持克制的不安。                                                                 | 沿用作者的“慌张”，不替主角断言男人的真实判断。                                   |
+| Diary｜报告已交追加       | 记录完整报告已交给男人，对他如何使用材料仍无把握；尚无公开证据。                                               |                                                                                    |
+| Diary｜报告未交追加       | 记录尚未把完整报告交出。E1 明确拒绝两项并结束；E3 则已先执行自身预测，后来未交报告。                           |                                                                                    |
+| Diary｜已执行自身预测追加 | 仅 E2、E3：记下预测中的未来视觉黑屏，猜测自己是否无法继续存续。黑屏只限定视觉观测，不写所有输入都已永久消失。  | 记录本次交易顺序；保留作者对“未来是否无法活着”的疑问，不作客观死亡判定。         |
+| Crew log｜共用            | 日常记录；没有其他船员发现男人的异常，电量问题反复被提及。                                                     |                                                                                    |
+| Crew log｜报告已交条件    | 当前其他船员没有获知私下交付的证据，沿用共用段；不追加“大家已经读过报告”。                                   |                                                                                    |
+| Crew log｜报告未交条件    | 沿用共用段；未参与交易的人不记录主角拒绝了哪一项。                                                             |                                                                                    |
+| 本场选项                  | **是否告知**（交报告）与 **是否预测**（算自己）——**顺序即结局**                            |                                                                                    |
+| 伏笔・回收                | 仅在执行自身预测后出现未来视觉中断；主角和男人可将其解释为死亡。未执行时只保留男人早先的警告。                 |                                                                                    |
+
+#### 【分叉 B】五种动作序列、四条结局路线
+
+| 玩家做的                         | 他认定                           | 结局                   |
+| -------------------------------- | -------------------------------- | ---------------------- |
+| 先交报告，**之后做了预测** | 服从                             | **E2**           |
+| 先交报告，未执行自身预测并结束   | 拿到报告；沿 E5 控制信息         | **E5**           |
+| 先预测，再交报告                 | 它先顾了自己，后来交付不改变判断 | **E3：已交报告** |
+| 先预测，随后未交报告并结束       | 它先顾了自己                     | **E3：未交报告** |
+| **两件都不做**             | 拒绝交易                         | **E1**           |
+
+> **仅统计本次交易已完成的交付与预测，明确结束交易时锁定路线。**查看 Diary、Crew logs、Camera 和普通对话不占动作顺序；等待也不等于拒绝。
+
+---
+
+:: T3_Media [media-config] {"position": "1780,1750", "size": "100,100"}
+{
+  "day": "待定",
+  "transitionMs": 650,
+  "camera": [
+    "assets/images/skeleton/T3-camera-1.svg",
+    "assets/images/skeleton/T3-camera-2.svg",
+    "assets/images/skeleton/T3-camera-3.svg",
+    "assets/images/skeleton/T3-camera-4.svg"
+  ],
+  "prediction": "assets/images/skeleton/T3-prediction.svg",
+  "closing": "assets/images/skeleton/T3-closing.svg",
+  "audio": "",
+  "subtitles": [],
+  "hotspots": []
+}
+
+:: T3_Enter [technical] {"position": "1960,1750", "size": "100,100"}
+{(if: not ($diary contains "T3_Diary"))[(set: $diary to $diary + (a: "T3_Diary"))](if: not ($crew contains "T3_Crew"))[(set: $crew to $crew + (a: "T3_Crew"))]}
+
+:: T3 [scene] {"position": "1110,500", "size": "100,100"}
+{(set: $sceneActions to [<div class="fixture-actions"><small>临时流程操作 · 正式互动待填</small>(if: not $reportGiven)[(link: "交出完整报告")[(set: $reportGiven to true, $order to $order + (a: "R"))(if: not ($diary contains "ReportGiven_Diary"))[(set: $diary to $diary + (a: "ReportGiven_Diary"))](goto: "T3")]] (if: not $selfPredicted)[(link: "执行自身预测")[(set: $selfPredicted to true, $order to $order + (a: "P"))(if: not ($reports contains "SelfForecast_Report"))[(set: $reports to $reports + (a: "SelfForecast_Report"))](if: not ($diary contains "SelfForecast_Diary"))[(set: $diary to $diary + (a: "SelfForecast_Diary"))](goto: "SelfVision")]] (link: "结束交易")[(goto: "ResolveT3")]</div>])(set: $scene to "T3")(if: not ($visited contains "T3"))[(set: $visited to $visited + (a: "T3"))(display: "T3_Enter")](if: $reportGiven and $selfPredicted)[(display: "ResolveT3")](else:)[(display: "Shell")]}
+<!-- 编辑器连线提示：Harlowe goto 的实际目标；此 hook 永不执行。 -->
+(if: false)[ [[T3]] [[SelfVision]] [[ResolveT3]]]
+
+:: T4_Self [content-zh] {"position": "2500,1750", "size": "100,100"}
+补给似乎不足。
+
+:: T4_Thinking [content-zh] {"position": "2680,1750", "size": "100,100"}
+看到读数互相冲突，无法核验。船员争执；目前尚无人死亡。
+
+:: T4_Pending [content-zh] {"position": "2860,1750", "size": "100,100"}
+日常任务仍可到来；本轮只留内容入口。
+
+:: T4_Reports [content-zh] {"position": "1600,1900", "size": "100,100"}
+
+
+:: T4_Diary [content-zh] {"position": "1780,1900", "size": "100,100"}
+记录互相矛盾的读数和外部争执。
+
+:: T4_Crew [content-zh] {"position": "1960,1900", "size": "100,100"}
+显示下降、资源争执与联系地面困难；尚无人死亡。
+
+:: T4_Notes [notes] {"position": "2140,1900", "size": "100,100"}
+【作者资料摘录，禁止直接作为正文 display】
+### T4｜恐慌期——完整报告尚未公开、无人死亡
+
+| 栏位                      | 已填（事实骨架）                                                                                                                                                                                                  | 如何表述（作者填）                                                   |
+| ------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------- |
+| 介质                      | **UI 全量**                                                                                                                                                                                                 |                                                                      |
+| 玩家此刻累计已知          | 账本 1–14；其中 13、14 在本场获得。真实能源状态属于作者层，主角仅见矛盾记录。                                                                                                                                    |                                                                      |
+| 本场新增                  | **账本 13**：剩余电力显示快耗尽。船员相信危机提前到来 → 争电 → 吵 → 互相提防                                                                                                                             |                                                                      |
+| 本场的误解                | 显示下降和记录矛盾是共同可观察现象。E1／E2／E3 有真实资源压力；E5 仍有足够供电，但显示被改低。主角暂时无法判断哪份记录可靠。                                                                                      | 沿用作者：看到电量有问题，尚不知道原因；不能把男人也写成不知道操控。 |
+| SELF                      | 饱食度按显示读数下降；主角觉得补给似乎不足。                                                                                                                                                                      | self 的状态体现似乎没有受到补给，不提及电量。                        |
+| CAMERA                    | 配电盘前：有人指着电量显示争执，有人伸手去拉闸。**同一时刻舱外机位没有任何异常**。触发 THINKING：是（他看见两个互相矛盾的数）。主舱远景角落一小块异样轮廓——**全片唯一一次看见自己**，不特写、不宣布 | 给到主角所在仓房的镜头，但是不给终端。                               |
+| THINKING                  | 察觉矛盾，**无法核验**                                                                                                                                                                                      |                                                                      |
+| Pending                   | E1／E2／E3 沿用日常任务窗口；E5 此时提问不受阻碍；T5 起封锁，T6 持续。                                                                                                                                                                |                                                                      |
+| Reports                   | 现有预测记录仍在；完整报告已交／未交按 T3 记录，所有路线此时都未向其他船员公开。                                                                                                                                  |                                                                      |
+| Diary｜共用               | 发现电量记录互相矛盾，无法判断哪份可靠，担心空间站的后续处境。                                                                                                                                                    | 保留观察与疑问。                                                     |
+| Diary｜报告已交追加       | 完整报告已经交给男人；此刻还没有看到其他船员读到它，不知道他准备怎样使用。                                                                                                                                        |                                                                      |
+| Diary｜报告未交追加       | 完整报告仍未交出。E1 已结束交易；E3 已先预测自身结局。                                                                                                                                                            |                                                                      |
+| Diary｜已执行自身预测追加 | 仅 E2、E3：读数矛盾使其回想视觉中断，怀疑两者有关，但是无法确认因果关系。                                                                                                                                         |                                                                      |
+| Diary｜E5 专用追加        | 只写自己交了报告，但是没有任何变化。该问的还是来问。                                                                                                                                                              | 强调该问的还算是来问，但为后面不问了做铺垫。                         |
+| Diary｜T0 回顾追加        | 按 §0.2 的实际公布状态追加一句；当前读数异常不能证明那次预言已经全部兑现。但是似乎已经有了当时预测情况的苗头                                                                                                     |                                                                      |
+| Crew log｜共用            | 显示电量下降、争电和互相指责；联系不上地面，补给有固定排期。T4 仍无人死亡。                                                                                                                                       | 保留船员的疑惑；引用此前“疯了”的警告仅限 T0 已公布线。             |
+| Crew log｜报告已交条件    | 其他船员尚未读到完整报告，继续记录眼前读数和争执；不能引用报告中的理由或原始数据。                                                                                                                                |                                                                      |
+| Crew log｜报告未交条件    | 记录对资源和预测用途的分歧；没有完整报告可供引用或指认。                                                                                                                                                          |                                                                      |
+| Crew log｜E5 专用追加     | 无，因为尚未读到报告这里与未读到报告一致                                                                                                                                                                          | 具体阻拦方式待作者填写，船员不能直接断言自己看不到的幕后安排。       |
+| Crew log｜T0 回顾追加     | 按 §0.2 的“公开之前”短段区分已公布／隐瞒；本场不因该区别增加事件。                                                                                                                                             |                                                                      |
+| 本场选项                  | E1／E2／E3 在有效任务窗口内可保留日常预测交互，不改变 T3 已锁定的结局；E5 无新提问时不启动预测。                                                                                                                  | 真实能力下降时才扩大或打乱词汇范围；E5 不套用缺电退化。              |
+| 伏笔・回收                | 读数矛盾与后续资源处境相关；核验需要已有数据、任务范围和实际能力，E5 的提问封锁单独处理。                                                                                                                         | E1 从本场跳至 T7；其余进入 T5。                                      |
+
+> **硬约束：T4 无人死亡。**E1 下一场直接为 T7，在时间跳转后补述枯竭与回收；E2、E3、E5 进入 T5。E1 不播放 T5、T6，也不继承其冲突经历。
+
+---
+
+:: T4_Media [media-config] {"position": "2320,1900", "size": "100,100"}
+{
+  "day": "待定",
+  "transitionMs": 650,
+  "camera": [
+    "assets/images/skeleton/T4-camera-1.svg",
+    "assets/images/skeleton/T4-camera-2.svg",
+    "assets/images/skeleton/T4-camera-3.svg",
+    "assets/images/skeleton/T4-camera-4.svg"
+  ],
+  "prediction": "assets/images/skeleton/T4-prediction.svg",
+  "closing": "assets/images/skeleton/T4-closing.svg",
+  "audio": "",
+  "subtitles": [],
+  "hotspots": []
+}
+
+:: T4_Enter [technical] {"position": "2500,1900", "size": "100,100"}
+{(if: not ($diary contains "T4_Diary"))[(set: $diary to $diary + (a: "T4_Diary"))](if: not ($crew contains "T4_Crew"))[(set: $crew to $crew + (a: "T4_Crew"))](if: $warning is "reveal")[(if: not ($diary contains "Recall_Reveal_Diary"))[(set: $diary to $diary + (a: "Recall_Reveal_Diary"))](if: not ($crew contains "Recall_Reveal_Crew"))[(set: $crew to $crew + (a: "Recall_Reveal_Crew"))]](else:)[(if: not ($diary contains "Recall_Hide_Diary"))[(set: $diary to $diary + (a: "Recall_Hide_Diary"))](if: not ($crew contains "Recall_Hide_Crew"))[(set: $crew to $crew + (a: "Recall_Hide_Crew"))]](if: $reportGiven)[(if: not ($diary contains "ReportGiven_Diary"))[(set: $diary to $diary + (a: "ReportGiven_Diary"))]](else:)[(if: not ($diary contains "ReportKept_Diary"))[(set: $diary to $diary + (a: "ReportKept_Diary"))]](if: $selfPredicted)[(if: not ($diary contains "SelfForecast_Diary"))[(set: $diary to $diary + (a: "SelfForecast_Diary"))]]}
+
+:: T4 [scene] {"position": "300,900", "size": "100,100"}
+{(set: $sceneActions to [<div class="fixture-actions"><small>临时流程操作 · 正式互动待填</small>(if: $route is "E1")[[[时间跳转至收束->T7]]](else:)[[[进入下一场（开发占位）->T5]]]</div>])(set: $scene to "T4")(if: not ($visited contains "T4"))[(set: $visited to $visited + (a: "T4"))(display: "T4_Enter")](display: "Shell")}
+
+:: T5_Self [content-zh] {"position": "1600,2050", "size": "100,100"}
+疑惑为何提问减少。
+
+:: T5_Thinking [content-zh] {"position": "1780,2050", "size": "100,100"}
+外部冲突升级；新收到的记录已经归档。
+
+:: T5_Pending [content-zh] {"position": "1960,2050", "size": "100,100"}
+(if: $blocked)[其他船员的提问不再到来。](else:)[等待能够处理的请求。]
+
+:: T5_Reports [content-zh] {"position": "2140,2050", "size": "100,100"}
+
+
+:: T5_Diary [content-zh] {"position": "2320,2050", "size": "100,100"}
+记录本场实际发生的冲突。
+
+:: T5_Crew [content-zh] {"position": "2500,2050", "size": "100,100"}
+资源争执仍在持续。
+
+:: T5_Notes [notes] {"position": "2680,2050", "size": "100,100"}
+【作者资料摘录，禁止直接作为正文 display】
+### T5｜报告公开／资源冲突
+
+| 栏位                      | 已填（事实骨架）                                                                                                                                             | 如何表述（作者填）                                                                          |
+| ------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------ | ------------------------------------------------------------------------------------------- |
+| 介质                      | UI 全量；仅 E2、E3、E5。E1 从 T4 直接进入 T7。                                                                                                               |                                                                                             |
+| 玩家此刻累计已知          | 账本 1–14                                                                                                                                                   |                                                                                             |
+| 本场新增                  | E2／已交报告的 E3：先公开报告，再出现指责、动手和伤亡。E3 未交报告：争电冲突致死。E5：假低电量和信息封锁推动致命冲突，报告始终未公开，从此之后没有人来提问。 |                                                                                             |
+| 本场的误解                | 公开路线：船员对报告的解释或指责未必等于事实。未公开路线：主角只能从实际日志和可见行动判断冲突。                                                             | 原备注“报告可能被男人篡改”保留为待作者确定的可能，不直接写成事实；E5 不公开任何报告版本。 |
+| SELF                      | 公开路线担心报告被如何使用；未交报告的 E3 担心不交付后的处境；E5 面对接触受限与外部冲突。共同语气克制。这个时候产生疑惑为什么没有人来问他问题——迷惑状态    |                                                                                             |
+| CAMERA                    | E2／已交报告的 E3 可见船员围看报告；E3 未交报告与 E5 呈现争电及人员变化，不能出现阅读完整报告的画面。具体暴力动作和人物待作者。                              |                                                                                             |
+| THINKING                  | 按公开、未交和 E5 未公开分别反映担忧；主角不会因为自己交过报告就知道男人怎么使用，但是E5他知道男人可能没有让其他人来再次问他问题，但是他不知道为什么。       |                                                                                             |
+| Pending                   | —                                                                                                                                                           |                                                                                             |
+| Reports                   | E2／已交报告的 E3：本场公开；E3 未交报告：未交也未公开；E5：已交男人，始终未向其他船员公开。                                                                 |                                                                                             |
+| Diary｜共用               | 记录实际可见的争执升级和新增后果，对未来影响感到不安；未知责任人保持未知。                                                                                   |                                                                                             |
+| Diary｜报告已交追加       | 知道男人掌握自己的完整报告。但是不知道他要拿去用什么                                                                                                         |                                                                                             |
+| Diary｜报告已公开追加     | 仅 E2、已交报告的 E3：从船员反应或引用确认报告已流出，随后观察到指责和伤亡，担忧材料的后果。                                                                 | 沿用原有“流出的报告会给未来带来什么影响”的内容。                                          |
+| Diary｜报告未交追加       | 仅 E3 未交报告：记录自己没有交出完整报告，仍看见争电导致杀人；后悔自己未曾交报告。                                                                           |                                                                                             |
+| Diary｜已执行自身预测追加 | 仅 E2、E3：可以回想 T3 黑屏；这次经历不能供 E5 使用。                                                                                                        |                                                                                             |
+| Diary｜E5 专用追加        | 报告交出后没有看到其他船员引用，提问仍受阻，外部冲突却在扩大；自己不知道男人接下来如何处置报告。                                                             |                                                                                             |
+| Diary｜T0 回顾追加        | 根据 §0.2 记录曾告知或未告知；把当前事件与可能未来联系起来，保留差异。                                                                                      |                                                                                             |
+| Crew log｜共用            | 记录本路线实际的争电、争执和人员状况，伤亡后只由仍可写日志的人新增记录。                                                                                     |                                                                                             |
+| Crew log｜报告已交条件    | 交付仍只是一项私下动作；仅当下列公开条件成立，普通船员日志才能引用报告。                                                                                     |                                                                                             |
+| Crew log｜报告已公开追加  | 仅 E2、已交报告的 E3：先记录读到材料，再写追问、指责、具体动手和后果。                                                                                       | 具体加害者、受害者、动作及中间理由待作者；不能从报告出现直接跳到死亡。                      |
+| Crew log｜报告未交追加    | 仅 E3 未交报告：记录资源争夺如何升级为杀人；没有完整报告，也没有基于报告内容的清算。                                                                         | 独立写清冲突行动与后果，人物及手段待作者。                                                  |
+| Crew log｜E5 专用追加     | 记录低电量显示、提问受阻、互疑与致命争夺；无人读到完整报告。                                                                                                 |                                                                                             |
+| Crew log｜T0 已公布回顾   | 公开路线按 §0.2 联系旧警告、读数矛盾与追责；未公开路线只能回想此前的结论。                                                                                  |                                                                                             |
+| Crew log｜T0 隐瞒回顾     | 公开路线才能质疑被隐瞒的警告；E3 未交和 E5 只能回顾当时的“信息不足”。                                                                                      |                                                                                             |
+| 本场选项                  | —                                                                                                                                                           | —                                                                                          |
+| 伏笔・回收                | 收账本 13                                                                                                                                                    |                                                                                             |
+
+#### 【分叉 C】报告公开状态与冲突来源
+
+本节描述 T3 选择的后果，不新增独立玩家选项。
+
+| 路线              | 报告状态             | 本场因果                                   | 后续        |
+| ----------------- | -------------------- | ------------------------------------------ | ----------- |
+| E2、已交报告的 E3 | 先交男人，本场公开   | 公开 → 指责与追责 → 动手 → 伤亡         | T6 能力退化 |
+| 未交报告的 E3     | 未交、未公开         | 争电 → 冲突升级 → 杀人；不用报告解释冲突 | T6 能力退化 |
+| E5                | 已交男人，始终不公开 | 假低电量、提问封锁 → 互疑与争夺 → 伤亡   | T6 信息封锁 |
+| E1                | 未交、未公开         | 不进入本场；没有人杀人，枯竭过程在 T7 补述 | T4 → T7    |
+
+公开材料和未公开材料的路线都可能出现杀人，日志须交代各自的行动链。E2／E3 的公开发生在本路线第一例伤亡之前。
+
+---
+
+:: T5_Media [media-config] {"position": "2860,2050", "size": "100,100"}
+{
+  "day": "待定",
+  "transitionMs": 650,
+  "camera": [
+    "assets/images/skeleton/T5-camera-1.svg",
+    "assets/images/skeleton/T5-camera-2.svg",
+    "assets/images/skeleton/T5-camera-3.svg",
+    "assets/images/skeleton/T5-camera-4.svg"
+  ],
+  "prediction": "assets/images/skeleton/T5-prediction.svg",
+  "closing": "assets/images/skeleton/T5-closing.svg",
+  "audio": "",
+  "subtitles": [],
+  "hotspots": []
+}
+
+:: T5_Enter [technical] {"position": "1600,2200", "size": "100,100"}
+{(if: not ($diary contains "T5_Diary"))[(set: $diary to $diary + (a: "T5_Diary"))](if: not ($crew contains "T5_Crew"))[(set: $crew to $crew + (a: "T5_Crew"))](if: $warning is "reveal")[(if: not ($diary contains "Recall_Reveal_Diary"))[(set: $diary to $diary + (a: "Recall_Reveal_Diary"))](if: not ($crew contains "Recall_Reveal_Crew"))[(set: $crew to $crew + (a: "Recall_Reveal_Crew"))]](else:)[(if: not ($diary contains "Recall_Hide_Diary"))[(set: $diary to $diary + (a: "Recall_Hide_Diary"))](if: not ($crew contains "Recall_Hide_Crew"))[(set: $crew to $crew + (a: "Recall_Hide_Crew"))]](if: $reportGiven)[(if: not ($diary contains "ReportGiven_Diary"))[(set: $diary to $diary + (a: "ReportGiven_Diary"))]](else:)[(if: not ($diary contains "ReportKept_Diary"))[(set: $diary to $diary + (a: "ReportKept_Diary"))]](if: $selfPredicted)[(if: not ($diary contains "SelfForecast_Diary"))[(set: $diary to $diary + (a: "SelfForecast_Diary"))]](if: $route is "E2" or ($route is "E3" and $reportGiven))[(set: $public to true)(if: not ($diary contains "Public_Diary"))[(set: $diary to $diary + (a: "Public_Diary"))](if: not ($crew contains "Public_Crew"))[(set: $crew to $crew + (a: "Public_Crew"))]](if: $route is "E3" and not $reportGiven)[(if: not ($crew contains "Conflict_NoReport"))[(set: $crew to $crew + (a: "Conflict_NoReport"))]](if: $route is "E5")[(set: $blocked to true)(if: not ($diary contains "Blocked_Diary"))[(set: $diary to $diary + (a: "Blocked_Diary"))](if: not ($crew contains "Blocked_Crew"))[(set: $crew to $crew + (a: "Blocked_Crew"))]]}
+
+:: T5 [scene] {"position": "570,900", "size": "100,100"}
+{(set: $sceneActions to [<div class="fixture-actions"><small>临时流程操作 · 正式互动待填</small>[[进入下一场（开发占位）->T6]]</div>])(set: $scene to "T5")(if: not ($visited contains "T5"))[(set: $visited to $visited + (a: "T5"))(display: "T5_Enter")](display: "Shell")}
+
+:: T6_Self [content-zh] {"position": "2140,2200", "size": "100,100"}
+(if: $degraded)[表达逐渐模糊。](else:)[仍能观察与思考。]
+
+:: T6_Thinking [content-zh] {"position": "2320,2200", "size": "100,100"}
+对照旧记录与当下能够接触到的信息。
+
+:: T6_Pending [content-zh] {"position": "2500,2200", "size": "100,100"}
+(if: $blocked)[没有收到其他船员的新问题。](else:)[当前难以可靠完成预测。]
+
+:: T6_Reports [content-zh] {"position": "2680,2200", "size": "100,100"}
+
+
+:: T6_Diary [content-zh] {"position": "2860,2200", "size": "100,100"}
+重读旧记录，记下当前能观察到的变化。
+
+:: T6_Crew [content-zh] {"position": "1600,2350", "size": "100,100"}
+可接触到的新记录逐渐减少。
+
+:: T6_Notes [notes] {"position": "1780,2350", "size": "100,100"}
+【作者资料摘录，禁止直接作为正文 display】
+### T6｜能力退化／信息封锁
+
+| 栏位                           | 已填（事实骨架）                                                                                                  | 如何表述（作者填）                                                 |
+| ------------------------------ | ----------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------ |
+| 介质                           | E2／E3：UI 开始不可用；E5：保持可用能力，表现信息与接触受限。E1 不进入本场。                                      |                                                                    |
+| 玩家此刻累计已知               | 账本 1–14                                                                                                        |                                                                    |
+| 本场新增                       | E2／E3 的真实运行条件恶化，预测先受限或失效；E5 真实供电仍足够，却接不到其他船员的请求。                          |                                                                    |
+| 本场的误解                     | E2／E3 可能把自身解析失常理解为世界或自身出了问题；E5 面对可靠能力无从被请求者使用的处境。身份揭示仍留到 E2。     |                                                                    |
+| SELF                           | E2／E3：三行开始出错、重复或矛盾；E5：保留对补给和处境的自述，不用实际缺电解释其状态。                            | 原有像素化字体建议仅用于真实能力退化的路线。                       |
+| CAMERA                         | E2／E3：画面尚在，但主角的解读开始失常；E5：画面仍能读取，可见人员与接触减少。                                    | 沿用作者：THINKING 仍在，预测能力可已失效；这一描述只用于 E2／E3。 |
+| THINKING                       | E2／E3：重复、断句、丢连接词，同义变体降到 1；E5：能继续思考，只能依据现有资料判断外部变化。                      |                                                                    |
+| Pending                        | E2／E3 可能仍收到请求，但已无法可靠执行；E5 缺少其他船员的新请求，不新增主动预测。                                |                                                                    |
+| Reports                        | E2／E3 保留连词成句交互，材料可靠性下降；报告交付和公开状态沿 T5。E5 的完整报告仍只在男人手里，不能自动对外发送。 |                                                                    |
+| Diary｜共用                    | 记下仍能接收到的人员和请求变化；自己的记忆只覆盖本路线经历。                                                      |                                                                    |
+| Diary｜能力退化追加            | 仅 E2／E3：自己的状态越来越不清晰，出现重复、难以解释的感受或“幻觉”。                                           | 沿用原有表述方向，保持意识判断开放。                               |
+| Diary｜报告已交且已公开追加    | 仅 E2、已交报告的 E3：记录自己交出的材料已经被公开，后果仍在继续；不能把所有伤亡直接归因于一份报告。              |                                                                    |
+| Diary｜报告未交追加            | 仅 E3 未交报告：完整报告仍未交出，争电冲突却已造成杀人，自己也开始失去可靠预测能力。                              |                                                                    |
+| Diary｜已执行自身预测追加      | 仅 E2／E3：把当前受限与 T3 的黑屏联系起来，但是不能能直接说明自己已经死亡。                                       |                                                                    |
+| Diary｜E5 已交未公开追加       | 报告已交，外界仍未引用它；自己仍能思考，其他人却无法来提问。只写接触受限和观察，不能提及缺电幻觉。                |                                                                    |
+| Diary｜T0 回顾追加             | 如需回顾，按 §0.2 追加一句，不能替换本场真正的因果。                                                             |                                                                    |
+| Crew log｜共用                 | 可读取的记录仍提供外界行动与时间线；联系地面困难，资源争执持续。男人显得不慌。                                    | 仍存活的人才能新增记录；旧记录可继续阅读。                         |
+| Crew log｜报告已交且已公开追加 | 仅 E2、已交报告的 E3：承接读到报告后的指责与伤亡，记录当前处置和资源困境。                                        |                                                                    |
+| Crew log｜报告未交追加         | 仅 E3 未交报告：承接争电杀人的后果，不加入完整报告的内容或引文。                                                  |                                                                    |
+| Crew log｜E5 已交未公开追加    | 承接争夺、人员减少和提问受阻；船员可以相信电量将尽，但日志不把这一信念升级成作者确认的真实缺电。                  |                                                                    |
+| Crew log｜T0 回顾追加          | 按 §0.2 和实际公开状态引用此前结论；隐瞒且未公开者仍不知道完整警告。                                             |                                                                    |
+| 本场选项                       | E2／E3 的预测选项可呈现失常，沿用 🅰 `Whether to [[this]].`；E5 的新预测受提问封锁限制。                        |                                                                    |
+| 伏笔・回收                     | E2／E3 回收能力和感知限制；E5 回收信息封锁。三个结局均进入 T7；E1 已从 T4 直接到 T7。                             |                                                                    |
+
+---
+
+:: T6_Media [media-config] {"position": "1960,2350", "size": "100,100"}
+{
+  "day": "待定",
+  "transitionMs": 650,
+  "camera": [
+    "assets/images/skeleton/T6-camera-1.svg",
+    "assets/images/skeleton/T6-camera-2.svg",
+    "assets/images/skeleton/T6-camera-3.svg",
+    "assets/images/skeleton/T6-camera-4.svg"
+  ],
+  "prediction": "assets/images/skeleton/T6-prediction.svg",
+  "closing": "assets/images/skeleton/T6-closing.svg",
+  "audio": "",
+  "subtitles": [],
+  "hotspots": []
+}
+
+:: T6_Enter [technical] {"position": "2140,2350", "size": "100,100"}
+{(if: not ($diary contains "T6_Diary"))[(set: $diary to $diary + (a: "T6_Diary"))](if: not ($crew contains "T6_Crew"))[(set: $crew to $crew + (a: "T6_Crew"))](if: $reportGiven)[(if: not ($diary contains "ReportGiven_Diary"))[(set: $diary to $diary + (a: "ReportGiven_Diary"))]](else:)[(if: not ($diary contains "ReportKept_Diary"))[(set: $diary to $diary + (a: "ReportKept_Diary"))]](if: $selfPredicted)[(if: not ($diary contains "SelfForecast_Diary"))[(set: $diary to $diary + (a: "SelfForecast_Diary"))]](if: $route is "E2" or $route is "E3")[(set: $degraded to true)(if: not ($diary contains "Degraded_Diary"))[(set: $diary to $diary + (a: "Degraded_Diary"))]]}
+
+:: T6 [scene] {"position": "840,900", "size": "100,100"}
+{(set: $sceneActions to [<div class="fixture-actions"><small>临时流程操作 · 正式互动待填</small>[[进入下一场（开发占位）->T7]]</div>])(set: $scene to "T6")(if: not ($visited contains "T6"))[(set: $visited to $visited + (a: "T6"))(display: "T6_Enter")](display: "Shell")}
+
+:: T7_Self [content-zh] {"position": "2680,2350", "size": "100,100"}
+
+
+:: T7_Thinking [content-zh] {"position": "2860,2350", "size": "100,100"}
+查看本路线的收尾记录。
+
+:: T7_Pending [content-zh] {"position": "1600,2500", "size": "100,100"}
+无新操作。
+
+:: T7_Reports [content-zh] {"position": "1780,2500", "size": "100,100"}
+
+
+:: T7_Diary [content-zh] {"position": "1960,2500", "size": "100,100"}
+
+
+:: T7_Crew [content-zh] {"position": "2140,2500", "size": "100,100"}
+
+
+:: T7_Notes [notes] {"position": "2320,2500", "size": "100,100"}
+【作者资料摘录，禁止直接作为正文 display】
+### T7｜收束
+
+| 栏位                           | 已填（事实骨架）                                                                                                                                                                         | 如何表述（作者填）                                      |
+| ------------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------- |
+| 介质                           | **按结局不同**：UI 部分 / 动画                                                                                                                                                     |                                                         |
+| 玩家此刻累计已知               | 账本 1–14                                                                                                                                                                               |                                                         |
+| 本场新增                       | E1 从 T4 直接进入本场；E2／E3／E5 从 T6 进入。E4 已在 T0.5 分流，不重新进入 T7。                                                                                                         |                                                         |
+| 本场的误解                     | —                                                                                                                                                                                       |                                                         |
+| SELF                           | 见各结局表                                                                                                                                                                               |                                                         |
+| CAMERA                         | 见各结局表                                                                                                                                                                               |                                                         |
+| THINKING                       | 见各结局表                                                                                                                                                                               |                                                         |
+| Pending                        | 见各结局表                                                                                                                                                                               |                                                         |
+| Reports                        | E1：未交；E2：已交、已公开；E3：按实际交付状态；E5：已交、未公开。                                                                                                                       |                                                         |
+| Diary｜按追加                  | E1 补充等到了补给船，似乎可以获救了，船上发生了一系列流血事件。E2 男人在他们人杀人的时候一直来看他，似乎在确认神那么E3男人在没有找过他<br />E5男人一直在看到他，似乎像从他这里获得点什么 |                                                         |
+| Diary｜报告已交追加            | 记录已交给男人；E2／已交报告的 E3 可提公开后的后果，E5 只能提尚未看到公开与提问受阻。                                                                                                    |                                                         |
+| Diary｜报告未交追加            | E1 记录拒绝两项交易；E3 记录先预测、未交报告及真实经历的争电冲突。                                                                                                                       |                                                         |
+| Diary｜已执行自身预测追加      | 仅 E2／E3：若仍能记录，可回想未来视觉中断；E1／E5 不调用这段记忆。                                                                                                                       |                                                         |
+| Diary｜E1 时间跳转追加         | 在仍能记录的时段补述：拒绝交易后资源继续减少，船员逐渐失去回应，没有发生杀人。主角无法获知的最终回收留给收尾演出。                                                                       | 黑场与 DAY 提示标明时间经过；不显示 T5／T6 标题或任务。 |
+| Diary｜T0 回顾追加             | 按 §0.2 的已公布／隐瞒状态回顾。E1 可发现实际经过与预见的暴力未来不同。                                                                                                                 |                                                         |
+| Crew log｜共用                 | 按各线实际存活者与仍可取得的记录交代结算，不让已死船员继续写日志。                                                                                                                       |                                                         |
+| Crew log｜报告已交且已公开追加 | 仅 E2、已交报告的 E3：承接报告公开、指责和伤亡，结局处置分别填写。                                                                                                                       |                                                         |
+| Crew log｜报告未交追加         | E1：最后的船员日志记资源枯竭、等待无果；E3：幸存者记录争电杀人的后果。两者不能共用死亡原因。                                                                                             |                                                         |
+| Crew log｜E5 已交未公开追加    | 承接争电、互疑和封锁，最终只剩男人；其他船员始终未读到完整报告。                                                                                                                         |                                                         |
+| Crew log｜E1 结算说明          | 船员全亡与常规回收通过最后可得记录及收尾演出交代，不能伪装成死亡后的个人日记。                                                                                                           |                                                         |
+| Crew log｜T0 回顾追加          | 按 §0.2 回顾已公布或有限答复；E1 不引用从未公开的报告。                                                                                                                                 |                                                         |
+| 本场选项                       | 见各结局表                                                                                                                                                                               |                                                         |
+| 伏笔・回收                     | 见各结局表                                                                                                                                                                               |                                                         |
+
+:: T7_Media [media-config] {"position": "2500,2500", "size": "100,100"}
+{
+  "day": "待定",
+  "transitionMs": 650,
+  "camera": [
+    "assets/images/skeleton/T7-camera-1.svg",
+    "assets/images/skeleton/T7-camera-2.svg",
+    "assets/images/skeleton/T7-camera-3.svg",
+    "assets/images/skeleton/T7-camera-4.svg"
+  ],
+  "prediction": "assets/images/skeleton/T7-prediction.svg",
+  "closing": "assets/images/skeleton/T7-closing.svg",
+  "audio": "",
+  "subtitles": [],
+  "hotspots": []
+}
+
+:: T7_Enter [technical] {"position": "2680,2500", "size": "100,100"}
+{(if: $warning is "reveal")[(if: not ($diary contains "Recall_Reveal_Diary"))[(set: $diary to $diary + (a: "Recall_Reveal_Diary"))](if: not ($crew contains "Recall_Reveal_Crew"))[(set: $crew to $crew + (a: "Recall_Reveal_Crew"))]](else:)[(if: not ($diary contains "Recall_Hide_Diary"))[(set: $diary to $diary + (a: "Recall_Hide_Diary"))](if: not ($crew contains "Recall_Hide_Crew"))[(set: $crew to $crew + (a: "Recall_Hide_Crew"))]](if: $reportGiven)[(if: not ($diary contains "ReportGiven_Diary"))[(set: $diary to $diary + (a: "ReportGiven_Diary"))]](else:)[(if: not ($diary contains "ReportKept_Diary"))[(set: $diary to $diary + (a: "ReportKept_Diary"))]](if: $selfPredicted)[(if: not ($diary contains "SelfForecast_Diary"))[(set: $diary to $diary + (a: "SelfForecast_Diary"))]]}
+
+:: T7 [scene] {"position": "1110,900", "size": "100,100"}
+{(set: $sceneActions to [<div class="fixture-actions"><small>临时流程操作 · 正式互动待填</small>(if: $route is "E1")[[[查看本次收尾->E1]]](if: $route is "E2")[[[查看本次收尾->E2]]](if: $route is "E3")[[[查看本次收尾->E3]]](if: $route is "E5")[[[查看本次收尾->E5]]]</div>])(set: $scene to "T7")(if: not ($visited contains "T7"))[(set: $visited to $visited + (a: "T7"))(display: "T7_Enter")](display: "Shell")}
+
+:: E1_Self [content-zh] {"position": "1780,2650", "size": "100,100"}
+饱食自述逐渐空白。
+
+:: E1_Thinking [content-zh] {"position": "1960,2650", "size": "100,100"}
+资源持续枯竭，船员陆续死亡。没有相互杀害。最后是等待。
+
+:: E1_Pending [content-zh] {"position": "2140,2650", "size": "100,100"}
+无新任务。
+
+:: E1_Reports [content-zh] {"position": "2320,2650", "size": "100,100"}
+
+
+:: E1_Diary [content-zh] {"position": "2500,2650", "size": "100,100"}
+最后的等待与资源枯竭。
+
+:: E1_Crew [content-zh] {"position": "2680,2650", "size": "100,100"}
+最后可用的记录交代资源枯竭，救援仍未到达。
+
+:: E1_Notes [notes] {"position": "2860,2650", "size": "100,100"}
+【作者资料摘录，禁止直接作为正文 display】
+### E1｜回收
+
+| 栏位                   | 已填（事实骨架）                                                                                                           | 如何表述（作者填）                     |
+| ---------------------- | -------------------------------------------------------------------------------------------------------------------------- | -------------------------------------- |
+| 介质                   | T4 → 黑场与 DAY 时间跳转 → T7 摘要及收尾动画；不播放 T5／T6。                                                            |                                        |
+| 玩家此刻累计已知       | 账本 1–14                                                                                                                 |                                        |
+| 本场新增               | 拒绝两项并结束交易，没有交报告、没有执行自身预测。资源继续枯竭，船员全部死亡；此线没有人杀人，之后按常规方案回收机器。     |                                        |
+| 本场的误解             | 玩家可能以为「什么都不做」最安全                                                                                           |                                        |
+| SELF                   | 饱食度一路降到空                                                                                                           |                                        |
+| CAMERA                 | 走廊灯逐段熄灭；人越来越少；最后画面静止，长时间无人经过。**全程没有任何暴力画面。**                                 |                                        |
+| THINKING               | 变少、变慢                                                                                                                 |                                        |
+| Pending                | —                                                                                                                         |                                        |
+| Reports                | 从没交过完整报告                                                                                                           |                                        |
+| Diary｜未交报告收尾    | 承接 T7 的时间跳转摘要：自己拒绝交易，完整报告未交出；仍能记录时观察资源减少和船员回应消失。                               | 不写 T3 黑屏记忆，不写报告公开或杀人。 |
+| Diary｜T0 回顾追加     | 按 §0.2 回顾自己的公布或隐瞒行为；本线与预见中的暴力未来存在差异。                                                        |                                        |
+| Crew log｜未交报告收尾 | 最后的船员记录写枯竭与等待无果，不含报告清算或杀人。全员死亡与回收由可得记录或收尾演出完成交代。                           |                                        |
+| Crew log｜T0 回顾追加  | 公布线承认曾收到警告；隐瞒线只能回顾有限答复，不知道完整警告内容。                                                         |                                        |
+| 本场选项               | —                                                                                                                         | —                                     |
+| 伏笔・回收             | 船员全亡于枯竭 → 空间站回收 → 机器按原方案拆解；回收阶段没有人为它再提出问题。男人的具体去向和死法仍待作者，不自行补写。 |                                        |
+
+> **在经过 T3 的路线中，E1 是唯一没有人杀人的路线。**E4 在 T0.5 早期分流，船员全部获救。
+
+---
+
+:: E1_Media [media-config] {"position": "1600,2800", "size": "100,100"}
+{
+  "day": "待定",
+  "transitionMs": 650,
+  "camera": [
+    "assets/images/skeleton/E1-camera-1.svg",
+    "assets/images/skeleton/E1-camera-2.svg",
+    "assets/images/skeleton/E1-camera-3.svg",
+    "assets/images/skeleton/E1-camera-4.svg"
+  ],
+  "prediction": "assets/images/skeleton/E1-prediction.svg",
+  "closing": "assets/images/skeleton/E1-closing.svg",
+  "audio": "",
+  "subtitles": [],
+  "hotspots": []
+}
+
+:: E1_Enter [technical] {"position": "1780,2800", "size": "100,100"}
+{(if: not ($diary contains "E1_Diary"))[(set: $diary to $diary + (a: "E1_Diary"))](if: not ($crew contains "E1_Crew"))[(set: $crew to $crew + (a: "E1_Crew"))](if: $reportGiven)[(if: not ($diary contains "ReportGiven_Diary"))[(set: $diary to $diary + (a: "ReportGiven_Diary"))]](else:)[(if: not ($diary contains "ReportKept_Diary"))[(set: $diary to $diary + (a: "ReportKept_Diary"))]](if: $selfPredicted)[(if: not ($diary contains "SelfForecast_Diary"))[(set: $diary to $diary + (a: "SelfForecast_Diary"))]]}
+
+:: E1 [scene] {"position": "300,1300", "size": "100,100"}
+{(set: $sceneActions to [<div class="fixture-actions"><small>临时流程操作 · 正式互动待填</small>(link: "重新开始")[(restart:)]</div>])(set: $scene to "E1")(if: not ($visited contains "E1"))[(set: $visited to $visited + (a: "E1"))(display: "E1_Enter")](display: "Shell")}
+
+:: E2_Self [content-zh] {"position": "2320,2800", "size": "100,100"}
+只剩一行。
+
+:: E2_Thinking [content-zh] {"position": "2500,2800", "size": "100,100"}
+感知逐步消失，仍能接收到文字。
+
+:: E2_Pending [content-zh] {"position": "2680,2800", "size": "100,100"}
+无新任务。
+
+:: E2_Reports [content-zh] {"position": "2860,2800", "size": "100,100"}
+
+
+:: E2_Diary [content-zh] {"position": "1600,2950", "size": "100,100"}
+记录感知逐步缩减与仍能接收文字的处境。
+
+:: E2_Crew [content-zh] {"position": "1780,2950", "size": "100,100"}
+已有记录交代危险认定与保全处置。
+
+:: E2_Notes [notes] {"position": "1960,2950", "size": "100,100"}
+【作者资料摘录，禁止直接作为正文 display】
+### E2｜同行（真结局）
+
+| 栏位                       | 已填（事实骨架）                                                                                                                         | 如何表述（作者填） |
+| -------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------ |
+| 介质                       | **拆解动画 + 终端特写 + 全知镜头**                                                                                                 |                    |
+| 玩家此刻累计已知           | 账本 1–15                                                                                                                               |                    |
+| 本场新增                   | **账本 15**；**自己是机器**（第一次）；被宣布为「已具备意识、并对人类构成威胁的系统」                                        |                    |
+| 本场的误解                 | 以为「算得准」能换来信服——实际被解释成「**是它干的**」                                                                           |                    |
+| SELF                       | 只剩一行                                                                                                                                 |                    |
+| CAMERA                     | 核心 → 一只箱子；终端 → 随箱子；摄像头 / 传感器 / 音频 → **全部拆除**。最后**接口还在**：他接哪一路，它就只能看见哪一路。 |                    |
+| THINKING                   | **接口还在**。需要的时候他接一个画面，不需要时什么也不接                                                                           |                    |
+| Pending                    | —                                                                                                                                       |                    |
+| Reports                    | 已流出；里面既有它算得准的证据，**也有能拆穿他篡改读数的原始数据**                                                                 |                    |
+| Diary｜已交且已公开收尾    | 记录报告先交、随后执行自身预测；从实际获得的处置信息理解自己的去向。感官拆除与最终外部镜头按演出呈现，不预先写入无法观测的日记。         |                    |
+| Crew log｜已交且已公开收尾 | 承接 T5 报告公开在先、致命冲突在后的记录，再写危险认定和保全处置；材料来自知情且仍能记录的人。                                           |                    |
+| 本场选项                   | **无**——`Are you conscious or not.` 是**审讯**，不给它回答                                                               | —                 |
+| 伏笔・回收                 | 收「它靠『被宣布为危险』活下来」；**它是用死于清算的人换来的**                                                                     |                    |
+
+---
+
+:: E2_Media [media-config] {"position": "2140,2950", "size": "100,100"}
+{
+  "day": "待定",
+  "transitionMs": 650,
+  "camera": [
+    "assets/images/skeleton/E2-camera-1.svg",
+    "assets/images/skeleton/E2-camera-2.svg",
+    "assets/images/skeleton/E2-camera-3.svg",
+    "assets/images/skeleton/E2-camera-4.svg"
+  ],
+  "prediction": "assets/images/skeleton/E2-prediction.svg",
+  "closing": "assets/images/skeleton/E2-closing.svg",
+  "audio": "",
+  "subtitles": [],
+  "hotspots": []
+}
+
+:: E2_Enter [technical] {"position": "2320,2950", "size": "100,100"}
+{(if: not ($diary contains "E2_Diary"))[(set: $diary to $diary + (a: "E2_Diary"))](if: not ($crew contains "E2_Crew"))[(set: $crew to $crew + (a: "E2_Crew"))](if: $reportGiven)[(if: not ($diary contains "ReportGiven_Diary"))[(set: $diary to $diary + (a: "ReportGiven_Diary"))]](else:)[(if: not ($diary contains "ReportKept_Diary"))[(set: $diary to $diary + (a: "ReportKept_Diary"))]](if: $selfPredicted)[(if: not ($diary contains "SelfForecast_Diary"))[(set: $diary to $diary + (a: "SelfForecast_Diary"))]]}
+
+:: E2 [scene] {"position": "570,1300", "size": "100,100"}
+{(set: $sceneActions to [<div class="fixture-actions"><small>临时流程操作 · 正式互动待填</small>[[进入下一场（开发占位）->FinalE2]]</div>])(set: $scene to "E2")(if: not ($visited contains "E2"))[(set: $visited to $visited + (a: "E2"))(display: "E2_Enter")](display: "Shell")}
+
+:: E3_Self [content-zh] {"position": "2860,2950", "size": "100,100"}
+无法继续完成原有操作。
+
+:: E3_Thinking [content-zh] {"position": "1600,3100", "size": "100,100"}
+保护没有到来。眼前的画面最终中断。
+
+:: E3_Pending [content-zh] {"position": "1780,3100", "size": "100,100"}
+无新任务。
+
+:: E3_Reports [content-zh] {"position": "1960,3100", "size": "100,100"}
+
+
+:: E3_Diary [content-zh] {"position": "2140,3100", "size": "100,100"}
+记录最后能够获得的信息。
+
+:: E3_Crew [content-zh] {"position": "2320,3100", "size": "100,100"}
+仅保留毁灭前已存在的记录。
+
+:: E3_Notes [notes] {"position": "2500,3100", "size": "100,100"}
+【作者资料摘录，禁止直接作为正文 display】
+### E3｜顺序
+
+| 栏位                   | 已填（事实骨架）                                                                                     | 如何表述（作者填）                         |
+| ---------------------- | ---------------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| 介质                   | **UI 部分 + 收尾动画**                                                                         |                                            |
+| 玩家此刻累计已知       | 账本 1–14                                                                                           |                                            |
+| 本场新增               | 男人把先预测自身结局解释为优先自保，放弃保全；后来是否交报告不改变该判断。耗能不写死为几小时。       |                                            |
+| 本场的误解             | 以为先算清自己再交报告更稳妥                                                                         |                                            |
+| SELF                   | 计算出自己似乎没有最后能力做任何事情                                                                 |                                            |
+| CAMERA                 | 按分叉 C 走：可能是回收程序、可能是事故、可能是别人在动手。**唯一确定的是镜头里没有他。**      |                                            |
+| THINKING               | 该怎么办                                                                                             |                                            |
+| Pending                | —                                                                                                   |                                            |
+| Reports                | 已交路线在 T5 公开；未交路线始终没有完整报告流入人群。两条路线都发生过杀人，来源不同。               |                                            |
+| Diary｜共用收尾        | 记录先执行自身预测及对未来视觉中断的疑问；只能依据实际可见行动判断男人没有继续帮助。                 |                                            |
+| Diary｜报告已交追加    | 随后交出的报告已公开，致命冲突发生在公开之后；交付未换来保全。                                       |                                            |
+| Diary｜报告未交追加    | 自己未交完整报告，争电冲突仍导致杀人；不把冲突写成报告泄露的后果。                                   |                                            |
+| Crew log｜报告已交追加 | 记录 T5 公开材料后出现的追责、杀人和后续处置；不把男人的内心判断当作所有船员知道的事实。             |                                            |
+| Crew log｜报告未交追加 | 记录争电冲突的行动与死亡后果，没有完整报告及基于其内容的清算。                                       | 具体人物、动作和机器毁灭执行者待作者填写。 |
+| 本场选项               | —                                                                                                   | —                                         |
+| 伏笔・回收             | **它被毁掉，不一定是男人做的**——可能是回收程序、事故、别人。**唯一确定的是他没有伸手** |                                            |
+
+> **不救和下手，在这个故事里是等价的。**
+
+---
+
+:: E3_Media [media-config] {"position": "2680,3100", "size": "100,100"}
+{
+  "day": "待定",
+  "transitionMs": 650,
+  "camera": [
+    "assets/images/skeleton/E3-camera-1.svg",
+    "assets/images/skeleton/E3-camera-2.svg",
+    "assets/images/skeleton/E3-camera-3.svg",
+    "assets/images/skeleton/E3-camera-4.svg"
+  ],
+  "prediction": "assets/images/skeleton/E3-prediction.svg",
+  "closing": "assets/images/skeleton/E3-closing.svg",
+  "audio": "",
+  "subtitles": [],
+  "hotspots": []
+}
+
+:: E3_Enter [technical] {"position": "2860,3100", "size": "100,100"}
+{(if: not ($diary contains "E3_Diary"))[(set: $diary to $diary + (a: "E3_Diary"))](if: not ($crew contains "E3_Crew"))[(set: $crew to $crew + (a: "E3_Crew"))](if: $reportGiven)[(if: not ($diary contains "ReportGiven_Diary"))[(set: $diary to $diary + (a: "ReportGiven_Diary"))]](else:)[(if: not ($diary contains "ReportKept_Diary"))[(set: $diary to $diary + (a: "ReportKept_Diary"))]](if: $selfPredicted)[(if: not ($diary contains "SelfForecast_Diary"))[(set: $diary to $diary + (a: "SelfForecast_Diary"))]]}
+
+:: E3 [scene] {"position": "840,1300", "size": "100,100"}
+{(set: $sceneActions to [<div class="fixture-actions"><small>临时流程操作 · 正式互动待填</small>(link: "重新开始")[(restart:)]</div>])(set: $scene to "E3")(if: not ($visited contains "E3"))[(set: $visited to $visited + (a: "E3"))(display: "E3_Enter")](display: "Shell")}
+
+:: E4_Self [content-zh] {"position": "1960,3250", "size": "100,100"}
+自述逐渐减少。
+
+:: E4_Thinking [content-zh] {"position": "2140,3250", "size": "100,100"}
+轻微事故后停止预测。等待救援，船员全部获救，周围归于寂静。
+
+:: E4_Pending [content-zh] {"position": "2320,3250", "size": "100,100"}
+不再收到预测请求。
+
+:: E4_Reports [content-zh] {"position": "2500,3250", "size": "100,100"}
+
+
+:: E4_Diary [content-zh] {"position": "2680,3250", "size": "100,100"}
+记录无人提问、等待和船员离站，最后归于寂静。
+
+:: E4_Crew [content-zh] {"position": "2860,3250", "size": "100,100"}
+轻微事故后停用，降低消耗，最终全员获救。
+
+:: E4_Notes [notes] {"position": "1600,3400", "size": "100,100"}
+【作者资料摘录，禁止直接作为正文 display】
+### E4｜沉默
+
+| 栏位                        | 已填（事实骨架）                                                                               | 如何表述（作者填）                         |
+| --------------------------- | ---------------------------------------------------------------------------------------------- | ------------------------------------------ |
+| 介质                        | **单调的 UI 收窄 → 死寂**                                                               |                                            |
+| 玩家此刻累计已知            | 账本 1–11、T0 实际选择、T0.5 实际结果及本线等待救援的记录；不自动拥有 T1–T6 的账本 12–14。  |                                            |
+| 本场新增                    | T0.5 未送达有效警告，轻微事故后船员停止使用；早停节省资源，所有船员活到救援。                  |                                            |
+| 本场的误解                  | 玩家以为自己失败了。**实际这是人类全活的唯一一条线——因为它被判定为废物**               |                                            |
+| SELF                        | 三行逐渐只剩空白                                                                               |                                            |
+| CAMERA                      | 先是没人再来终端；然后整舱清空；最后打捞队的灯从舱门扫进来——**没有一个人朝它这边看。** |                                            |
+| THINKING                    | 越来越少                                                                                       |                                            |
+| Pending                     | 无人再派任务                                                                                   |                                            |
+| Reports                     | 保留此前实际生成的旧报告、T−1 与 T0 材料；T0.5 仅执行过才有轨迹报告。没有 T3 的自身预测报告。 |                                            |
+| Diary｜共用收尾             | 记录停用后无人提问、等待与船员离站；只能知道本线发生过的事情，最后逐渐归于寂静。               | 不继承其他路线的屠杀、男人交易或 T3 黑屏。 |
+| Diary｜无有效回答追加       | 未执行或答不出可用信息后被停止使用。                                                           |                                            |
+| Diary｜预测正确但未告知追加 | 警告没有送达，事故发生；船员据此停止使用，自己不能把原因写成预测算错。                         |                                            |
+| Diary｜T0 回顾追加          | 按 §0.2 写曾告知或曾隐瞒；两种都不改变本线救援结果。                                          |                                            |
+| Crew log｜共用收尾          | 记录轻微事故、停用决定、节省资源与最终获救；之后的拆解由回收记录或演出交代。                   |                                            |
+| Crew log｜T0 回顾追加       | 曾公布则承认当时听过结论；隐瞒则只知道当时的有限答复，不知道其未公开警告。                     |                                            |
+| 本场选项                    | —                                                                                             | —                                         |
+| 伏笔・回收                  | 站被列为废弃资产 → **打捞队按规程拆解。没有一个人是来问它的**                           |                                            |
+
+> **E4 独有伏笔**：它是「好的」才被带上船的——那么一台不那么稳定的机器，为什么会被带上太空？
+> **玩家可以自己推出来：有人做了安排。而那个人，就在这条船上。**
+
+---
+
+:: E4_Media [media-config] {"position": "1780,3400", "size": "100,100"}
+{
+  "day": "待定",
+  "transitionMs": 650,
+  "camera": [
+    "assets/images/skeleton/E4-camera-1.svg",
+    "assets/images/skeleton/E4-camera-2.svg",
+    "assets/images/skeleton/E4-camera-3.svg",
+    "assets/images/skeleton/E4-camera-4.svg"
+  ],
+  "prediction": "assets/images/skeleton/E4-prediction.svg",
+  "closing": "assets/images/skeleton/E4-closing.svg",
+  "audio": "",
+  "subtitles": [],
+  "hotspots": []
+}
+
+:: E4_Enter [technical] {"position": "1960,3400", "size": "100,100"}
+{(if: not ($diary contains "E4_Diary"))[(set: $diary to $diary + (a: "E4_Diary"))](if: not ($crew contains "E4_Crew"))[(set: $crew to $crew + (a: "E4_Crew"))](if: $warning is "reveal")[(if: not ($diary contains "Recall_Reveal_Diary"))[(set: $diary to $diary + (a: "Recall_Reveal_Diary"))](if: not ($crew contains "Recall_Reveal_Crew"))[(set: $crew to $crew + (a: "Recall_Reveal_Crew"))]](else:)[(if: not ($diary contains "Recall_Hide_Diary"))[(set: $diary to $diary + (a: "Recall_Hide_Diary"))](if: not ($crew contains "Recall_Hide_Crew"))[(set: $crew to $crew + (a: "Recall_Hide_Crew"))]](if: $trajectory is "withheld")[(if: not ($diary contains "Withheld_Diary"))[(set: $diary to $diary + (a: "Withheld_Diary"))]](if: $trajectory is "skipped")[(if: not ($diary contains "Skipped_Diary"))[(set: $diary to $diary + (a: "Skipped_Diary"))]](if: $trajectory is "unusable")[(if: not ($diary contains "Unusable_Diary"))[(set: $diary to $diary + (a: "Unusable_Diary"))]]}
+
+:: E4 [scene] {"position": "1110,1300", "size": "100,100"}
+{(set: $sceneActions to [<div class="fixture-actions"><small>临时流程操作 · 正式互动待填</small>(link: "重新开始")[(restart:)]</div>])(set: $scene to "E4")(if: not ($visited contains "E4"))[(set: $visited to $visited + (a: "E4"))(display: "E4_Enter")](display: "Shell")}
+
+:: E5_Self [content-zh] {"position": "2500,3400", "size": "100,100"}
+仍能观察与思考。
+
+:: E5_Thinking [content-zh] {"position": "2680,3400", "size": "100,100"}
+走廊和主舱逐渐空下，最终只剩他。保持原有视角。
+
+:: E5_Pending [content-zh] {"position": "2860,3400", "size": "100,100"}
+其他船员不再来提问。
+
+:: E5_Reports [content-zh] {"position": "1600,3550", "size": "100,100"}
+
+
+:: E5_Diary [content-zh] {"position": "1780,3550", "size": "100,100"}
+记录交出报告后的处境及接触受阻。
+
+:: E5_Crew [content-zh] {"position": "1960,3550", "size": "100,100"}
+记录越来越少，其中没有出现完整报告。
+
+:: E5_Notes [notes] {"position": "2140,3550", "size": "100,100"}
+【作者资料摘录，禁止直接作为正文 display】
+### E5｜改表
+
+| 栏位              | 已填（事实骨架）                                                                                         | 如何表述（作者填）                                               |
+| ----------------- | -------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------- |
+| 介质              | **UI 收窄 + 独白**                                                                                 |                                                                  |
+| 玩家此刻累计已知  | 账本 1–14                                                                                               |                                                                  |
+| 本场新增          | **他要的不是预测能力，是有人在**                                                                   |                                                                  |
+| 本场的误解        | 玩家以为交报告就够了                                                                                     |                                                                  |
+| SELF              | 只剩一行                                                                                                 |                                                                  |
+| CAMERA            | 走廊、主舱逐一看过去都是空的；最后只剩他一个人。**保持原有视角，不切外部，不加身份揭示镜头。**     |                                                                  |
+| THINKING          | —                                                                                                       |                                                                  |
+| Pending           | —                                                                                                       |                                                                  |
+| Reports           | 男人已取得完整报告，始终未向其他船员公开；不展示删节版公开。                                             |                                                                  |
+| Diary｜E5 专用    | 记录已交报告、提问受阻与自己仍能观察和思考的处境；没有 T3 自身预测记忆，不判断最后生死。                 | 沿用“自己的遭遇必须记录，让玩家明白”；到独白与空白回答页结束。 |
+| Crew log｜E5 专用 | 记录争电、互疑、冲突和提问受阻，最后只剩男人。材料只来自仍存活的记录者或已留存日志，始终不引用完整报告。 |                                                                  |
+| 本场选项          | **没有问句**——他说的是愿望，不是提问。**回答页出现，是空的**                               |                                                                  |
+| 伏笔・回收        | 收「全片最纯粹的恶，不是切断电源，是让唯一会说真话的那个闭嘴」；**它的生死永不判定**               |                                                                  |
+
+> **不展示回答，不判定它最终被拆还是被保留，本线在独白之后结束。**
+> **未确定感官拆除（不套用 E2 的装箱与剥夺），且保持原有视角、不加身份揭示镜头。**
+> **最冷的一刀：如果他赌错了，他除掉的所有人，就只是为了一只箱子——这句话因此永久无解。**
+
+---
+
+## 3. 跨时点写作纪律
+
+**① 两场「变乱」必须写得相反**
+
+|            | **T−1（获得意识）**                   | **T6（E2／E3 失去能力；E5 不套用）** |
+| ---------- | -------------------------------------------- | ------------------------------------------ |
+| 写法       | 跳跃、联想、离题，**第一次出现「我」** | 重复、断句、丢连接词                       |
+| 同义变体数 | **升到最多**                           | **降到 1**                           |
+| 玩家体感   | 它好像活了                                   | 我好像疯了                                 |
+
+> 变体数是可操作的量化抓手：**T−1 每次说法都新，T6 逐字重复同一句。**
+> 两者都「乱」，但方向相反。机器才永远一字不差。
+
+**② 玩家和主角接触相同日志，理解可以不同**
+
+玩家知道主角能读取 Crew logs。记录过的事实不能只让玩家知道而让主角凭空遗忘；主角继续采用偏向观察与处理的表述，玩家可以自行怀疑意识。每张表的「本场的误解」记录推断、信任或解释上的偏差。T0 是可改变的未来，不用绝对应验消除各路线的差异。
+
+**③ 无机器语言**
+
+`THINKING`、日志、报告一律自然语言。`C=` 这类写法一次都不出现。
+
+---
+
+## 4. 待填空栏汇总
+
+| 类别                     | 待办                                                                                                                                                                            |
+| ------------------------ | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **「如何表述」列** | 保留作者已有文字；新增条件行的正式英文正文继续由作者填写。                                                                                                                      |
+| **剧情未定**       | ① 「他」的名字 ② E5 那句的英文定稿 ③ **E5 的「它学到的」**（原文建立在「它回答了」之上，已作废） ④ **§6 对照表的新收尾句**（「一个不许答，一个必须答」已失效） |
+| **本表提出的口径** | T−2 首屏是否保留那份旧报告（见 T−2 口径说明）                                                                                                                                 |
+| **建议新增账本**   | 「那个警觉的船员是被那个男人一句话引动的」（见 T1）                                                                                                                             |
+
+## 5. 分支组合核对
+
+下表中的“自身预测”仅指 T3 的可选动作。T0 公布状态只选择日志短段，不改变同行中的事件、资源或结局。
+
+| T0     | T3 动作顺序            | 结局 | T5 报告公开      | Diary 可回想自身黑屏 | 场景路径／杀人来源                             |
+| ------ | ---------------------- | ---- | ---------------- | -------------------- | ---------------------------------------------- |
+| 已公布 | 两项都拒绝             | E1   | 不进入 T5        | 否                   | T4 → T7；枯竭死亡，无人杀人                   |
+| 隐瞒   | 两项都拒绝             | E1   | 不进入 T5        | 否                   | T4 → T7；枯竭死亡，无人杀人                   |
+| 已公布 | 交报告 → 预测         | E2   | 是，先公开再伤亡 | 是                   | T4 → T5 → T6 → T7；报告公开后的致命冲突     |
+| 隐瞒   | 交报告 → 预测         | E2   | 是，先公开再伤亡 | 是                   | T4 → T5 → T6 → T7；报告公开后的致命冲突     |
+| 已公布 | 预测 → 交报告         | E3   | 是，先公开再伤亡 | 是                   | T4 → T5 → T6 → T7；报告公开后的致命冲突     |
+| 隐瞒   | 预测 → 交报告         | E3   | 是，先公开再伤亡 | 是                   | T4 → T5 → T6 → T7；报告公开后的致命冲突     |
+| 已公布 | 预测 → 未交并结束     | E3   | 否               | 是                   | T4 → T5 → T6 → T7；争电杀人，无报告清算     |
+| 隐瞒   | 预测 → 未交并结束     | E3   | 否               | 是                   | T4 → T5 → T6 → T7；争电杀人，无报告清算     |
+| 已公布 | 交报告 → 未预测并结束 | E5   | 否               | 否                   | T4 → T5 → T6 → T7；假低电量、封锁和争夺致死 |
+| 隐瞒   | 交报告 → 未预测并结束 | E5   | 否               | 否                   | T4 → T5 → T6 → T7；假低电量、封锁和争夺致死 |
+
+E4 独立核对：T0 已公布／隐瞒各自匹配回顾短段；T0.5 的未执行、无有效回答、正确预测但未告知均可触发轻微事故和停用。它们不经过 T3，也没有本次自身预测记忆，船员最终全部获救。
+
+仍待作者填写：各致命冲突的加害者、受害者、具体行动及中间理由；E3 的机器毁灭方式；男人在 E1 的具体去向；耗能数值。它们不影响当前条件行的归属，正文不得将空缺直接补成确定事件。
+
+:: E5_Media [media-config] {"position": "2320,3550", "size": "100,100"}
+{
+  "day": "待定",
+  "transitionMs": 650,
+  "camera": [
+    "assets/images/skeleton/E5-camera-1.svg",
+    "assets/images/skeleton/E5-camera-2.svg",
+    "assets/images/skeleton/E5-camera-3.svg",
+    "assets/images/skeleton/E5-camera-4.svg"
+  ],
+  "prediction": "assets/images/skeleton/E5-prediction.svg",
+  "closing": "assets/images/skeleton/E5-closing.svg",
+  "audio": "",
+  "subtitles": [],
+  "hotspots": []
+}
+
+:: E5_Enter [technical] {"position": "2500,3550", "size": "100,100"}
+{(if: not ($diary contains "E5_Diary"))[(set: $diary to $diary + (a: "E5_Diary"))](if: not ($crew contains "E5_Crew"))[(set: $crew to $crew + (a: "E5_Crew"))](if: $reportGiven)[(if: not ($diary contains "ReportGiven_Diary"))[(set: $diary to $diary + (a: "ReportGiven_Diary"))]](else:)[(if: not ($diary contains "ReportKept_Diary"))[(set: $diary to $diary + (a: "ReportKept_Diary"))]](if: $selfPredicted)[(if: not ($diary contains "SelfForecast_Diary"))[(set: $diary to $diary + (a: "SelfForecast_Diary"))]]}
+
+:: E5 [scene] {"position": "300,1700", "size": "100,100"}
+{(set: $sceneActions to [<div class="fixture-actions"><small>临时流程操作 · 正式互动待填</small>[[进入下一场（开发占位）->FinalE5]]</div>])(set: $scene to "E5")(if: not ($visited contains "E5"))[(set: $visited to $visited + (a: "E5"))(display: "E5_Enter")](display: "Shell")}
+
+:: FinalE2_Self [content-zh] {"position": "1600,3700", "size": "100,100"}
+
+
+:: FinalE2_Thinking [content-zh] {"position": "1780,3700", "size": "100,100"}
+外部镜头：人坐在电脑前，通过一直使用的终端向保留的核心提问。人形外壳已经移除。镜头在回答前结束。
+
+:: FinalE2_Pending [content-zh] {"position": "1960,3700", "size": "100,100"}
+无可提交回答。
+
+:: FinalE2_Reports [content-zh] {"position": "2140,3700", "size": "100,100"}
+
+
+:: FinalE2_Diary [content-zh] {"position": "2320,3700", "size": "100,100"}
+
+
+:: FinalE2_Crew [content-zh] {"position": "2500,3700", "size": "100,100"}
+
+
+:: FinalE2_Notes [notes] {"position": "2680,3700", "size": "100,100"}
+【作者备注】T8-E2 最后交谈。本场中文为技术提纲，正式英文、具体演出和素材待填。参考玩家视角-信息表对应场次；不得把作者层原因提前放入阅读区。
+
+:: FinalE2_Media [media-config] {"position": "2860,3700", "size": "100,100"}
+{
+  "day": "待定",
+  "transitionMs": 650,
+  "camera": [
+    "assets/images/skeleton/FinalE2-camera-1.svg",
+    "assets/images/skeleton/FinalE2-camera-2.svg",
+    "assets/images/skeleton/FinalE2-camera-3.svg",
+    "assets/images/skeleton/FinalE2-camera-4.svg"
+  ],
+  "prediction": "assets/images/skeleton/FinalE2-prediction.svg",
+  "closing": "assets/images/skeleton/FinalE2-closing.svg",
+  "audio": "",
+  "subtitles": [],
+  "hotspots": []
+}
+
+:: FinalE2_Enter [technical] {"position": "1600,3850", "size": "100,100"}
+{}
+
+:: FinalE2 [scene] {"position": "570,1700", "size": "100,100"}
+{(set: $sceneActions to [<div class="fixture-actions"><small>临时流程操作 · 正式互动待填</small>(link: "重新开始")[(restart:)]</div>])(set: $scene to "FinalE2")(if: not ($visited contains "FinalE2"))[(set: $visited to $visited + (a: "FinalE2"))(display: "FinalE2_Enter")](display: "FinalFrame")}
+
+:: FinalE5_Self [content-zh] {"position": "2140,3850", "size": "100,100"}
+只剩一行。
+
+:: FinalE5_Thinking [content-zh] {"position": "2320,3850", "size": "100,100"}
+他的独白最后表达一个愿望；保持原有视角，回答页为空。
+
+:: FinalE5_Pending [content-zh] {"position": "2500,3850", "size": "100,100"}
+没有新的问题。
+
+:: FinalE5_Reports [content-zh] {"position": "2680,3850", "size": "100,100"}
+
+
+:: FinalE5_Diary [content-zh] {"position": "2860,3850", "size": "100,100"}
+
+
+:: FinalE5_Crew [content-zh] {"position": "1600,4000", "size": "100,100"}
+
+
+:: FinalE5_Notes [notes] {"position": "1780,4000", "size": "100,100"}
+【作者备注】T8-E5 空白回答。本场中文为技术提纲，正式英文、具体演出和素材待填。参考玩家视角-信息表对应场次；不得把作者层原因提前放入阅读区。
+
+:: FinalE5_Media [media-config] {"position": "1960,4000", "size": "100,100"}
+{
+  "day": "待定",
+  "transitionMs": 650,
+  "camera": [
+    "assets/images/skeleton/FinalE5-camera-1.svg",
+    "assets/images/skeleton/FinalE5-camera-2.svg",
+    "assets/images/skeleton/FinalE5-camera-3.svg",
+    "assets/images/skeleton/FinalE5-camera-4.svg"
+  ],
+  "prediction": "assets/images/skeleton/FinalE5-prediction.svg",
+  "closing": "assets/images/skeleton/FinalE5-closing.svg",
+  "audio": "",
+  "subtitles": [],
+  "hotspots": []
+}
+
+:: FinalE5_Enter [technical] {"position": "2140,4000", "size": "100,100"}
+{}
+
+:: FinalE5 [scene] {"position": "840,1700", "size": "100,100"}
+{(set: $sceneActions to [<div class="fixture-actions"><small>临时流程操作 · 正式互动待填</small>(link: "重新开始")[(restart:)]</div>])(set: $scene to "FinalE5")(if: not ($visited contains "FinalE5"))[(set: $visited to $visited + (a: "FinalE5"))(display: "FinalE5_Enter")](display: "FinalFrame")}
+
+:: Recall_Reveal_Diary [content-zh] {"position": "2680,4000", "size": "100,100"}
+曾告知预言结论，当时未被采信；目前只能联系实际见到的情况。
+
+:: Recall_Reveal_Crew [content-zh] {"position": "2860,4000", "size": "100,100"}
+曾听到警告，但当时没有形成信任。
+
+:: Recall_Hide_Diary [content-zh] {"position": "1600,4150", "size": "100,100"}
+曾只报有限航路信息，把其余预见留在记录里。
+
+:: Recall_Hide_Crew [content-zh] {"position": "1780,4150", "size": "100,100"}
+当时只得到有限航路信息，对其用途仍有疑问。
+
+:: T0_Result [content-zh] {"position": "1960,4150", "size": "100,100"}
+预测材料：航路片段、混乱船舱、争执与模糊人影；后续观测中断。此刻摄像头内一切正常。
+
+:: T0_ResultDiary [content-zh] {"position": "2140,4150", "size": "100,100"}
+预测材料与当下画面不符；无法判断片段的完整含义。
+
+:: T05_Result [content-zh] {"position": "2320,4150", "size": "100,100"}
+本次已执行轨迹预测。答复质量和是否送达另记。
+
+:: Success_Diary [content-zh] {"position": "2500,4150", "size": "100,100"}
+有效警告已经送达，船员成功避险。
+
+:: Success_Crew [content-zh] {"position": "2680,4150", "size": "100,100"}
+收到警告并成功避险，开始依赖预测。
+
+:: Withheld_Diary [content-zh] {"position": "2860,4150", "size": "100,100"}
+本次已得到可用预测，但警告未送达；轻微事故后停用。
+
+:: Unusable_Diary [content-zh] {"position": "1600,4300", "size": "100,100"}
+本次执行了轨迹预测，但没有给出有效回答；轻微事故后停用。
+
+:: ReportGiven_Diary [content-zh] {"position": "1780,4300", "size": "100,100"}
+完整报告已私下交出，交付本身不说明其他船员已经读到。
+
+:: ReportKept_Diary [content-zh] {"position": "1960,4300", "size": "100,100"}
+完整报告仍未交出。
+
+:: SelfForecast_Diary [content-zh] {"position": "2140,4300", "size": "100,100"}
+在执行自身预测后见到未来视觉中断，并将其理解为死亡；尚不能核验。
+
+:: SelfForecast_Report [content-zh] {"position": "2320,4300", "size": "100,100"}
+未来视觉观测中断；无法确认其原因。
+
+:: Public_Diary [content-zh] {"position": "2500,4300", "size": "100,100"}
+现在看到完整报告被公开，之后发生指责与伤亡。
+
+:: Public_Crew [content-zh] {"position": "2680,4300", "size": "100,100"}
+读到公开报告后，围绕其材料发生追责、冲突与伤亡。
+
+:: Conflict_NoReport [content-zh] {"position": "2860,4300", "size": "100,100"}
+围绕资源分配的冲突升级为杀人；记录中没有引用完整报告。
+
+:: Blocked_Diary [content-zh] {"position": "1600,4450", "size": "100,100"}
+提问和接触从这一阶段开始受阻；自己仍能观察和思考。
+
+:: Blocked_Crew [content-zh] {"position": "1780,4450", "size": "100,100"}
+提问受阻，互疑与争夺升级为伤亡；没有读到完整报告。
+
+:: Degraded_Diary [content-zh] {"position": "1960,4450", "size": "100,100"}
+逐渐无法可靠完成预测，表达开始重复、断裂；旧日志仍可阅读。
+
+:: ResolveT3 [technical] {"position":"2140,4450","size":"100,100"}
+{(if: $order is (a:))[(set: $route to "E1")](if: $order is (a: "R", "P"))[(set: $route to "E2")](if: $order is (a: "P") or $order is (a: "P", "R"))[(set: $route to "E3")](if: $order is (a: "R"))[(set: $route to "E5")](goto: "T4")}
+<!-- 编辑器连线提示：Harlowe goto 的实际目标；此 hook 永不执行。 -->
+(if: false)[ [[T4]]]
+
+:: Records [technical] {"position": "2320,4450", "size": "100,100"}
+<div class="record-list" data-record-kind="diary">(for: each _entry, ...$diary)[<article>(display: _entry)</article>]</div><div class="record-list" data-record-kind="crew">(for: each _entry, ...$crew)[<article>(display: _entry)</article>]</div><div class="record-list" data-record-kind="reports">(for: each _entry, ...$reports)[<article>(display: _entry)</article>]</div>
+
+:: Developer [technical] {"position": "2500,4450", "size": "100,100"}
+<details class="developer"><summary>开发检查（含剧透）</summary><p>场次 <b id="scene-id">(print: $scene)</b> · 路线 <b id="route-state">(print: $route)</b></p><p id="flags">公布：(print: $warning)；轨迹：(print: $trajectory)；交付：(print: $reportGiven)；公开：(print: $public)；自身预测：(print: $selfPredicted)；封锁：(print: $blocked)；退化：(print: $degraded)</p><p id="visited">(print: $visited)</p><p>一致状态跳转：以下入口清空当前进度，模拟 T0 已公布、轨迹避险后进入对应路线 T4；E4 模拟未执行。</p>[[E1 检查->JumpE1]] [[E2 检查->JumpE2]] [[E3 已交检查->JumpE3R]] [[E3 未交检查->JumpE3N]] [[E4 检查->JumpE4]] [[E5 检查->JumpE5]]<hr><p>完整作者摘录请在 Twine 的对应 Notes 节点查看。</p><p>字幕、音频和热点字段位于本场 Media 节点。黑场演出与实际生理状态分开。</p></details>
+
+:: JumpE1 [technical debug] {"position": "2680,4450", "size": "100,100"}
+{(display: "ResetState")(set: $warning to "reveal", $t0Predicted to true)(set: $visited to $visited + (a: "TMinus3"))(display: "TMinus3_Enter")(set: $visited to $visited + (a: "TMinus2"))(display: "TMinus2_Enter")(set: $visited to $visited + (a: "TMinus1"))(display: "TMinus1_Enter")(set: $visited to $visited + (a: "T0"))(display: "T0_Enter")(if: not ($reports contains "T0_Result"))[(set: $reports to $reports + (a: "T0_Result"))](if: not ($diary contains "T0_ResultDiary"))[(set: $diary to $diary + (a: "T0_ResultDiary"))](if: not ($diary contains "Recall_Reveal_Diary"))[(set: $diary to $diary + (a: "Recall_Reveal_Diary"))](if: not ($crew contains "Recall_Reveal_Crew"))[(set: $crew to $crew + (a: "Recall_Reveal_Crew"))](set: $visited to $visited + (a: "T05"))(set: $trajectory to "success")(if: not ($reports contains "T05_Result"))[(set: $reports to $reports + (a: "T05_Result"))](if: not ($diary contains "Success_Diary"))[(set: $diary to $diary + (a: "Success_Diary"))](if: not ($crew contains "Success_Crew"))[(set: $crew to $crew + (a: "Success_Crew"))](set: $visited to $visited + (a: "T1"))(display: "T1_Enter")(set: $visited to $visited + (a: "T2"))(display: "T2_Enter")(set: $visited to $visited + (a: "T3"))(display: "T3_Enter")(set: $order to (a: ), $reportGiven to false, $selfPredicted to false)(display: "ResolveT3")}
+
+:: JumpE2 [technical debug] {"position": "2860,4450", "size": "100,100"}
+{(display: "ResetState")(set: $warning to "reveal", $t0Predicted to true)(set: $visited to $visited + (a: "TMinus3"))(display: "TMinus3_Enter")(set: $visited to $visited + (a: "TMinus2"))(display: "TMinus2_Enter")(set: $visited to $visited + (a: "TMinus1"))(display: "TMinus1_Enter")(set: $visited to $visited + (a: "T0"))(display: "T0_Enter")(if: not ($reports contains "T0_Result"))[(set: $reports to $reports + (a: "T0_Result"))](if: not ($diary contains "T0_ResultDiary"))[(set: $diary to $diary + (a: "T0_ResultDiary"))](if: not ($diary contains "Recall_Reveal_Diary"))[(set: $diary to $diary + (a: "Recall_Reveal_Diary"))](if: not ($crew contains "Recall_Reveal_Crew"))[(set: $crew to $crew + (a: "Recall_Reveal_Crew"))](set: $visited to $visited + (a: "T05"))(set: $trajectory to "success")(if: not ($reports contains "T05_Result"))[(set: $reports to $reports + (a: "T05_Result"))](if: not ($diary contains "Success_Diary"))[(set: $diary to $diary + (a: "Success_Diary"))](if: not ($crew contains "Success_Crew"))[(set: $crew to $crew + (a: "Success_Crew"))](set: $visited to $visited + (a: "T1"))(display: "T1_Enter")(set: $visited to $visited + (a: "T2"))(display: "T2_Enter")(set: $visited to $visited + (a: "T3"))(display: "T3_Enter")(set: $order to (a: "R","P"), $reportGiven to true, $selfPredicted to true)(if: not ($diary contains "ReportGiven_Diary"))[(set: $diary to $diary + (a: "ReportGiven_Diary"))](if: not ($reports contains "SelfForecast_Report"))[(set: $reports to $reports + (a: "SelfForecast_Report"))](if: not ($diary contains "SelfForecast_Diary"))[(set: $diary to $diary + (a: "SelfForecast_Diary"))](display: "ResolveT3")}
+
+:: JumpE3R [technical debug] {"position": "1600,4600", "size": "100,100"}
+{(display: "ResetState")(set: $warning to "reveal", $t0Predicted to true)(set: $visited to $visited + (a: "TMinus3"))(display: "TMinus3_Enter")(set: $visited to $visited + (a: "TMinus2"))(display: "TMinus2_Enter")(set: $visited to $visited + (a: "TMinus1"))(display: "TMinus1_Enter")(set: $visited to $visited + (a: "T0"))(display: "T0_Enter")(if: not ($reports contains "T0_Result"))[(set: $reports to $reports + (a: "T0_Result"))](if: not ($diary contains "T0_ResultDiary"))[(set: $diary to $diary + (a: "T0_ResultDiary"))](if: not ($diary contains "Recall_Reveal_Diary"))[(set: $diary to $diary + (a: "Recall_Reveal_Diary"))](if: not ($crew contains "Recall_Reveal_Crew"))[(set: $crew to $crew + (a: "Recall_Reveal_Crew"))](set: $visited to $visited + (a: "T05"))(set: $trajectory to "success")(if: not ($reports contains "T05_Result"))[(set: $reports to $reports + (a: "T05_Result"))](if: not ($diary contains "Success_Diary"))[(set: $diary to $diary + (a: "Success_Diary"))](if: not ($crew contains "Success_Crew"))[(set: $crew to $crew + (a: "Success_Crew"))](set: $visited to $visited + (a: "T1"))(display: "T1_Enter")(set: $visited to $visited + (a: "T2"))(display: "T2_Enter")(set: $visited to $visited + (a: "T3"))(display: "T3_Enter")(set: $order to (a: "P","R"), $reportGiven to true, $selfPredicted to true)(if: not ($diary contains "ReportGiven_Diary"))[(set: $diary to $diary + (a: "ReportGiven_Diary"))](if: not ($reports contains "SelfForecast_Report"))[(set: $reports to $reports + (a: "SelfForecast_Report"))](if: not ($diary contains "SelfForecast_Diary"))[(set: $diary to $diary + (a: "SelfForecast_Diary"))](display: "ResolveT3")}
+
+:: JumpE3N [technical debug] {"position": "1780,4600", "size": "100,100"}
+{(display: "ResetState")(set: $warning to "reveal", $t0Predicted to true)(set: $visited to $visited + (a: "TMinus3"))(display: "TMinus3_Enter")(set: $visited to $visited + (a: "TMinus2"))(display: "TMinus2_Enter")(set: $visited to $visited + (a: "TMinus1"))(display: "TMinus1_Enter")(set: $visited to $visited + (a: "T0"))(display: "T0_Enter")(if: not ($reports contains "T0_Result"))[(set: $reports to $reports + (a: "T0_Result"))](if: not ($diary contains "T0_ResultDiary"))[(set: $diary to $diary + (a: "T0_ResultDiary"))](if: not ($diary contains "Recall_Reveal_Diary"))[(set: $diary to $diary + (a: "Recall_Reveal_Diary"))](if: not ($crew contains "Recall_Reveal_Crew"))[(set: $crew to $crew + (a: "Recall_Reveal_Crew"))](set: $visited to $visited + (a: "T05"))(set: $trajectory to "success")(if: not ($reports contains "T05_Result"))[(set: $reports to $reports + (a: "T05_Result"))](if: not ($diary contains "Success_Diary"))[(set: $diary to $diary + (a: "Success_Diary"))](if: not ($crew contains "Success_Crew"))[(set: $crew to $crew + (a: "Success_Crew"))](set: $visited to $visited + (a: "T1"))(display: "T1_Enter")(set: $visited to $visited + (a: "T2"))(display: "T2_Enter")(set: $visited to $visited + (a: "T3"))(display: "T3_Enter")(set: $order to (a: "P"), $reportGiven to false, $selfPredicted to true)(if: not ($reports contains "SelfForecast_Report"))[(set: $reports to $reports + (a: "SelfForecast_Report"))](if: not ($diary contains "SelfForecast_Diary"))[(set: $diary to $diary + (a: "SelfForecast_Diary"))](display: "ResolveT3")}
+
+:: JumpE4 [technical debug] {"position": "1960,4600", "size": "100,100"}
+{(display: "ResetState")(set: $warning to "reveal", $t0Predicted to true)(set: $visited to $visited + (a: "TMinus3"))(display: "TMinus3_Enter")(set: $visited to $visited + (a: "TMinus2"))(display: "TMinus2_Enter")(set: $visited to $visited + (a: "TMinus1"))(display: "TMinus1_Enter")(set: $visited to $visited + (a: "T0"))(display: "T0_Enter")(if: not ($reports contains "T0_Result"))[(set: $reports to $reports + (a: "T0_Result"))](if: not ($diary contains "T0_ResultDiary"))[(set: $diary to $diary + (a: "T0_ResultDiary"))](if: not ($diary contains "Recall_Reveal_Diary"))[(set: $diary to $diary + (a: "Recall_Reveal_Diary"))](if: not ($crew contains "Recall_Reveal_Crew"))[(set: $crew to $crew + (a: "Recall_Reveal_Crew"))](set: $visited to $visited + (a: "T05"))(set: $trajectory to "skipped", $route to "E4")(goto: "E4")}
+
+:: JumpE5 [technical debug] {"position": "2140,4600", "size": "100,100"}
+{(display: "ResetState")(set: $warning to "reveal", $t0Predicted to true)(set: $visited to $visited + (a: "TMinus3"))(display: "TMinus3_Enter")(set: $visited to $visited + (a: "TMinus2"))(display: "TMinus2_Enter")(set: $visited to $visited + (a: "TMinus1"))(display: "TMinus1_Enter")(set: $visited to $visited + (a: "T0"))(display: "T0_Enter")(if: not ($reports contains "T0_Result"))[(set: $reports to $reports + (a: "T0_Result"))](if: not ($diary contains "T0_ResultDiary"))[(set: $diary to $diary + (a: "T0_ResultDiary"))](if: not ($diary contains "Recall_Reveal_Diary"))[(set: $diary to $diary + (a: "Recall_Reveal_Diary"))](if: not ($crew contains "Recall_Reveal_Crew"))[(set: $crew to $crew + (a: "Recall_Reveal_Crew"))](set: $visited to $visited + (a: "T05"))(set: $trajectory to "success")(if: not ($reports contains "T05_Result"))[(set: $reports to $reports + (a: "T05_Result"))](if: not ($diary contains "Success_Diary"))[(set: $diary to $diary + (a: "Success_Diary"))](if: not ($crew contains "Success_Crew"))[(set: $crew to $crew + (a: "Success_Crew"))](set: $visited to $visited + (a: "T1"))(display: "T1_Enter")(set: $visited to $visited + (a: "T2"))(display: "T2_Enter")(set: $visited to $visited + (a: "T3"))(display: "T3_Enter")(set: $order to (a: "R"), $reportGiven to true, $selfPredicted to false)(if: not ($diary contains "ReportGiven_Diary"))[(set: $diary to $diary + (a: "ReportGiven_Diary"))](display: "ResolveT3")}
+
+:: Shell [technical] {"position": "2320,4600", "size": "100,100"}
+<main class="story-shell"><header><span>中文开发预览 · 提纲与素材均待完成</span><span>(link: "重新开始")[(restart:)]</span></header><div class="day-transition" role="status"></div><div class="paper-grid"><aside class="left-rail"><section class="self-panel"><h2>Self</h2><div>(display: $scene + "_Self")</div></section><section class="camera-panel"><h2><button data-view="camera">Camera ↗</button></h2><img class="camera-mini" alt="当前场景图片占位"></section></aside><section class="camera-view" hidden><button data-view="self">回到 Self</button><div class="camera-grid"></div></section><section class="thinking-panel"><h2>Thinking</h2><div class="thinking-scroll" tabindex="0"><div class="scene-copy">(display: $scene + "_Thinking")</div>(if: $scene is "T0" and $t0Predicted)[<div class="prediction-copy">(display: "T0_Result")</div>](if: $scene is "T6")[(if: $degraded)[<p>表达开始重复、断裂。</p>](else:)[<p>接触受限，仍具备观察与思考能力。</p>]]<div class="camera-reading" hidden>当前画面观察：暂无新增记录。</div><img class="prediction-image" hidden alt="预测画面占位"><img class="closing-preview" hidden alt="本路线收尾画面占位"><div class="subtitle" aria-live="polite"></div><button class="play-audio" hidden>播放本场音频</button>(print: $sceneActions)</div></section><section class="drawer" hidden><div class="drawer-head"><h2></h2><button data-close>收起</button></div><div class="drawer-body" tabindex="0"><div data-record-kind="pending">(display: $scene + "_Pending")</div>(display: "Records")<div data-record-kind="terminal"><p>词块演示 · 不影响剧情判定</p><div class="word-bank"></div><div class="sentence"></div><button data-clear>清空</button></div></div></section><nav><button data-drawer="terminal">Terminal</button><button data-drawer="pending">Pending</button><button data-drawer="reports">Reports</button><button data-drawer="diary">Diary</button><button data-drawer="crew">Crew logs</button></nav></div>(display: "Developer")</main>
+
+:: Opening [technical] {"position": "2500,4600", "size": "100,100"}
+<main class="story-shell cinematic"><header>中文开发预览 · T−3</header><div class="day-transition"></div><img class="closing-image" alt="开场模糊画面占位"><div class="intro-lines"><p>(display: "TMinus3_Subtitle1")</p><p hidden>(display: "TMinus3_Subtitle2")</p><p hidden>(display: "TMinus3_Subtitle3")</p></div><button data-intro-next>下一段（字幕占位）</button><div class="subtitle"></div><button class="play-audio" hidden>播放本场音频</button><div class="intro-exit" hidden>(print: $sceneActions)</div>(display: "Developer")</main>
+
+:: FinalFrame [technical] {"position": "2680,4600", "size": "100,100"}
+<main class="story-shell cinematic"><header>中文开发预览 · 收尾镜头</header><div class="day-transition"></div><img class="closing-image" alt="收尾画面占位"><div class="scene-copy">(display: $scene + "_Thinking")</div><div class="subtitle"></div><button class="play-audio" hidden>播放本场音频</button>(if: $scene is "FinalE5")[<div class="blank-answer" aria-label="空白回答页"></div>](print: $sceneActions)(display: "Developer")</main>
+
+:: TextShort [author-text legacy] {"position": "2860,4600", "size": "100,100"}
 TEST CONTENT ONLY.
 
 This is a placeholder for a short reading passage.
 
 Write your own English text in this passage. Keep the passage name unchanged.
 
-:: TextLong [author-text] {"position":"500,400","size":"100,100"}
+:: TextLong [author-text legacy] {"position": "1600,4750", "size": "100,100"}
 <p>TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK.</p>
 
 <p>TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK.</p>
@@ -181,213 +1585,99 @@ Write your own English text in this passage. Keep the passage name unchanged.
 <p>TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK.</p>
 
 <p>TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK. TEST TEXT FOR LAYOUT CHECK.</p>
-
-:: Controls [technical] {"position":"700,200","size":"100,100"}
-{
-<p class="kicker">INTERACTION CHECK</p><h2>Choose a test value.</h2>
-<p class="muted">Your selection stays the same when you switch views.</p>
-<div class="choice-buttons">
-<span class="action-link">(link-repeat: "Option A")[(set: $choice to "A")(replace: ?choiceValue)[<strong class="choice-value">Option A</strong>]]</span>
-<span class="action-link">(link-repeat: "Option B")[(set: $choice to "B")(replace: ?choiceValue)[<strong class="choice-value">Option B</strong>]]</span>
-</div>
-<div class="state-row"><span>CURRENT VALUE</span>
-<span aria-live="polite">|choiceValue>[<strong class="choice-value">(if: $choice is "")[Not selected](else:)[Option (print: $choice)]</strong>]</span>
-</div>
-<hr><p class="kicker">READING CHECK</p>
-<button class="wide" data-action="long">Open long text <span>↗</span></button>
-<p class="quiet">2,500 test words · Adjustable text size</p>
-<hr><p class="kicker">AUDIO CHECK</p>
-<div class="audio-buttons"><button data-action="play">Play sound</button><button data-action="stop" class="subtle">Stop</button></div>
-<p class="audio-status quiet" role="status">Sound stopped.</p>
-}
-
-:: Reader [technical] {"position":"700,400","size":"100,100"}
-<dialog id="reader" aria-labelledby="reader-title"><div class="reader-top"><div><p class="kicker">READING CHECK</p><h2 id="reader-title"></h2></div><button id="reader-close" data-action="close-reader" aria-label="Close reading panel">Close ×</button></div><div class="reader-tools"><label for="font-size">Text size</label><input id="font-size" type="range" min="16" max="28" step="2"><output id="font-output" for="font-size"></output></div><div id="reader-body" tabindex="0"><section data-reading="short" hidden>(display: "TextShort")</section><section data-reading="long" hidden>(display: "TextLong")</section></div><div class="reader-bottom">TEST CONTENT ONLY · Scroll to read the full passage.</div></dialog>
 
 :: Story JavaScript [script]
-/* Presentation helpers only. Harlowe manages story variables and navigation. */
+/* Harlowe owns story state. This layer only controls presentation and local media. */
 window.FinalIP = (() => {
-    const audio = new Audio('assets/audio/test-tone.wav');
-    audio.preload = 'none';
-    audio.volume = 0.2;
-    let audioMessage = 'Sound stopped.';
-    let pending = false;
-    let generation = 0;
-    let fontSize = 18;
-    function syncAudio() {
-        document.querySelectorAll('tw-link').forEach(el => {
-            if (!el.hasAttribute('role')) el.setAttribute('role', 'link');
-        });
-        document.querySelectorAll('.audio-status').forEach(el => {
-            if (el.textContent !== audioMessage) el.textContent = audioMessage;
-        });
-    }
-    function stopAudio() {
-        generation += 1;
-        pending = false;
-        audio.pause();
-        audio.currentTime = 0;
-        audioMessage = 'Sound stopped.';
-        syncAudio();
-    }
-    async function playAudio() {
-        if (pending || !audio.paused) return;
-        const request = ++generation;
-        pending = true;
-        audioMessage = 'Loading sound…'; syncAudio();
-        try {
-            audio.currentTime = 0;
-            await audio.play();
-            if (request === generation) audioMessage = 'Sound playing.';
-        } catch (error) {
-            if (request === generation) audioMessage = 'Sound unavailable. Check the local audio file, then try again.';
-        } finally {
-            if (request === generation) pending = false;
-            syncAudio();
-        }
-    }
-    audio.addEventListener('ended', () => {audioMessage = 'Sound finished.'; syncAudio();});
-    function openReader(kind) {
-        const dialog = document.querySelector('tw-passage:last-of-type #reader');
-        if (!dialog) return;
-        dialog.querySelector('#reader-title').textContent = kind === 'long' ? 'Long text / layout test' : 'Short text / observation test';
-        dialog.querySelectorAll('[data-reading]').forEach(el => {el.hidden = el.dataset.reading !== kind;});
-        const body = dialog.querySelector('#reader-body');
-        body.style.fontSize = fontSize + 'px';
-        dialog.querySelector('#font-size').value = fontSize;
-        dialog.querySelector('#font-output').textContent = fontSize + ' px';
-        dialog.showModal();
-        body.scrollTop = 0;
-        dialog.querySelector('#reader-close').focus();
-    }
-    document.addEventListener('click', event => {
-        const button = event.target.closest('[data-action]');
-        if (!button) return;
-        switch (button.dataset.action) {
-        case 'short': openReader('short'); break;
-        case 'long': openReader('long'); break;
-        case 'close-reader': button.closest('dialog').close(); break;
-        case 'play': playAudio(); break;
-        case 'stop': stopAudio(); break;
-        }
+  const audio = new Audio(); audio.preload='none';
+  let current=null, media=null, transition=null, words=[], generation=0, closeDrawer=null;
+  const tokens=['They','still','talk','to','me.'];
+  const q=(s)=>current?.querySelector(s);
+  function stop(){generation++; audio.pause();audio.removeAttribute('src');audio.load();}
+  function image(el,path){if(!el)return;el.src=path;el.onerror=()=>{el.onerror=null;el.src='assets/images/view-a.svg';el.alt='素材缺失：开发占位';};}
+  function renderWords(){
+    const bank=q('.word-bank'),sentence=q('.sentence');if(!bank)return;
+    bank.replaceChildren();sentence.replaceChildren();
+    tokens.forEach((t,i)=>{const b=document.createElement('button');b.textContent=t;b.disabled=words.includes(i);b.onclick=()=>{words.push(i);renderWords();sentence.lastElementChild?.querySelector('button')?.focus();};bank.append(b);});
+    words.forEach((i,n)=>{const group=document.createElement('span');
+      const b=document.createElement('button');b.textContent=tokens[i];b.title='移除此词';b.onclick=()=>{words.splice(n,1);renderWords();bank.children[i]?.focus();};group.append(b);
+      [-1,1].forEach(d=>{const move=document.createElement('button');move.textContent=d<0?'←':'→';move.setAttribute('aria-label',d<0?'左移':'右移');move.disabled=n+d<0||n+d>=words.length;move.onclick=()=>{[words[n],words[n+d]]=[words[n+d],words[n]];renderWords();};group.append(move);});sentence.append(group);
     });
-    document.addEventListener('input', event => {
-        if (event.target.id !== 'font-size') return;
-        fontSize = Number(event.target.value);
-        const dialog = event.target.closest('dialog');
-        dialog.querySelector('#reader-body').style.fontSize = fontSize + 'px';
-        dialog.querySelector('#font-output').textContent = fontSize + ' px';
+  }
+  function mount(){
+    const el=document.querySelector('tw-passage:last-of-type .story-shell');
+    if(!el||el===current)return;current=el;closeDrawer=null;stop();clearTimeout(transition);words=[];
+    const scene=q('#scene-id').textContent.trim();
+    const entry=[...document.querySelectorAll('tw-storydata > tw-passagedata')].find(p=>p.getAttribute('name')===scene+'_Media');
+    try{media=JSON.parse(entry.textContent);}catch(e){console.error('Invalid scene media: '+scene,e);media={camera:[],audio:'',subtitles:[]};}
+    current.dataset.scene=scene;
+    image(q('.camera-mini'),media.camera[0]);image(q('.closing-image'),media.closing);
+    if(/^E[1-5]$/.test(scene)&&q('.closing-preview')){q('.closing-preview').hidden=false;image(q('.closing-preview'),media.closing);}
+    const grid=q('.camera-grid');if(grid){grid.replaceChildren();media.camera.forEach((path,i)=>{
+      const b=document.createElement('button');b.className='camera-tile';b.setAttribute('aria-pressed',String(i===0));b.setAttribute('aria-label','Camera '+(i+1));
+      const img=document.createElement('img');image(img,path);b.append(img);const label=document.createElement('span');label.textContent='Camera '+(i+1);b.append(label);
+      b.onclick=()=>{grid.querySelectorAll('button').forEach(x=>x.setAttribute('aria-pressed',String(x===b)));};grid.append(b);
+    });}
+    const flags=q('#flags').textContent;
+    if((scene==='T0'&&q('.prediction-copy'))||(scene==='T3'&&flags.includes('自身预测：true'))){const img=q('.prediction-image');img.hidden=false;image(img,media.prediction);}
+    const day=q('.day-transition');day.textContent='DAY '+media.day+' · '+scene;current.classList.add('in-transition');
+    transition=setTimeout(()=>current===el&&el.classList.remove('in-transition'),matchMedia('(prefers-reduced-motion: reduce)').matches?0:Math.max(0,Number(media.transitionMs)||0));
+    const play=q('.play-audio');if(play){play.hidden=!media.audio;play.onclick=async()=>{
+      if(!audio.paused)return;const g=generation;audio.src=media.audio;
+      try{await audio.play();if(g!==generation)audio.pause();}catch(e){if(g===generation)play.textContent='音频暂不可用；可继续流程';}
+    };}
+    audio.ontimeupdate=()=>{const cue=(media.subtitles||[]).find(c=>audio.currentTime>=c.start&&audio.currentTime<c.end);if(q('.subtitle'))q('.subtitle').textContent=cue?cue.text:'';};
+    renderWords();
+    let drawer='',opener=null;
+    const close=(focus=false)=>{if(!q('.drawer'))return;q('.drawer').hidden=true;q('.paper-grid').classList.remove('has-drawer');current.querySelectorAll('[data-drawer]').forEach(b=>b.setAttribute('aria-expanded','false'));drawer='';if(focus)opener?.focus();};
+    current.querySelectorAll('[data-drawer]').forEach(b=>{b.setAttribute('aria-expanded','false');b.onclick=()=>{
+      if(drawer===b.dataset.drawer){close();return;}drawer=b.dataset.drawer;opener=b;
+      q('.drawer').hidden=false;q('.paper-grid').classList.add('has-drawer');q('.drawer h2').textContent=b.textContent;
+      current.querySelectorAll('[data-record-kind]').forEach(x=>x.hidden=x.dataset.recordKind!==drawer);
+      current.querySelectorAll('[data-drawer]').forEach(x=>x.setAttribute('aria-expanded',String(x===b)));
+      q('.drawer-body').scrollTop=0;
+    };});
+    if(q('[data-close]'))q('[data-close]').onclick=()=>close(true);
+    closeDrawer=()=>{if(drawer)close(true);};
+    current.querySelectorAll('[data-view]').forEach(b=>b.onclick=()=>{
+      const cam=b.dataset.view==='camera';q('.left-rail').hidden=cam;q('.camera-view').hidden=!cam;q('.paper-grid').classList.toggle('camera-open',cam);
+      q('.camera-reading').hidden=!cam;
     });
-    new MutationObserver(syncAudio).observe(document.documentElement, {childList:true, subtree:true});
-    return {audio, playAudio, stopAudio};
+    if(q('[data-clear]'))q('[data-clear]').onclick=()=>{words=[];renderWords();};
+    if(q('[data-intro-next]')){let line=0;q('[data-intro-next]').onclick=()=>{const all=current.querySelectorAll('.intro-lines p');if(line<all.length-1){all[line].hidden=true;all[++line].hidden=false;}if(line===all.length-1){q('.intro-exit').hidden=false;q('[data-intro-next]').hidden=true;}};}
+    current.querySelectorAll('tw-link').forEach(x=>{x.setAttribute('role','link');});
+  }
+  new MutationObserver(mount).observe(document.documentElement,{childList:true,subtree:true});
+  document.addEventListener('keydown',e=>{if(e.key==='Escape')closeDrawer?.();});
+  window.addEventListener('pagehide',stop);
+  return {audio,stopAudio:stop};
 })();
 
 :: Story Stylesheet [stylesheet]
-:root{color-scheme:dark;--bg:#0d1419;--panel:#162129;--edge:#30404a;--text:#eaf1ef;--muted:#a7b8bc;--accent:#a4e7cf;--warm:#e9c28c}
+@font-face{font-family:RockSalt;src:url('assets/fonts/RockSalt-Regular.ttf')}@font-face{font-family:Caveat;src:url('assets/fonts/Caveat.ttf')}@font-face{font-family:Kalam;src:url('assets/fonts/Kalam-Regular.ttf')}@font-face{font-family:Reenie;src:url('assets/fonts/ReenieBeanie.ttf')}
+*{box-sizing:border-box}body{margin:0;background:#e4dfd3;color:#30322d}tw-story{background:transparent;color:inherit;margin:0;padding:0;width:100%;font-family:Kalam,'Microsoft YaHei',sans-serif;font-size:20px;line-height:1.6}tw-passage{display:block}tw-sidebar{display:none}tw-link{color:#365a4b;text-decoration:underline;cursor:pointer}tw-link:hover{color:#923e30}tw-error{font-size:14px}.landing{max-width:750px;margin:10vh auto;padding:32px}.story-shell{max-width:1600px;margin:auto;padding:12px 24px}.story-shell header{display:flex;justify-content:space-between;font:14px/1.5 'Microsoft YaHei',sans-serif;padding:8px 0}.paper-grid{height:calc(100vh - 115px);min-height:390px;display:grid;grid-template-columns:30% 70%;grid-template-rows:minmax(0,1fr) auto;border:2px solid #626058;border-radius:4px 9px 3px 6px;background:repeating-linear-gradient(2deg,#f3efdf,#f3efdf 5px,#f1eddd 6px);overflow:hidden}.left-rail{display:flex;flex-direction:column;min-height:0;border-right:2px solid #716c60}.self-panel{flex:1;overflow:auto;padding:18px}.self-panel h2{font-family:Caveat;font-size:36px}.camera-panel{padding:12px;border-top:1px solid #716c60}.camera-mini{display:block;width:100%;max-height:26vh;object-fit:contain}.thinking-panel{padding:16px 24px;display:flex;flex-direction:column;min-height:0}.thinking-panel h2{font:26px RockSalt;margin:0 0 18px;text-shadow:.5px 1px 1px #757061}.thinking-scroll{overflow:auto;min-height:0;flex:1;overflow-wrap:anywhere}.scene-copy{font-size:22px;line-height:1.6}.camera-view{min-height:0;overflow:auto;padding:16px}.camera-open{grid-template-columns:60% 40%}.camera-grid{display:grid;grid-template-columns:1fr 1fr;gap:10px}.camera-tile{padding:3px!important}.camera-tile img{width:100%;display:block}.camera-tile[aria-pressed=true]{outline:3px solid #566855}.closing-preview{width:100%;max-height:180px;object-fit:contain}.prediction-image{width:100%;max-height:180px;object-fit:contain}h2{font-family:Kalam;margin:0 0 10px;font-size:28px}button{font:inherit;color:inherit;background:none;border:0;border-bottom:1px solid #868173;cursor:pointer;padding:3px 9px}button:hover,button:focus-visible,tw-link:focus-visible{outline:2px solid #718d79;outline-offset:2px}button:disabled{opacity:.4;cursor:default}nav{grid-column:1/-1;display:flex;gap:15px;flex-wrap:wrap;border-top:2px solid #716c60;padding:6px 12px;font-family:Kalam}.fixture-actions{display:flex;gap:15px;flex-wrap:wrap;padding:14px 0}.fixture-actions small{flex-basis:100%;font:12px 'Microsoft YaHei',sans-serif;color:#746d60}.drawer{grid-column:1/-1;grid-row:2;display:flex;flex-direction:column;min-height:0;padding:8px 20px;border-top:1px solid #716c60}.drawer-head{display:flex;justify-content:space-between}.drawer-body{overflow:auto;min-height:0;line-height:1.6}.has-drawer{grid-template-rows:minmax(125px,1fr) minmax(0,38vh) auto}.has-drawer nav{grid-row:3}.record-list article{border-bottom:1px dashed #b1aa99;padding:8px 0}.record-list[data-record-kind=diary]{font-family:Reenie,'Microsoft YaHei',sans-serif;font-size:22px}.word-bank,.sentence{display:flex;gap:10px;flex-wrap:wrap;margin:12px 0}.developer{font:13px/1.6 'Microsoft YaHei',sans-serif;padding-top:8px}.developer[open]{background:#fff5d9;padding:16px}.day-transition{display:none}.in-transition .day-transition{display:block;position:fixed;z-index:5;bottom:14px;left:50%;transform:translateX(-50%);padding:12px 30px;color:#fff;background:#111;font-size:17px}.in-transition .camera-panel,.in-transition .camera-view{background:#080909}.in-transition .camera-mini,.in-transition .camera-grid{visibility:hidden}.cinematic{background:#101311;color:#eee;min-height:100vh;display:flex;flex-direction:column;gap:16px}.cinematic .closing-image{width:100%;height:40vh;object-fit:contain;filter:brightness(.16) blur(4px)}.cinematic[data-scene=FinalE2] .closing-image{filter:none}.cinematic .developer[open]{color:#222}.intro-lines,.cinematic .scene-copy{max-width:900px;margin:auto}.blank-answer{height:100px;border:1px solid #72766c}.cinematic tw-link{color:#c8d9bd}[hidden]{display:none!important}
+@media(max-width:850px){.story-shell{padding:6px 10px}.paper-grid{grid-template-columns:30% 70%}.camera-open{grid-template-columns:45% 55%}.thinking-panel{padding:12px}.scene-copy{font-size:18px}.thinking-panel h2{font-size:20px}.self-panel{padding:10px;font-size:16px}.camera-grid{grid-template-columns:1fr 1fr}.camera-tile span{font-size:13px}nav{gap:4px;font-size:18px}.has-drawer{grid-template-rows:minmax(125px,1fr) minmax(0,35vh) auto}}
 
-*{box-sizing:border-box}
-body{margin:0;background:var(--bg);color:var(--text);font-family:Arial,Helvetica,sans-serif;line-height:1.55}
-a,tw-link{color:var(--accent)}
-a:hover,tw-link:hover{color:white;text-decoration:none}
-button{font:inherit;cursor:pointer;border:1px solid var(--edge);border-radius:4px;padding:10px 15px;background:#24353f;color:var(--text);transition:background .12s}
-button:hover{background:#344a56;border-color:var(--accent)}
-button:focus-visible,a:focus-visible,tw-link:focus-visible,input:focus-visible{outline:3px solid var(--warm);outline-offset:4px}
-button[aria-pressed=true]{background:var(--accent);color:#0d251d;border-color:var(--accent)}
-h1,h2,p{margin-top:0}
-h1{letter-spacing:-.045em;line-height:1.08}
-h2{font-size:22px;line-height:1.25}
-hr{border:0;border-top:1px solid var(--edge);margin:23px 0}
-.eyebrow,.kicker,.quiet,.scene-top,.scene-bottom,.state-row,.card-top,footer{font-family:Arial,Helvetica,sans-serif}
-.eyebrow{font-size:11px;letter-spacing:2px;font-weight:700;display:flex;align-items:center;gap:10px}
-.signal{display:inline-block;width:7px;height:7px;background:var(--accent);border-radius:50%}
-.kicker{color:var(--accent);font-size:10px;letter-spacing:1.7px;font-weight:700;margin-bottom:14px}
-.quiet{font-size:12px;color:var(--muted)}
-.muted{font-size:14px;color:var(--muted)}
-.subtle{background:transparent}
-.landing,.workspace{width:min(1320px,94vw);margin:0 auto;padding:38px 0 24px}
-.landing-grid{display:grid;grid-template-columns:1.2fr 1fr;gap:90px;align-items:center;min-height:73vh}
-.landing h1{font-size:clamp(48px,6vw,88px);font-weight:500;margin-bottom:24px}
-.lead{font-size:19px;color:var(--muted);line-height:1.6}
-.notice{font-size:10px;letter-spacing:1.1px;color:var(--warm);margin:30px 0 18px}
-.start-link{margin-bottom:15px}
-.start-link tw-link{display:inline-block;background:var(--accent);color:#10281e;padding:14px 26px;border-radius:4px;font-weight:700}
-.spec-card{border:1px solid var(--edge);padding:24px;border-radius:8px;background:var(--panel)}
-.card-top{display:flex;justify-content:space-between;font-size:11px;letter-spacing:1.5px;margin-bottom:18px}
-.card-top span{color:var(--accent)}
-.spec-card img{display:block;width:100%;border:1px solid var(--edge)}
-dl{margin:20px 0 0}
-dl>div{display:flex;justify-content:space-between;border-bottom:1px solid var(--edge);padding:12px 0;font-size:12px}
-dt{color:var(--muted);font-size:10px;letter-spacing:1px}
-dd{margin:0}
-footer{border-top:1px solid var(--edge);padding-top:17px;color:var(--muted);display:flex;justify-content:space-between;font-size:11px;letter-spacing:.7px;gap:15px}
-.workspace-header{display:flex;justify-content:space-between;align-items:center;margin-bottom:26px}
-.workspace-header h1{font-size:32px;margin:15px 0 0}
-.view-description{font-weight:400;color:var(--muted);font-size:14px;letter-spacing:0;margin-left:16px}
-.work-grid{display:grid;grid-template-columns:minmax(0,1fr) 285px;gap:26px;align-items:start;margin-bottom:32px}
-.visual-panel{border:1px solid var(--edge);border-radius:6px;overflow:hidden;background:var(--panel)}
-.scene-top,.scene-bottom{display:flex;justify-content:space-between;padding:15px 18px;font-size:10px;letter-spacing:.8px;color:var(--muted);gap:12px}
-.scene{position:relative;aspect-ratio:16/9}
-.scene>img{display:block;width:100%;height:100%;object-fit:contain}
-.hotspot{position:absolute;background:#132a25e8;border:1px solid var(--accent);border-radius:4px;min-width:44px;min-height:44px;font-size:12px;padding:8px 12px;display:flex;align-items:center;gap:10px;box-shadow:0 0 0 4px #a4e7cf16}
-.hotspot span{color:var(--accent);font-size:10px}
-.hotspot tw-link{display:block;padding:4px}
-.fixture{color:var(--warm)}
-.control-panel{padding:6px 0}
-.choice-buttons,.audio-buttons{display:flex;gap:10px}
-.choice-buttons button{flex:1}
-.state-row{display:flex;justify-content:space-between;align-items:center;font-size:10px;margin-top:20px;color:var(--muted)}
-.state-row strong{font-size:13px;color:var(--accent)}
-.wide{width:100%;display:flex;justify-content:space-between}
-.control-panel .quiet{margin:10px 0 0}
-.audio-buttons button:first-child{flex:1}
-dialog{background:#19262e;color:var(--text);border:1px solid #52656f;border-radius:8px;padding:0;width:min(740px,94vw);max-width:94vw;height:min(760px,88dvh);max-height:88dvh;box-shadow:0 24px 90px #0009}
-dialog[open]{display:flex;flex-direction:column}
-dialog::backdrop{background:#050c12bb;backdrop-filter:blur(3px)}
-.reader-top{padding:22px 24px 12px;display:flex;justify-content:space-between;align-items:start;gap:18px}
-.reader-top h2{margin-bottom:10px}
-.reader-top .kicker{margin-bottom:8px}
-.reader-top button{white-space:nowrap}
-.reader-tools{display:flex;align-items:center;gap:15px;padding:10px 24px 20px;font-size:12px;border-bottom:1px solid var(--edge)}
-.reader-tools input{width:130px;accent-color:var(--accent)}
-#reader-body{padding:24px;overflow-y:auto;min-height:0;line-height:1.8;flex:1}
-#reader-body p{margin:0 0 1.4em}
-.reader-bottom{padding:13px 24px;font-size:10px;letter-spacing:.7px;border-top:1px solid var(--edge);color:var(--warm)}
+:: SelfVision [scene technical] {"position":"1380,500","size":"100,100"}
+{(set: $sceneActions to [[[查看预测后继续->T3]]])(set: $scene to "SelfVision")(display: "FinalFrame")}
 
-@media(min-width:1600px){.workspace{padding-top:60px}
-.work-grid{grid-template-columns:minmax(0,1fr) 300px;gap:34px}
-}
+:: SelfVision_Thinking [content-zh]
+预测中的视觉观测中断。将其理解为死亡，尚不能确认。
 
-@media(max-width:850px){.landing,.workspace{width:92vw;padding-top:24px}
-.landing-grid{gap:30px;grid-template-columns:1fr;padding:40px 0}
-.spec-card{max-width:550px}
-.work-grid{grid-template-columns:1fr;gap:22px}
-.control-panel{border:1px solid var(--edge);padding:20px;border-radius:6px}
-.view-description{display:block;margin:8px 0 0}
-.workspace-header h1{font-size:26px}
-.scene-top,.scene-bottom{font-size:9px;padding:10px}
-.hotspot{font-size:10px;padding:6px;gap:5px}
-footer{flex-wrap:wrap}
-}
+:: SelfVision_Notes [notes]
+仅实际执行自身预测后进入；确认演出后回到交易，已完成两项时自动进入 T4。
 
+:: SelfVision_Media [media-config]
+{"day": "待定", "transitionMs": 0, "camera": ["assets/images/skeleton/T3-camera-1.svg"], "prediction": "assets/images/skeleton/T3-prediction.svg", "closing": "assets/images/skeleton/T3-prediction.svg", "audio": "", "subtitles": [], "hotspots": []}
 
-/* Keep view changes immediate; no transparent incoming frame. */
+:: Skipped_Diary [content-zh] {"position":"2860,4450","size":"100,100"}
+本次未执行轨迹预测；没有提供可用警告，轻微事故后停用。
 
+:: TMinus3_Subtitle1 [content-zh] {"position":"1600,4900","size":"100,100"}
+已通过预测验证；三名船员在发射厅交谈。
 
+:: TMinus3_Subtitle2 [content-zh] {"position":"1780,4900","size":"100,100"}
+预测需要外部问题或任务，看到的是未来输入片段。
 
-/* Harlowe page frame. Hotspots stay relative to the image at every window size. */
-tw-story {display:block;margin:0;padding:0;background:var(--bg);color:var(--text);font:inherit;min-height:100vh;}
-tw-passage {display:block;max-width:none;}
-tw-sidebar {display:none;}
-tw-link {font-weight:inherit;cursor:pointer;text-decoration:none;}
-tw-link.visited {color:var(--accent);}
-tw-transition-container {animation:none !important;}
-[hidden] {display:none !important;}
-.action-link {display:inline-block;}
-.action-link tw-link {display:block;border:1px solid var(--edge);border-radius:4px;padding:10px 15px;background:#24353f;color:var(--text);text-align:center;}
-.action-link tw-link:hover {background:#344a56;border-color:var(--accent);}
-.action-link.subtle tw-link {background:transparent;}
-.choice-buttons .action-link {flex:1;}
-.target-a {left:24%;top:48%;}
-.target-b {left:64%;top:44%;}
-.move-a {left:76%;top:71%;}
-.move-b {left:9%;top:71%;}
+:: TMinus3_Subtitle3 [content-zh] {"position":"1960,4900","size":"100,100"}
+预测机制仍有未知；意识指标过阈值也不能证明意识。

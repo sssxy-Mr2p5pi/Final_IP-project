@@ -22,5 +22,980 @@
     "license": "Project diagnostic fixture; no third-party source",
     "modifications": "Generated locally",
     "use": "technical test only; replace before final submission"
+  },
+  {
+    "path": "assets/images/skeleton/TMinus3-camera-1.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/TMinus3-camera-2.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/TMinus3-camera-3.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/TMinus3-camera-4.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/TMinus3-prediction.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/TMinus3-closing.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/TMinus2-camera-1.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/TMinus2-camera-2.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/TMinus2-camera-3.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/TMinus2-camera-4.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/TMinus2-prediction.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/TMinus2-closing.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/TMinus1-camera-1.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/TMinus1-camera-2.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/TMinus1-camera-3.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/TMinus1-camera-4.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/TMinus1-prediction.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/TMinus1-closing.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T0-camera-1.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T0-camera-2.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T0-camera-3.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T0-camera-4.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T0-prediction.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T0-closing.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T05-camera-1.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T05-camera-2.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T05-camera-3.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T05-camera-4.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T05-prediction.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T05-closing.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T1-camera-1.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T1-camera-2.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T1-camera-3.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T1-camera-4.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T1-prediction.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T1-closing.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T2-camera-1.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T2-camera-2.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T2-camera-3.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T2-camera-4.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T2-prediction.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T2-closing.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T3-camera-1.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T3-camera-2.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T3-camera-3.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T3-camera-4.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T3-prediction.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T3-closing.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T4-camera-1.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T4-camera-2.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T4-camera-3.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T4-camera-4.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T4-prediction.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T4-closing.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T5-camera-1.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T5-camera-2.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T5-camera-3.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T5-camera-4.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T5-prediction.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T5-closing.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T6-camera-1.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T6-camera-2.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T6-camera-3.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T6-camera-4.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T6-prediction.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T6-closing.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T7-camera-1.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T7-camera-2.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T7-camera-3.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T7-camera-4.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T7-prediction.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/T7-closing.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E1-camera-1.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E1-camera-2.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E1-camera-3.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E1-camera-4.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E1-prediction.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E1-closing.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E2-camera-1.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E2-camera-2.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E2-camera-3.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E2-camera-4.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E2-prediction.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E2-closing.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E3-camera-1.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E3-camera-2.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E3-camera-3.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E3-camera-4.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E3-prediction.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E3-closing.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E4-camera-1.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E4-camera-2.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E4-camera-3.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E4-camera-4.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E4-prediction.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E4-closing.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E5-camera-1.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E5-camera-2.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E5-camera-3.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E5-camera-4.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E5-prediction.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/E5-closing.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/FinalE2-camera-1.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/FinalE2-camera-2.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/FinalE2-camera-3.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/FinalE2-camera-4.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/FinalE2-prediction.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/FinalE2-closing.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/FinalE5-camera-1.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/FinalE5-camera-2.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/FinalE5-camera-3.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/FinalE5-camera-4.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/FinalE5-prediction.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/images/skeleton/FinalE5-closing.svg",
+    "author": "AI-assisted technical fixture",
+    "source": "Local geometric placeholder for story skeleton",
+    "license": "Project diagnostic fixture",
+    "modifications": "No third-party artwork",
+    "use": "development only"
+  },
+  {
+    "path": "assets/fonts/RockSalt-Regular.ttf",
+    "author": "See bundled license and original ui-study source record",
+    "source": "art/ui-study/sources.json",
+    "license": "Apache-2.0",
+    "modifications": "Copied unchanged"
+  },
+  {
+    "path": "assets/fonts/RockSalt-LICENSE.txt",
+    "author": "See bundled license and original ui-study source record",
+    "source": "art/ui-study/sources.json",
+    "license": "Apache-2.0",
+    "modifications": "Copied unchanged"
+  },
+  {
+    "path": "assets/fonts/Caveat.ttf",
+    "author": "See bundled license and original ui-study source record",
+    "source": "art/ui-study/sources.json",
+    "license": "OFL-1.1",
+    "modifications": "Copied unchanged"
+  },
+  {
+    "path": "assets/fonts/Caveat-OFL.txt",
+    "author": "See bundled license and original ui-study source record",
+    "source": "art/ui-study/sources.json",
+    "license": "OFL-1.1",
+    "modifications": "Copied unchanged"
+  },
+  {
+    "path": "assets/fonts/Kalam-Regular.ttf",
+    "author": "See bundled license and original ui-study source record",
+    "source": "art/ui-study/sources.json",
+    "license": "OFL-1.1",
+    "modifications": "Copied unchanged"
+  },
+  {
+    "path": "assets/fonts/Kalam-OFL.txt",
+    "author": "See bundled license and original ui-study source record",
+    "source": "art/ui-study/sources.json",
+    "license": "OFL-1.1",
+    "modifications": "Copied unchanged"
+  },
+  {
+    "path": "assets/fonts/ReenieBeanie.ttf",
+    "author": "See bundled license and original ui-study source record",
+    "source": "art/ui-study/sources.json",
+    "license": "OFL-1.1",
+    "modifications": "Copied unchanged"
+  },
+  {
+    "path": "assets/fonts/ReenieBeanie-OFL.txt",
+    "author": "See bundled license and original ui-study source record",
+    "source": "art/ui-study/sources.json",
+    "license": "OFL-1.1",
+    "modifications": "Copied unchanged"
+  },
+  {
+    "path": "assets/fonts/sources.json",
+    "author": "Original font source register",
+    "source": "art/ui-study/sources.json",
+    "license": "Source metadata",
+    "modifications": "Copied unchanged"
   }
 ]

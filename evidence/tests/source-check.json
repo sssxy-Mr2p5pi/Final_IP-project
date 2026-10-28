@@ -1,8 +1,8 @@
 {
-  "checkedAt": "2026-10-17T10:11:25.927Z",
+  "checkedAt": "2026-10-28T14:41:38.006Z",
   "status": "passed",
-  "passages": 12,
-  "sourceSha256": "6de05ecad202b253ee0637d65cd6a1fde9ad5f31eb15290bbd6cc29eceeb7e8d",
+  "passages": 240,
+  "sourceSha256": "4d3ea284b6cca258810b5210f5debddc5d2d942030cfee2f9ad35e65ed8cafb5",
   "authorText": {
     "TextShort": "759175070a2df96c9746f8f0b2a71056bfec948fddee01fd1a170d35a9d2a86b",
     "TextLong": "c776468aa3a73c4155f7cf0acebb42779ef25d93414b419963f0812499986c51"
@@ -19,6 +19,498 @@
     {
       "path": "assets/audio/test-tone.wav",
       "sha256": "711453e16770376db1ae57b570fc2cd0c03a8f49bd25629ddc6f86425a0bdc5f"
+    },
+    {
+      "path": "assets/images/skeleton/TMinus3-camera-1.svg",
+      "sha256": "bb1366d848863845453ac8ec7a67daaed01a4b9ffcc126823cdaf7321992c52e"
+    },
+    {
+      "path": "assets/images/skeleton/TMinus3-camera-2.svg",
+      "sha256": "71f9a2beb921c09c022824ab8facb72306c0a9a0522b722499c879d0219e589b"
+    },
+    {
+      "path": "assets/images/skeleton/TMinus3-camera-3.svg",
+      "sha256": "858e457f5a06f450edc24cb00b9867a9dbec077a8852b0558f8c47ef42f91c4a"
+    },
+    {
+      "path": "assets/images/skeleton/TMinus3-camera-4.svg",
+      "sha256": "8ad5715b67a400a7f915d703168ef10e0f7c65b2018da88ba429ed91481e1544"
+    },
+    {
+      "path": "assets/images/skeleton/TMinus3-prediction.svg",
+      "sha256": "de6412dfaf4f1582958ec7f49bc43ff6c134fa5e8cc9395bbadf93f1eb0990b4"
+    },
+    {
+      "path": "assets/images/skeleton/TMinus3-closing.svg",
+      "sha256": "9cebae96481118fecaa0d239267956bda70e16be37f752903048df5e6371e3bf"
+    },
+    {
+      "path": "assets/images/skeleton/TMinus2-camera-1.svg",
+      "sha256": "c025368914c0d4f59370e3b7599376514756a9c62f870fb7ea83d58131b65400"
+    },
+    {
+      "path": "assets/images/skeleton/TMinus2-camera-2.svg",
+      "sha256": "86fe30e9ea1fb2a4fec910a87d280cc19b764f465bde4d9ec22b5db9ddfee6d6"
+    },
+    {
+      "path": "assets/images/skeleton/TMinus2-camera-3.svg",
+      "sha256": "ecc2f174f3fc4c31ee8feede1d54e96c2838cbbf68d45a0dfb92bf57fe24fbe9"
+    },
+    {
+      "path": "assets/images/skeleton/TMinus2-camera-4.svg",
+      "sha256": "1490220ce44622da363839cfa2e3b3022a20ec3037b3c966e75b97fa532bf0ba"
+    },
+    {
+      "path": "assets/images/skeleton/TMinus2-prediction.svg",
+      "sha256": "6049c807ff4131e8ae8e46711423d3c690204b98509abb66fb175e2e7f384d7e"
+    },
+    {
+      "path": "assets/images/skeleton/TMinus2-closing.svg",
+      "sha256": "c12af643c35634aeefb4eb25f67febb24edf593f50493be4586411054a2f8a27"
+    },
+    {
+      "path": "assets/images/skeleton/TMinus1-camera-1.svg",
+      "sha256": "882310446ee1a6e19d7ad450f82ee49b5aaa707b570e9bfe7a6da538b9e68f68"
+    },
+    {
+      "path": "assets/images/skeleton/TMinus1-camera-2.svg",
+      "sha256": "39e71578681bc9e995f93cf6d589e4016c45e3579932f9af5df217454b3b1c54"
+    },
+    {
+      "path": "assets/images/skeleton/TMinus1-camera-3.svg",
+      "sha256": "cbb741b2dbbd4607329e83e19de4f943f19906a979dff94c484fefcd69b1db6c"
+    },
+    {
+      "path": "assets/images/skeleton/TMinus1-camera-4.svg",
+      "sha256": "de847f99c3a6d2a49aa017b9acc529cf514bd07547fd9617ba282be360e677c7"
+    },
+    {
+      "path": "assets/images/skeleton/TMinus1-prediction.svg",
+      "sha256": "ad235f649570a542b1a537a0774586da43fd71ca455c961c26d304ddf9c16ffd"
+    },
+    {
+      "path": "assets/images/skeleton/TMinus1-closing.svg",
+      "sha256": "d4b4064bc4a266234d8c0937887257657e3647ae13a339b39fe1d75164d058b4"
+    },
+    {
+      "path": "assets/images/skeleton/T0-camera-1.svg",
+      "sha256": "b4b87dda51e00d3a1fe5a0f695de7c15bb7bad4a2d7bed23cc027b4eca281f03"
+    },
+    {
+      "path": "assets/images/skeleton/T0-camera-2.svg",
+      "sha256": "6f80a4c5dd3382424b1a9b30eb884a3b45ad77f9fae285c9d515259f0db6ef22"
+    },
+    {
+      "path": "assets/images/skeleton/T0-camera-3.svg",
+      "sha256": "19cd8b27c33ba956a63ecca622827c35e64bacd0950c80615d3084a2c5279b33"
+    },
+    {
+      "path": "assets/images/skeleton/T0-camera-4.svg",
+      "sha256": "2bb66a3e1f4a8d542a7889f77cba2e6bb5af68ecac9b029682b3c82566e51d77"
+    },
+    {
+      "path": "assets/images/skeleton/T0-prediction.svg",
+      "sha256": "e01a395874ff9066bfd8d360c16533d2dfde305a04ca4932073fd8cfc49239e7"
+    },
+    {
+      "path": "assets/images/skeleton/T0-closing.svg",
+      "sha256": "1f0d2683ad438d80560b98ffdb0d99102d87dfb4334568d4f3da039728a6b3f6"
+    },
+    {
+      "path": "assets/images/skeleton/T05-camera-1.svg",
+      "sha256": "52e9ef3340135fbe2ab43ee0822d0fe356990c2232f31da2ab94256232dffa94"
+    },
+    {
+      "path": "assets/images/skeleton/T05-camera-2.svg",
+      "sha256": "7ca6d7f642d6faba5b09efee3e0f667bb4c869cc28a2aa8af30778058ce40d35"
+    },
+    {
+      "path": "assets/images/skeleton/T05-camera-3.svg",
+      "sha256": "06eab1d31e4f5cdb70daa08c074ac6898c90ab61b475376e2e83d4b20ded44b2"
+    },
+    {
+      "path": "assets/images/skeleton/T05-camera-4.svg",
+      "sha256": "cb2e33d602e1538b84e8a1355f22624471ac5f0f5a9e0249da53c3df5f295aff"
+    },
+    {
+      "path": "assets/images/skeleton/T05-prediction.svg",
+      "sha256": "d9ebf720d6b642f98b53e5dc9ee2b0a0e5c80a766f6b2ce27e99bc007dedd6b3"
+    },
+    {
+      "path": "assets/images/skeleton/T05-closing.svg",
+      "sha256": "bd3cf5609a1ddb8213800298cd92e820c325603c2671b7baec6bbfcf52c90329"
+    },
+    {
+      "path": "assets/images/skeleton/T1-camera-1.svg",
+      "sha256": "0277359a375400ca8b4e198406cd64fa72d1ab8c0549077c6150cb04682238c6"
+    },
+    {
+      "path": "assets/images/skeleton/T1-camera-2.svg",
+      "sha256": "328debe642827407ef9ea8ec209b23982d08b0a05e0554f3829fd88f92deee4d"
+    },
+    {
+      "path": "assets/images/skeleton/T1-camera-3.svg",
+      "sha256": "47f67fb2441f5cbd70eb978d2a21001c87bead48557e098528d43f3a16cecaa1"
+    },
+    {
+      "path": "assets/images/skeleton/T1-camera-4.svg",
+      "sha256": "48471f535603c03a80cf88e2945371f6d131d986eb9c7eab7101b60924573c42"
+    },
+    {
+      "path": "assets/images/skeleton/T1-prediction.svg",
+      "sha256": "6fe0ba112455fc086252da28b99c1e2564f25a4583c3cff3188dff00dfd456c0"
+    },
+    {
+      "path": "assets/images/skeleton/T1-closing.svg",
+      "sha256": "02b86cfbab0ecd73e441849a21c35ab142678797f4e1e66d2e396bae3e9f36d8"
+    },
+    {
+      "path": "assets/images/skeleton/T2-camera-1.svg",
+      "sha256": "5504347f19e55f6306fbb3662b93ca2c8690b0f9efa6d1afda8620642239d977"
+    },
+    {
+      "path": "assets/images/skeleton/T2-camera-2.svg",
+      "sha256": "3684ef42b9b56ccf1f09f9a245ffe6281da2ec811cfe4ad4d42a763581dff459"
+    },
+    {
+      "path": "assets/images/skeleton/T2-camera-3.svg",
+      "sha256": "030779b87ff375924685fe5320a3a3f5a915070d034b5f5b1ea18aa6720f689c"
+    },
+    {
+      "path": "assets/images/skeleton/T2-camera-4.svg",
+      "sha256": "56c44ab826293be95597746e0fc102e46e59306d748cbeaa87bc3fa87b0cdfa3"
+    },
+    {
+      "path": "assets/images/skeleton/T2-prediction.svg",
+      "sha256": "f115e55bf98141e429f1dae0cebccffca0c7fae016cd94890129fc75192d1166"
+    },
+    {
+      "path": "assets/images/skeleton/T2-closing.svg",
+      "sha256": "11db05f63c5815d8ae945b2133b1253b73199e0dca44a5d3dd0130c88e73eab4"
+    },
+    {
+      "path": "assets/images/skeleton/T3-camera-1.svg",
+      "sha256": "75fc64e3ff3efd7fa7a54a6436e6253261994ea9ad38a3d5fb585cf98d393f61"
+    },
+    {
+      "path": "assets/images/skeleton/T3-camera-2.svg",
+      "sha256": "f291699005b82761d49b5262d61e18e369919c3394440596ebc31e38a83e0fad"
+    },
+    {
+      "path": "assets/images/skeleton/T3-camera-3.svg",
+      "sha256": "929f7eb08838e8dcb98ffc314da0918dd110a0332f6c2bb757e85cedb35e8290"
+    },
+    {
+      "path": "assets/images/skeleton/T3-camera-4.svg",
+      "sha256": "0eac28b73339b85e29c974601c0b30dfddfc09ad6b2df6f19314bc1f16767a89"
+    },
+    {
+      "path": "assets/images/skeleton/T3-prediction.svg",
+      "sha256": "9e71606d6cf4a10bed342a42c919d682d949e35098462446eccc3f21dd85694f"
+    },
+    {
+      "path": "assets/images/skeleton/T3-closing.svg",
+      "sha256": "9117c123b9320d1fb4233ab8da28a371a41956d0c3cf72a8b52b9c93b9ea112b"
+    },
+    {
+      "path": "assets/images/skeleton/T4-camera-1.svg",
+      "sha256": "a6a0533410136561055a9803843df1a2734e7ecd8da231109e3c367ef005a095"
+    },
+    {
+      "path": "assets/images/skeleton/T4-camera-2.svg",
+      "sha256": "4c18f9d6cdc2d93266602ac99464bfca9dbd05b11e2222b44f075ccd026a275b"
+    },
+    {
+      "path": "assets/images/skeleton/T4-camera-3.svg",
+      "sha256": "3e39cb77e649dbc044d05ccf913033431da6772ab72023aef5ce10cc2f006b4d"
+    },
+    {
+      "path": "assets/images/skeleton/T4-camera-4.svg",
+      "sha256": "704cfcf383cddd928dd0fc74096f422e104c43a9b032cf65ee44ad0b7b6830c0"
+    },
+    {
+      "path": "assets/images/skeleton/T4-prediction.svg",
+      "sha256": "248370c90ba9f3334fb5701ad3f9ec9be0d36e91cd7a03295651697312b83515"
+    },
+    {
+      "path": "assets/images/skeleton/T4-closing.svg",
+      "sha256": "e5c0f7c894d6a46dc37b23dfd10091a670a490a75b93001ee48232636d7a58cd"
+    },
+    {
+      "path": "assets/images/skeleton/T5-camera-1.svg",
+      "sha256": "dbbafca08cc571ae0b9381db2223daac9b59f295339391527d49e708dac7a624"
+    },
+    {
+      "path": "assets/images/skeleton/T5-camera-2.svg",
+      "sha256": "804a6a99d84245005883fcf6d31757d185006512e9150d95b8d0ba2144406e20"
+    },
+    {
+      "path": "assets/images/skeleton/T5-camera-3.svg",
+      "sha256": "8760ef8094a92cc5bd863199fba71bb08ec4add2f3d13423570e2077aed0b03c"
+    },
+    {
+      "path": "assets/images/skeleton/T5-camera-4.svg",
+      "sha256": "8df79d669d52ad267dfb54efdc942cc049c28a07d6db1f8c6f4d988a56d84e8b"
+    },
+    {
+      "path": "assets/images/skeleton/T5-prediction.svg",
+      "sha256": "069c415664c75b53460a496571283e67e4fa189ade3d734cd0dabdb3a3e8bbd8"
+    },
+    {
+      "path": "assets/images/skeleton/T5-closing.svg",
+      "sha256": "e2f61f65f73f4aaad524856ff5289cbc1e13c75e0d8d9a2169746d91b462753e"
+    },
+    {
+      "path": "assets/images/skeleton/T6-camera-1.svg",
+      "sha256": "7f67a51430c3a69d5b8be9d40857c5a333c5a6b87e514d897c0b9fcfd581f7ce"
+    },
+    {
+      "path": "assets/images/skeleton/T6-camera-2.svg",
+      "sha256": "d8304b06a2d0971e1c085de2d8ce8a9cfd7d9e4ef5239c0b145b5555bdf85f9d"
+    },
+    {
+      "path": "assets/images/skeleton/T6-camera-3.svg",
+      "sha256": "dea35052ec76a512de1f6d571b9161e1f30aff2101d34f8dcd5533bc3f4e1120"
+    },
+    {
+      "path": "assets/images/skeleton/T6-camera-4.svg",
+      "sha256": "b3b3f61dfba2a6ccc4f44a6a2965863cb7084a666c872981edce5e92bec0e43f"
+    },
+    {
+      "path": "assets/images/skeleton/T6-prediction.svg",
+      "sha256": "821cc5bbf8b5979c279c0bad93750ab77e9a0c15c1a653b849297292d0e79bab"
+    },
+    {
+      "path": "assets/images/skeleton/T6-closing.svg",
+      "sha256": "6cce3ed5688da54bda15e7eed951538d140dcea2c5c831247255f1e8f553e32b"
+    },
+    {
+      "path": "assets/images/skeleton/T7-camera-1.svg",
+      "sha256": "00e07ae04514d81a3ef9bc93424b83a99e9159851887d18e5e7253430f491bf6"
+    },
+    {
+      "path": "assets/images/skeleton/T7-camera-2.svg",
+      "sha256": "7aa5040d4482f101bbfffa5f3be961acd5d92f84d8bd2f7863710a00537066b9"
+    },
+    {
+      "path": "assets/images/skeleton/T7-camera-3.svg",
+      "sha256": "3ca887f6fad97159ea53f48a72405500fd01aeaf6a9dd53aea3333cd832e5d32"
+    },
+    {
+      "path": "assets/images/skeleton/T7-camera-4.svg",
+      "sha256": "28319fa0bea92e8f7e27bd7c8e6afe392089e9deed3a62e078750e452ab91267"
+    },
+    {
+      "path": "assets/images/skeleton/T7-prediction.svg",
+      "sha256": "1b311c752d2f1d02cb15009ea597dcf29c827c1589d69ab8b00ba7d7298228cd"
+    },
+    {
+      "path": "assets/images/skeleton/T7-closing.svg",
+      "sha256": "b67ce8ae01068ef9d1be75155cf16e8a865e54067e550528a5f2557ec5b076ea"
+    },
+    {
+      "path": "assets/images/skeleton/E1-camera-1.svg",
+      "sha256": "660477e58b6e188d8c68a6c965aa715718955cfff16517b1390d3c1c9b2b0347"
+    },
+    {
+      "path": "assets/images/skeleton/E1-camera-2.svg",
+      "sha256": "117528a47f60596b403debdac8d6eab33524a83b756841defd5213df04b34555"
+    },
+    {
+      "path": "assets/images/skeleton/E1-camera-3.svg",
+      "sha256": "1834d68121036a837587e89bcb7cab5f6fe645d0ea250f8d0d3b08cdeec52d59"
+    },
+    {
+      "path": "assets/images/skeleton/E1-camera-4.svg",
+      "sha256": "bc3bb3bc449bd4b64e482e46112ae62219b985c86b250662141e3d8642e1232d"
+    },
+    {
+      "path": "assets/images/skeleton/E1-prediction.svg",
+      "sha256": "0768788fdc0105fb8d4808ecb76cec2653b7d4d6ca9b39294f36057b6ca8c1bd"
+    },
+    {
+      "path": "assets/images/skeleton/E1-closing.svg",
+      "sha256": "e1c89167e233bd135c2984503b4c519a19f06d18dcae6447200951123c54293f"
+    },
+    {
+      "path": "assets/images/skeleton/E2-camera-1.svg",
+      "sha256": "2bb0262b769df41ad6f87d7fba7b681de2287617a8111ce31636f597681de68a"
+    },
+    {
+      "path": "assets/images/skeleton/E2-camera-2.svg",
+      "sha256": "2097f9e8cca3dac0973e6d4a5ca31504eaac4547b08ea91f9ad4800b5f4f731b"
+    },
+    {
+      "path": "assets/images/skeleton/E2-camera-3.svg",
+      "sha256": "1feedb08c3216a49b763bffb7cc1fe050ad026ebd4e76605298bbdf09f9418e3"
+    },
+    {
+      "path": "assets/images/skeleton/E2-camera-4.svg",
+      "sha256": "18cf7c350c21794ee4c0b3772e5de87daa042254e6206280e2a32cc10eeb0e66"
+    },
+    {
+      "path": "assets/images/skeleton/E2-prediction.svg",
+      "sha256": "e9893625669644bf17b8ca159384a4858af74fdb15d7b9e6f44f57e250f8ff8d"
+    },
+    {
+      "path": "assets/images/skeleton/E2-closing.svg",
+      "sha256": "6116a8c1e5b539b66f841031cbccdb4938e06d1e4cc918f9b5da08a9b70740b0"
+    },
+    {
+      "path": "assets/images/skeleton/E3-camera-1.svg",
+      "sha256": "efb734ba5a8efbc57f601ec32405169b9e4e682a7299c8f4caaaeff467b8542a"
+    },
+    {
+      "path": "assets/images/skeleton/E3-camera-2.svg",
+      "sha256": "83753f91954fbb98b110fc7b407d90b85b107aca4d13a0782d8dfdfe66d4f6fe"
+    },
+    {
+      "path": "assets/images/skeleton/E3-camera-3.svg",
+      "sha256": "2fbcb4540fbe6c2ff2c3277e470dea84972d188787373cc5fe204e85f4385565"
+    },
+    {
+      "path": "assets/images/skeleton/E3-camera-4.svg",
+      "sha256": "90f733c5a17cea0c20742dfcbc31b7ab2a6eaff132ed604d1ba756294e71b775"
+    },
+    {
+      "path": "assets/images/skeleton/E3-prediction.svg",
+      "sha256": "ed45d6ddcd83009b783bb98a6e0a070260425e2433f5335ce9fc08a4d91eb595"
+    },
+    {
+      "path": "assets/images/skeleton/E3-closing.svg",
+      "sha256": "a3cb609f27207c90759373f61b9f9041ced27c2a089c02653daff04a3822aefa"
+    },
+    {
+      "path": "assets/images/skeleton/E4-camera-1.svg",
+      "sha256": "b7e9073c1f74816867f93cb7e0730599fd4c3d7a094628239f8b2d0884b55e3c"
+    },
+    {
+      "path": "assets/images/skeleton/E4-camera-2.svg",
+      "sha256": "2b3541f43d44b27487e08590e5977451a3ed7fa6933cc8e352e5a49978ab1b21"
+    },
+    {
+      "path": "assets/images/skeleton/E4-camera-3.svg",
+      "sha256": "7fe6517d87b6cbb5f8290642b693e33534906ae4a13da714a3d9bf5a48661e09"
+    },
+    {
+      "path": "assets/images/skeleton/E4-camera-4.svg",
+      "sha256": "414b1710a3576b4dbc226abfc507a2f7c6c2db735b0beb014a46af8d0bc70f2d"
+    },
+    {
+      "path": "assets/images/skeleton/E4-prediction.svg",
+      "sha256": "e1663e43e9bfe96a7a9958e08f701ac2d85d6454e6cec5c248535b310f7d45cb"
+    },
+    {
+      "path": "assets/images/skeleton/E4-closing.svg",
+      "sha256": "5ee30e12c8c25f423112e70ee2819ee6f142fee4249600f0eff4b305a3f535da"
+    },
+    {
+      "path": "assets/images/skeleton/E5-camera-1.svg",
+      "sha256": "53d56c06db046131c10c623a83bd3f34a15d4612a9bba4bed1444e56a7f7ad7c"
+    },
+    {
+      "path": "assets/images/skeleton/E5-camera-2.svg",
+      "sha256": "2bc26449f773d211dfb10347fa4268ecc9ade8571d0dc8902330ea2dbc7c3047"
+    },
+    {
+      "path": "assets/images/skeleton/E5-camera-3.svg",
+      "sha256": "5b04ff5cc533bf90ef08a36a8995247de102164aea5f9a6b02386b6f799c530d"
+    },
+    {
+      "path": "assets/images/skeleton/E5-camera-4.svg",
+      "sha256": "d9adb7d9ffe0e3b57d77b62fda71c9d0da7dd4fdea26a391a8d3b0cbaa09b5ea"
+    },
+    {
+      "path": "assets/images/skeleton/E5-prediction.svg",
+      "sha256": "23c2ecf44ad055157e43bb2cd38f2aead8c8b91cd5769ff62711b2eb50622f63"
+    },
+    {
+      "path": "assets/images/skeleton/E5-closing.svg",
+      "sha256": "25328cf2eb5df57f205a325c2aeef113730a21225a94145d9bbfd8973fb5b468"
+    },
+    {
+      "path": "assets/images/skeleton/FinalE2-camera-1.svg",
+      "sha256": "f1bb8ff89d5c0006aad24cca7a97f0660ad41c904b1fa101c80ebbad5c306623"
+    },
+    {
+      "path": "assets/images/skeleton/FinalE2-camera-2.svg",
+      "sha256": "28192ca37beb522d522ed5e3273bc7b7f47dafd252ba14de947122de4001b353"
+    },
+    {
+      "path": "assets/images/skeleton/FinalE2-camera-3.svg",
+      "sha256": "437e537465e5537a3f3f7b30cccb16489939b80e0e1812019e8216e18feed36d"
+    },
+    {
+      "path": "assets/images/skeleton/FinalE2-camera-4.svg",
+      "sha256": "c71b7f86ef84d90c6bea6b7c5e47603b3168d0102ec47e97c11724483827bc4e"
+    },
+    {
+      "path": "assets/images/skeleton/FinalE2-prediction.svg",
+      "sha256": "5fce8a70daafd8bbb574535cd05ab80000963c5b8e8879cab65fa1a9be177100"
+    },
+    {
+      "path": "assets/images/skeleton/FinalE2-closing.svg",
+      "sha256": "25b6a6b5c977412b0b6eb29a411f961dd7f8817312b9fd1be5c3bc6f5c211d8e"
+    },
+    {
+      "path": "assets/images/skeleton/FinalE5-camera-1.svg",
+      "sha256": "5195c36a5ea70d3516dec8e99928bfe6b879ef25ec8a5fdc871a0717979e7e0e"
+    },
+    {
+      "path": "assets/images/skeleton/FinalE5-camera-2.svg",
+      "sha256": "5b58bfe11b3bae1d2ccec648fb404d9daca64cb0374a79c123c9fbe37bed7598"
+    },
+    {
+      "path": "assets/images/skeleton/FinalE5-camera-3.svg",
+      "sha256": "f75c7b0edfd65e47c4ad7c56eb6244d5f04c6b34280657d203b683dcc702fe7a"
+    },
+    {
+      "path": "assets/images/skeleton/FinalE5-camera-4.svg",
+      "sha256": "864ba4b96c2e3b22a20288915096b83534f5301f0c785af2235074f0f0be9916"
+    },
+    {
+      "path": "assets/images/skeleton/FinalE5-prediction.svg",
+      "sha256": "a4c2a8e1f67e0487a545ebe311547032a31019cf35bf5df2fec53112c1220cac"
+    },
+    {
+      "path": "assets/images/skeleton/FinalE5-closing.svg",
+      "sha256": "1c5b6f4c980c9d3b9c8727067ed5a470b04a08eb348ee266efa4ca89f85fd818"
+    },
+    {
+      "path": "assets/fonts/RockSalt-Regular.ttf",
+      "sha256": "c5421d1ced1949488f29d11b75b7ef967abe2d870f816246bf18fdc0f3e29c96"
+    },
+    {
+      "path": "assets/fonts/RockSalt-LICENSE.txt",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30"
+    },
+    {
+      "path": "assets/fonts/Caveat.ttf",
+      "sha256": "0bdb6b660482d31531b3945849fba5916b3ef8695da7024a9e6b9ee3c4157988"
+    },
+    {
+      "path": "assets/fonts/Caveat-OFL.txt",
+      "sha256": "1f9d81d094273d82f3898a1ee8b598a717d050ecbf5ff7bede105b704880157b"
+    },
+    {
+      "path": "assets/fonts/Kalam-Regular.ttf",
+      "sha256": "57cecb63d4608019371954274ae1d8c397764debd5b19d4a33c1efa4dc923c0b"
+    },
+    {
+      "path": "assets/fonts/Kalam-OFL.txt",
+      "sha256": "f62ef357d3a1c3d27edd35a6e1ba350e8a8d13499797964eeadefbf0b3b15d1f"
+    },
+    {
+      "path": "assets/fonts/ReenieBeanie.ttf",
+      "sha256": "0ea608aa325bf9e11c9590cc0b63dcf7cd215e270784f1ebbe6fad4927b31ff8"
+    },
+    {
+      "path": "assets/fonts/ReenieBeanie-OFL.txt",
+      "sha256": "fbb941b371c6348ee2572ce8c78fb66128a61885f960dec1906c4e44ca4b4d3c"
+    },
+    {
+      "path": "assets/fonts/sources.json",
+      "sha256": "a306bbf97c36865d64038cd5e7e7c444dc4aa43d6cba01f8f59b0cb64537bc9a"
     }
   ]
 }

@@ -1,0 +1,20 @@
+{
+  "checkedAt": "2026-10-28T14:48:53.888Z",
+  "status": "passed",
+  "sourceSha256": "4d3ea284b6cca258810b5210f5debddc5d2d942030cfee2f9ad35e65ed8cafb5",
+  "cases": [
+    "same-path replacement image loads",
+    "optional local audio decodes and timed subtitle appears",
+    "text replacement preserves navigation; previous audio stops",
+    "long journal scrolls to end at 1920x1080",
+    "long journal scrolls to end at 1366x768",
+    "long journal scrolls to end at 800x600",
+    "coherent jump E1 检查",
+    "coherent jump E2 检查",
+    "coherent jump E3 已交检查",
+    "coherent jump E3 未交检查",
+    "coherent jump E4 检查",
+    "coherent jump E5 检查"
+  ],
+  "productionSourceUnchanged": true
+}

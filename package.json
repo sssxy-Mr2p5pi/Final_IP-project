@@ -2,7 +2,7 @@
   "name": "final-ip-project",
   "version": "0.1.0",
   "private": true,
-  "description": "Offline Harlowe technical prototype. All story content is authored by the group.",
+  "description": "Offline Harlowe story skeleton. Chinese development outlines; final story content is authored by the group.",
   "devDependencies": {
     "playwright": "1.64.1"
   },
@@ -10,9 +10,10 @@
     "build": "node scripts/project.mjs build",
     "check": "node scripts/project.mjs check",
     "package": "node scripts/project.mjs package",
-    "test": "node tests/offline.cjs",
+    "test": "node tests/story.cjs",
     "preview": "node scripts/project.mjs preview",
     "test:twine": "node tests/twine.cjs",
-    "test:author": "node tests/author-guard.mjs"
+    "test:author": "node tests/author-guard.mjs",
+    "test:media": "node tests/story-media.cjs"
   }
 }
